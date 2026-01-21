@@ -1,0 +1,13 @@
+<script lang="ts">
+	import Svg from '$lib/components/Svg.svelte';
+	import svg from '$lib/assets/_Романовы и турбулентность.svg?raw';
+</script>
+
+# hello md
+
+* 111
+* 2222
+
+<Svg {svg} caption="«Затейка» верховников" />
+
+sdfsdfsfsdf
