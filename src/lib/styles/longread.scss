@@ -4,7 +4,26 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    article, svg {
+    article, svg, figure, img {
         max-width: 80ch;
     }
+
+    ul {
+        min-height: 1rem;
+    }
+}
+header {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 3rem;
 }
