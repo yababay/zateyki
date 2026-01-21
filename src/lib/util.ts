@@ -3,11 +3,11 @@ export const extractMdxMeta = (page: string) => {
     if(iof === -1) return {}
     const arr = page.substring(0, iof).split(/[\r\n]+/)
 
-    const getMeta = (meta: string) => {
+    const getMeta = (meta: string): string => {
         const toFind = `${meta}:`
         const lines = arr.filter(el => el.includes(toFind))
         const [ line ] = lines
-        if(!line) return
+        if(!line) return ''
         return line.replace(toFind, '').trim()
     }
 

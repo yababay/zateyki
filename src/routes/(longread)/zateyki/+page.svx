@@ -4,21 +4,15 @@ title: Романовы и турбулентность
 
 <script lang="ts">
 	import Svg from '$lib/components/Svg.svelte';
-	import Head from '$lib/components/Head.svelte';
-	import svg from '$lib/assets/_Романовы и турбулентность.svg?raw';
-	export let data: {title?: string, description?: string, banner?: string}
-	import banner from './banner.png'
-	const { title } = data
+	import Helper from './Helper.svelte'
+	import svg_01 from './Романовы и турбулентность.svg?raw';
 </script>
 
-<Head {data} />
-<img src={banner} alt={title} class="d-none">
-
-# {title}
+<Helper />
 
 * 111
 * 2222
 
-<Svg {svg} caption="«Затейка» верховников" />
+<Svg svg={svg_01} caption="Чередование стабильных периодов и энтропии в российской истории." />
 
 sdfsdfsfsdf

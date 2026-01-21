@@ -1,6 +1,5 @@
 <script lang="ts">
-    	export let data: {title: string, description?: string}
-        const { title, description } = data
+    	export let title: string = '', description: string = ''
 </script>
 
 <svelte:head>
