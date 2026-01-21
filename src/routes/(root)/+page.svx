@@ -1,0 +1,11 @@
+<script>
+    import '$lib/styles/root.scss'
+</script>
+
+<main>
+
+    # Список лонгридов
+
+    * [Романовы и турбулентность](/zateyki/)
+
+</main>
