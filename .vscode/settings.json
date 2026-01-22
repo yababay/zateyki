@@ -1,3 +1,14 @@
 {
-    "liveServer.settings.root": "/build"
+    "liveServer.settings.root": "/build",
+    "openInExternalApp.openMapper": [
+        {
+            "extensionName": "svx",
+            "apps": [
+                {
+                    "title": "Gnome Text Editor",
+                    "openCommand": "/usr/bin/gnome-text-editor"
+                },
+            ]
+        },        
+    ]
 }
