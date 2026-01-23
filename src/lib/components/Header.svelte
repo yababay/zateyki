@@ -16,7 +16,7 @@
                     hiddenTitle = false
                     img.remove()
                 }, 100)
-            }, 3000)
+            }, 2000)
         }
         if(img.complete) {
             onImageLoaded()
