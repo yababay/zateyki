@@ -5,4 +5,7 @@
 </script>
 
 <Head {title} {description} />
-<img src={banner} alt={title} class="d-none">
+
+<slot>
+    <img src={banner} alt="banner" class="d-none">
+</slot>

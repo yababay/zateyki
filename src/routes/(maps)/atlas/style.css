@@ -1,0 +1,14 @@
+@import "ol.css";
+
+html, body, main, section {
+  width: 100vw; 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
