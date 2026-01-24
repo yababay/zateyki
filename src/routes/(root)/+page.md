@@ -7,7 +7,7 @@
     const tocAtlas = atlas.map(([href, descr]) => [ `/${href.replaceAll('-', '/')}`, descr.title ])
 
     const tocAtlas1859 = tocAtlas.filter(([href]) => /1859/.test(href))
-    const tocAtlas1745 = tocAtlas.filter(([href]) => /1745/.test(href))
+    const tocAtlas1745 = [ ['/atlas-1745/', 'Предисловие к Атласу Российской империи 1745 г.'], ...tocAtlas.filter(([href]) => /1745/.test(href)) ]
 
 </script>
 
