@@ -32,6 +32,7 @@
 * [Спокойной ночи, социализм](/spokojnoj-nochi-socializm/)
 * [От японских денег до ноты Риббентропа](/yaponskie-dengi/)
 * [Юнона и Турксиб](/yunona-i-turksib/)
+* [«Эль Ниньо» над Ярославлем](/yar-myateg/)
 
 ## Карты и схемы 
 
@@ -42,6 +43,20 @@
 ### Карта земель иррегулярных войск (1859 г.)
 
 <UlExt toc={tocAtlas1859} />
+
+## Диаграммы
+
+* [Экспедиция камергера Н. П. Резанова с инспекцией в Русскую Америку](/diagram/rezanovs-voyage)
+* [Романовы и турбулентность](/diagram/rovanovy-i-turbulentnost)
+* [Российские канцлеры и императоры XVIII в.](/diagram/kanclery-i-imperatory-xviii)
+* [Российские канцлеры и императоры XIX в.](/diagram/kanclery-i-imperatory-xix)
+* [Российские канцлеры — графы Священной римской империи](/diagram/kanclery-i-grafy)
+* [Раевские: служаки и бунтари](/diagram/raevskie-romanovy-golovkiny)
+* [«Затейка верховников» (1730 г.)](/diagram/zateyka-verhovnikov)
+* [Свержение Брауншвейгского семейства (1741 г.)](/diagram/braunshveigskoe-semeystvo)
+* [Заговор Ботта-Лопухиных (1743 г.)](/diagram/zagovor-lopuhinoy)
+* [Свержение Петра III (1762 г.)](/diagram/svergenie-petra-iii)
+* [Убийство Павла I](/diagram/ubiystvo-pavla-i)
 
 <!--
 * [Романовы и турбулентность](/romanovy-i-turbulentnost/)
