@@ -6,6 +6,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"readme:local": "cp README.md 'src/routes/(root)/+page.md'",
+		"readme:build": "",
 		"git": "read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT; git push origin main",
 		"postbuild": "./scripts/aws-sync.sh",
 		"preview": "vite preview",
