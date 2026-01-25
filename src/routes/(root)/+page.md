@@ -1,15 +1,3 @@
-<script>
-
-    import atlas from '$lib/assets/atlas.json'
-    import UlExt from './UlExt.svelte'
-
-
-    const tocAtlas = atlas.map(([href, descr]) => [ `/${href.replaceAll('-', '/')}`, descr.title ])
-
-    const tocAtlas1859 = tocAtlas.filter(([href]) => /1859/.test(href))
-    const tocAtlas1745 = [ ['/atlas-1745/', 'Предисловие к Атласу Российской империи 1745 г.'], ...tocAtlas.filter(([href]) => /1745/.test(href)) ]
-
-</script>
 
 На этой сайте собраны лонгриды Михаила Белякова, написанные за последние годы: о русских революциях, альтернативной истории, автобиографические.
 
@@ -21,6 +9,7 @@
 * [Подношение святому Янусу](/podnoshenie-svyatomu-yanusu/)
 * [1492 год как начало новой эры](/1492-god-kak-nacalo-novoj-ery/)
 * [А что это такое бумкнуло?](/a-cto-eto-takoe-bumknulo/)
+* […а осадочек остался](/a-osadocek-ostalsa/)
 * [Ирония судьбы и классовой борьбы](/ironiya-sudby-kak-klassovoj-borby/)
 
 ## История Российской империи
@@ -49,17 +38,3 @@
 * [Заговор Ботта-Лопухиных (1743 г.)](/diagram/zagovor-lopuhinoy)
 * [Свержение Петра III (1762 г.)](/diagram/svergenie-petra-iii)
 * [Убийство Павла I](/diagram/ubiystvo-pavla-i)
-
-## Карты и схемы 
-
-### Атлас Российской империи (1745 г.)
-
-<UlExt toc={tocAtlas1745} />
-
-### Карта земель иррегулярных войск (1859 г.)
-
-<UlExt toc={tocAtlas1859} />
-
-<!--
-* [Романовы и турбулентность](/romanovy-i-turbulentnost/)
--->

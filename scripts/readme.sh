@@ -1,5 +1,7 @@
 #!/bin/bash
 
-BASE_URL="https://yababay.website.yandexcloud.net"
+YC_URL="yababay.website.yandexcloud.net"
 
-cat 
+echo '# Лонгриды Михаила Белякова' > README.md
+
+cat .README.md | sed "s/](/](https\:\/\/$YC_URL/" >> README.md
