@@ -178,6 +178,6 @@ title: Битва Тарквиния с Редедей
 
 ## Curriculum vitæ
 
-* [История кота Зухеля](https://yababay.website.yandexcloud.net/kot-zyxel/)
+* [История кота Зухеля](https://yababay.website.yandexcloud.net/zyxel-the-cat/)
 * [Как расстаться с комсомолом](https://yababay.website.yandexcloud.net/kak-rasstatsa-s-komsomolom/)
 * [«Эль Ниньо» над Ярославлем](https://yababay.website.yandexcloud.net/yar-myateg/)

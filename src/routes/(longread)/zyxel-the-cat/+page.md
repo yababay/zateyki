@@ -8,8 +8,9 @@ description: Памяти четвероногого друга, скрасив�
     import Figure from '$lib/components/Figure.svelte' 
     import src from './zyxel.jpg'    
 
-    const title = 'История кота Зухеля'
-    const description = 'Памяти четвероногого друга, скрасившего мне жизнь в самые одинокие годы.'
+    export let data
+
+    const { title, description } = data
     const caption = 'Кот Зухель'
 
 </script>
