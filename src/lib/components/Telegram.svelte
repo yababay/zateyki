@@ -9,7 +9,6 @@
         position: fixed;
         top: 1rem;
         right: 1rem;
-        //width: 20%;
         list-style: none; /* Убираем маркеры списка */
         padding: 0;       /* Убираем стандартный отступ */
         margin: 0;        /* Убираем стандартный отступ */
