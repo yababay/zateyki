@@ -1,3 +1,6 @@
+---
+title: А что это такое бумкнуло?
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'    

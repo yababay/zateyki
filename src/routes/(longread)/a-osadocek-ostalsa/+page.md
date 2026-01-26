@@ -1,3 +1,6 @@
+---
+title: …а осадочек остался
+---
 <script>
 
     import Figure from '$lib/components/Figure.svelte'    

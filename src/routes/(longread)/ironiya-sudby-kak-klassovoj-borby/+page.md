@@ -1,3 +1,6 @@
+---
+title: Ирония судьбы и классовой борьбы
+---
 <script>
 
     import Figure from '$lib/components/Figure.svelte'

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "previewPath": null,
+      "defaultFileName": "+page",
+      "pageBundle": true,
+      "fields": [
+        {
+          "title": "Заголовок",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "description": "Описание",
+          "name": "description",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "posts",
+      "path": "[[workspace]]/src/routes/(longread)",
+      "filePrefix": null
+    }
+  ]
+}

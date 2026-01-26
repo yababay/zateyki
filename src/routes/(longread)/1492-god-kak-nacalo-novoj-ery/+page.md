@@ -1,3 +1,6 @@
+---
+title: 1492 год как начало новой эры
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'    

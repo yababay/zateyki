@@ -1,3 +1,6 @@
+---
+title: Битва Тарквиния с Редедей
+---
 
 На этой сайте собраны лонгриды Михаила Белякова, написанные за последние годы: о русских революциях, альтернативной истории, автобиографические.
 
@@ -10,7 +13,48 @@
 * [1492 год как начало новой эры](/1492-god-kak-nacalo-novoj-ery/)
 * [А что это такое бумкнуло?](/a-cto-eto-takoe-bumknulo/)
 * […а осадочек остался](/a-osadocek-ostalsa/)
+* […а осадочек остался 2](/a-osadocek-ostalsa-2/)
+* [А шапочка, извините, откуда?](/a-sapocka-izvinite-otkuda/)
+* [Альтернативщик Батюшков](/alternativsik-batuskov/)
 * [Ирония судьбы и классовой борьбы](/ironiya-sudby-kak-klassovoj-borby/)
+* [(Ана)хроники Вильяма Шекспира](/anahroniki-vilama-sekspira/)
+* [(Ана)хроники Вильяма Шекспира 2](/anahroniki-vilama-sekspira-prodolzenie/)
+* [Астерикс, Обеликс и хронический анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/) 
+* [Квадратно-гнездовая христианизция](/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
+* [Жертва из божественного семейства](/jertva-iz-bogestvennogo-semeystva/) 
+* [Если топну я ногою, позову своих солдат…](/esli-topnu-a-nogou-pozovu-svoih-soldat/) 
+* [Балкон как моветон](/balkon-kak-moveton/) 
+* [Праздник непослушания](/prazdnik-neposlusania/) 
+* [Горят-шумят Бадаевские склады](/gorat-sumat-badaevskie-sklady/) 
+* [Случай на Белоозере](/slucaj-na-beloozere-istoriceskaa-ugadajka-vypusk-3/) 
+* [О разорении Рязани](/o-razorenii-razani-istoriceskaa-ugadajka-vypusk-5/) 
+* […дык ёлы-палы, здравствуй, сестра!](/dyk-ely-paly-zdravstvuj-sestra/) 
+* [Шоссе энтузиастов. Следующая станция — Владимирский централ](/sosse-entuziastov-sleduusaa-stancia-vladimirskij-central/) 
+* [Битва Тарквиния с Редедей](/bitva-tarkvinia-s-rededej/) 
+* [Павка Корчагин и оливковое масло](/pavka-korcagin-i-olivkovoe-maslo/) 
+* [Битва Фридриха Барбароссы с половцами](/bitva-fridriha-barbarossy-s-polovcamiv/) 
+
+<!-- 
+* [](//) 
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+
+    const title = ''
+    const description = ''
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+<Figure {caption}>
+    <img {src} alt={caption}>
+</Figure>
+
+-->
 
 ## История Российской империи
 
@@ -38,3 +82,7 @@
 * [Заговор Ботта-Лопухиных (1743 г.)](/diagram/zagovor-lopuhinoy)
 * [Свержение Петра III (1762 г.)](/diagram/svergenie-petra-iii)
 * [Убийство Павла I](/diagram/ubiystvo-pavla-i)
+
+## Curriculum vitæ
+
+* [История кота Зухеля](/kot-zyxel/)
