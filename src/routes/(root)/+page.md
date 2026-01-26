@@ -19,6 +19,7 @@ title: Битва Тарквиния с Редедей
 * [Ирония судьбы и классовой борьбы](/ironiya-sudby-kak-klassovoj-borby/)
 * [(Ана)хроники Вильяма Шекспира](/anahroniki-vilama-sekspira/)
 * [(Ана)хроники Вильяма Шекспира 2](/anahroniki-vilama-sekspira-prodolzenie/)
+* [Из-за леса, из-за гор показал мужик копьё](/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
 * [Астерикс, Обеликс и хронический анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/) 
 * [Квадратно-гнездовая христианизция](/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
 * [Жертва из божественного семейства](/jertva-iz-bogestvennogo-semeystva/) 
@@ -86,3 +87,4 @@ title: Битва Тарквиния с Редедей
 ## Curriculum vitæ
 
 * [История кота Зухеля](/kot-zyxel/)
+* [Как расстаться с комсомолом](/kak-rasstatsa-s-komsomolom/)

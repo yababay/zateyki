@@ -20,6 +20,7 @@ title: Битва Тарквиния с Редедей
 * [Ирония судьбы и классовой борьбы](https://yababay.website.yandexcloud.net/ironiya-sudby-kak-klassovoj-borby/)
 * [(Ана)хроники Вильяма Шекспира](https://yababay.website.yandexcloud.net/anahroniki-vilama-sekspira/)
 * [(Ана)хроники Вильяма Шекспира 2](https://yababay.website.yandexcloud.net/anahroniki-vilama-sekspira-prodolzenie/)
+* [Из-за леса, из-за гор показал мужик копьё](https://yababay.website.yandexcloud.net/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
 * [Астерикс, Обеликс и хронический анахроникс](https://yababay.website.yandexcloud.net/asteriks-obeliks-i-hroniceskij-anahroniks/) 
 * [Квадратно-гнездовая христианизция](https://yababay.website.yandexcloud.net/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
 * [Жертва из божественного семейства](https://yababay.website.yandexcloud.net/jertva-iz-bogestvennogo-semeystva/) 
@@ -87,3 +88,4 @@ title: Битва Тарквиния с Редедей
 ## Curriculum vitæ
 
 * [История кота Зухеля](https://yababay.website.yandexcloud.net/kot-zyxel/)
+* [Как расстаться с комсомолом](https://yababay.website.yandexcloud.net/kak-rasstatsa-s-komsomolom/)
