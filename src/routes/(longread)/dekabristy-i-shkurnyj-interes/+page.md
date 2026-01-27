@@ -1,3 +1,7 @@
+---
+title: Декабристы и шкурный интерес
+description: О Российско-американской компании как точке пересечения государственных и оппозиционных интересов.
+---
 <script>
 
     import Figure from '$lib/components/Figure.svelte'
@@ -7,8 +11,9 @@
     import moika72 from './moika-72.jpg'
     import svg from './_Дом на Мойке.svg?raw'
 
-    const title = 'Декабристы и шкурный интерес'
-    const description = 'О Российско-американской компании как точке пересечения государственных и оппозиционных интересов.'
+    export let data
+
+    const { title, description } = data    
     const padenie = 'Падение прибылей Российско-Американской компании'
     const moika = 'Санкт-Петербург. Мойка, 72. Бывшее здание Российско-Американской компании.'
 

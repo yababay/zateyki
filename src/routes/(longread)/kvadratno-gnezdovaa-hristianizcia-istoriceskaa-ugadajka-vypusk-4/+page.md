@@ -1,12 +1,17 @@
 ---
 title: Квадратно-гнездовая христианизция
+description: Только ли Владимир Красно Солнышко любил крестить славян?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Квадратно-гнездовая христианизция'
-    const description = 'Только ли Владимир Красно Солнышко любил крестить славян?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

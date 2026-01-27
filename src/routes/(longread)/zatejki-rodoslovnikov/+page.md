@@ -1,20 +1,21 @@
 ---
 title: Затейки верховников и верхушки затенйников
-slug: zatejki-rodoslovnikov
-coverImage: /images/posts/russia-1745.png
-excerpt: Расправа с Долгоруковыми, дело Лопухиных, свержение Брауншвейгов, переворот Екатерины Великой и другие безобразия XVIII века
-date: 2026-01-19T01:22:24.455Z
-updated: null
-hidden: false
-tags:
-    - интриги
-keywords:
-    - Романовы
-    - Долгоруковы
-    - Брауншвейгское семейство
-    - Петр III
-    - Лопухины
+description: Расправа с Долгоруковыми, дело Лопухиных, свержение Брауншвейгов, переворот Екатерины Великой и другие безобразия XVIII века
 ---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > У девушки с острова Пасхи<br>
 > Украли любовника тигры,<br>

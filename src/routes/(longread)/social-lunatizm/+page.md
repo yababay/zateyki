@@ -1,14 +1,31 @@
-# Социал-лунатизм
+---
+title: Социал-лунатизм
+description: Моральный облик обитателей парижского кафе «Ротонда» и большевистская революция.
+---
+<script>
 
-> Я
-> себя
-> под Лениным чищу,
-> чтобы плыть
-> в революцию дальше.
-> Я боюсь
-> этих строчек тыщи,
-> как мальчишкой
-> боишься фальши.
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+> Я<br>
+> себя<br>
+> под Лениным чищу,<br>
+> чтобы плыть<br>
+> в революцию дальше.<br>
+> Я боюсь<br>
+> этих строчек тыщи,<br>
+> как мальчишкой<br>
+> боишься фальши.<br>
 >
 > Владимир Маяковский
 

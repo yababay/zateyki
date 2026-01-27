@@ -1,4 +1,21 @@
-# Винегрет из съездов: правила дегустации
+---
+title: Винегрет из съездов
+description: Высшие органы всоветской власти в первые годы.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Не звони ночами друзьям.
 > Не зевай в присутствии дам,

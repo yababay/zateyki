@@ -1,4 +1,21 @@
-# Непередаваемые ощущения
+---
+title: Непередаваемые ощущения
+description: О книге Эрнста Маха «Анализ ощущений»
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 (О книге Эрнста Маха «Анализ ощущений»)
 

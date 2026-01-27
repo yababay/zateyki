@@ -1,9 +1,21 @@
-# Как русский царь на Бреславском шляхе безобразничал
+---
+title: Русский царь на Бреславском шляхе
+description: Суопутный экспорт зерна из России.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Фразу “крымский хан на Изюмском шляхе безобразничает” из кинокомедии
 “Иван Васильевич меняет профессию” знают, наверно, все. Но что это за

@@ -1,9 +1,21 @@
-# Макар Дедушкин и дурни
+---
+title: Макар Дедушкин и дурни
+description: Философское эссе по мотивам книги В.И. Ленина «Материализм и эмпириокритицизм».
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-(По мотивам книги В.И. Ленина «Материализм и эмпириокритицизм»).
+</script>
+
+<Helper {title} {description} />
 
 По субботам Макар Владимирович Дедушкин отдыхал от своей
 публицистической деятельности за игрой в шахматы. Его неизменным

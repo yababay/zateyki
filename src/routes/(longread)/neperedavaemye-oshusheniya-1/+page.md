@@ -1,11 +1,28 @@
-# Непередаваемые ощущения
+---
+description: О книгах Эрнста Маха «Анализ ощущений» и Вл. Ильина «Материализм и эмпириокритицизм»
+title: Непередаваемые ощущения
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 (О книгах Эрнста Маха «Анализ ощущений» и Вл. Ильина «Материализм и эмпириокритицизм»)
 
-> _Вот тебе, гадина,<br>
-	Вот тебе, подлюка,<br> 
-	Вот тебе за Гайдна,<br> 
-	Вот тебе за Глюка!_
+> Вот тебе, гадина,<br>
+> Вот тебе, подлюка,<br> 
+> Вот тебе за Гайдна,<br> 
+> Вот тебе за Глюка!
 >
 > Записано со слов Новеллы Матвеевой.
 

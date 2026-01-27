@@ -1,12 +1,17 @@
 ---
 title: Горят-шумят Бадаевские склады
+description: Когда немцы сожгли продовольственные склады врага, чтобы повысить эффективность блокады?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Горят-шумят Бадаевские склады'
-    const description = 'Когда немцы сожгли продовольственные склады врага, чтобы повысить эффективность блокады?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

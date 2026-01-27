@@ -1,7 +1,21 @@
-# Здесь были Жора, Вася и Бурнашев
+---
+title: Здесь были Жора, Вася и Бурнашев
+description: О чем свидетельствуют античные надписи на стенах Помпей.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Писать на стенах, увы, друзья, не мудрено, и если Киса и Ося из “12
 стульев” решили увековечить свои имена на скалах Кавказа безобидным

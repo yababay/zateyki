@@ -1,12 +1,14 @@
 ---
 title: А что это такое бумкнуло?
+description: Возможный украинский прототип Лжедмитрия I.
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'    
     
-    const title = 'А что это такое бумкнуло?'
-    const description = 'Возможный украинский прототип Лжедмитрия I.'
+    export let data
+
+    const { title, description } = data
 
 </script>
 

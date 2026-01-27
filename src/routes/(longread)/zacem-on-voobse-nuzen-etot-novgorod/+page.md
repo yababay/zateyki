@@ -1,7 +1,21 @@
-# Зачем он вообще нужен, этот Новгород?
+---
+title: Зачем нужен Новгород
+description: Странности геограического расположия днерусской торговой фактории.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Да, такой вот, мягко говоря, небанальный вопрос. Поясню.
 

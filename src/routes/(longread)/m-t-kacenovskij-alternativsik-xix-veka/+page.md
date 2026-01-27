@@ -1,7 +1,21 @@
-# М. Т. Каченовский: альтернативщик XIX века
+---
+title: Альтернативщик Каченовский
+description: М. Т. Каченовский как основатель русской критической школы.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 М. Т. Каченовский — влиятельный историк, публицист, переводчик, а
 главное — издатель первой трети XIX в. В период с 1811 по 1830 гг. он

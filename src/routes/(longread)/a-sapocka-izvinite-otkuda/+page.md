@@ -1,5 +1,6 @@
 ---
 title: А шапочка, извините, откуда?
+description: Странная схожесть военной формы европейских держав и США во второй половине XIX в.
 ---
 <script>
 
@@ -10,9 +11,9 @@ title: А шапочка, извините, откуда?
     import src03 from './shapochka-03.webp'   
     import src04 from './shapochka-04.webp'   
     
-    const title = 'А шапочка, извините, откуда?'
-    const description = 'Странная схожесть военной формы европейских держав и США во второй половине XIX в.'
+    export let data
 
+    const { title, description } = data
     const caption01 = 'Французская военная форма второй половины XIX в.'
     const caption02 = 'Итальянская военная форма второй половины XIX в.'
     const caption03 = 'Американская (США) военная форма второй половины XIX в.'

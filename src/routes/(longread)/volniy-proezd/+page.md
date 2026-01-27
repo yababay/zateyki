@@ -1,4 +1,21 @@
-# Фрагменты из книги Марины Цветаевой «Вольный проезд»
+---
+description: Фрагменты из книги Марины Цветаевой.
+title: «Вольный проезд»
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 **От ведущего**. Публикую несколько фрагментов из автобиографической книги Марины Цветаевой «Вольный проезд». Это произведение, к сожалению, до сих пор не слишком известно, хотя, по-моему, его следовало бы включить в школьную программу для старших классов. Глядишь, и любителей советского образа жизни в стране поубавилось бы.
 

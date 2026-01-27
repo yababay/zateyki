@@ -1,4 +1,21 @@
-# Развешивание ярлыков как высшая стадия полоскания грязного белья
+---
+title: Скунс-полоскун
+description: Развешивание ярлыков как высшая стадия полоскания грязного белья.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 [Предыдущий лонгрид](https://yababay.github.io/longread/echo-1917/mie-insults) был посвящен оскорблению как методу ведения философской дискуссии, примененному автором (или авторами) книги «Материализм и эмпириокритицизм» (кстати, не факт, что это плод персонального, а не коллективного творчества; об этом я надеюсь порассуждать когда-нибудь позже). 
 

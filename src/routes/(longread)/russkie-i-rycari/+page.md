@@ -1,7 +1,22 @@
+---
+title: Русские и рыцари
+description: Древнеримский вектор расселения славян на восток.
+---
 # Русские и рыцари
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Понятие “рыцарь” получило у нас в последние десятилетия некую
 отчужденную, враждебную окраску: да, это человек сильный, благородный,

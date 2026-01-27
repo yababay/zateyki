@@ -1,7 +1,21 @@
-# Жены без титек и другие предки славян
+---
+title: Жены без титек — предки славян
+description: Странности в летописх, собранных Василие Никитичем Татищевым.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Василий Никитич Татищев — первый русский отечественный историк. Он
 начал интересоваться древними источниками еще до того, как исследование

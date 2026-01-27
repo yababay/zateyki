@@ -1,9 +1,21 @@
-# Александр Македонский, Робинзон Крузо и “неправильные пчелы”
+---
+title: Александр Македонский и “неправильные пчелы”
+description: Выращивание сахарного тростника в античности и во времена Робинзона Крузо
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Древнегреческий историк Онесикрит, сопровождавший Александра
 Македонского в походах, был удивлен, узнав о выращивавшемся в Индии

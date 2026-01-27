@@ -1,4 +1,21 @@
-# Осторожно: не кантовать!
+---
+title: "Осторожно: не кантовать!"
+description: Классическая немецкая философия и большевики.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Раз уж дело в моем [уютном бложеке](https://t.me/channel_1917) дошло до [размышлений о гегельянстве](https://yababay.github.io/longread/echo-1917/gegel-vs-marx/), решил я освежить в памяти и знания о философии Иммануила Канта, которые с университетских времен изрядно повыветрились. Нет лучшего способа сделать это, чем прочитать «Пролегомены» — небольшое произведение кенигсбергского философа, призванное подготовить читателя к восприятию гораздо более увесистой книги — «Критики чистого разума». Уж в ней-то точно «без поллитры не разобраться». [Андрей Кнышев](https://w.wiki/Bib3), если не ошибаюсь, писал в связи с этим:
 

@@ -7,10 +7,11 @@ description: О наименовании древнеримских монет.
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
     import src from './sestertium.gif'
-    
-    const title = '…дык ёлы-палы, здравствуй, сестра!'
-    const description = 'О наименовании древнеримских монет.'
+   
     const caption = 'Древнеримский сестерций'
+    export let data
+
+    const { title, description } = data
 
 </script>
 

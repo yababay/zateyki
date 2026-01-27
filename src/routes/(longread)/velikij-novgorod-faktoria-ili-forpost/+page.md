@@ -1,7 +1,21 @@
-# Великий Новгород: фактория или форпост?
+---
+title: Фактория или форпост?
+description: Был ли Великий Новгород крепостью или оптовым рынком?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В этом небольшом этюде (без ссылок, сносок и списка литературы) я хотел
 бы прояснить вопрос о местонахождении Великого Новгорода русских

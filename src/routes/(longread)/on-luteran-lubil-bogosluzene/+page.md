@@ -1,7 +1,21 @@
-# Он лютеран любил богослуженье
+---
+title: Он лютеран любил богослуженье
+description: Любил ли Петр Великий Православие?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Речь пойдет не Ф.И. Тютчеве, написавшем обыгранное в заголовке
 стихотворение, а о всё том же российском царе Петре I, точнее

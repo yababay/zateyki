@@ -1,9 +1,21 @@
-# Манипулирование манипулами и мануфактурами
+---
+title: Манипулирование манипулами и мануфактурами
+description: Объемы древнеримского военного производства.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 На днях в материале “Сука любовь” я высказал гипотезу о том, что
 производство сукна в античной Римской империи может служить маркером

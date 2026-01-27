@@ -1,4 +1,21 @@
-# О чем поют пеоны
+---
+title: О чем поют пеоны
+description: Русские — не автохтоны, а колонисты. Эссе к годовщине Отмены крепостного права.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сегодня, 3-го марта, в России отмечается очередная годовщина отмены крепостного права &lang;материал публикую 4-го, но писать начал накануне&rang;. В этот день, я обычно вспоминаю строфу из известной поэмы Н.А. Некрасова:
 

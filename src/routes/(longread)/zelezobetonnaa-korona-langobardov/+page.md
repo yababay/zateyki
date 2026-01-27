@@ -1,7 +1,21 @@
-# Железобетонная корона лангобардов
+---
+title: Железобетонная корона лангобардов
+description: Странности истории средневековых владык Европы.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Лангобарды — одна из тех субстанций, которыми заполнены так называемые
 Темные века. Эдакий “бутовый камень” истории. Есть списки их королей и

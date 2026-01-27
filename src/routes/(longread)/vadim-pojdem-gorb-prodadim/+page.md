@@ -1,7 +1,22 @@
-# Вадим, пойдем горб продадим
+---
+title: Вадим, пойдем горб продадим
+description: Отражение мифического героя русских летописей в произведении Лермонтова.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
 
 Юношеская повесть М.Ю. Лермонтова “Вадим” (название условное, т.к. сам
 автор ее не дописал и не озаглавил) с литературной точки зрения

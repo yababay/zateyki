@@ -1,7 +1,21 @@
-# Литдесант с юга
+---
+title: Литдесант с юга
+description: Одеситы в советской литературе.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В русской классической литературе можно разглядеть занятный вектор:
 некто приезжает с юга, точнее говоря, с юго-запада Российской империи и

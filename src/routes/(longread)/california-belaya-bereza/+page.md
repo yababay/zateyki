@@ -1,4 +1,21 @@
-# Калифорнюшка, белая берёзынька
+---
+title: Калифорнюшка, белая берёзынька
+description: Форт Росс как плацдарм для восстания декабристов.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Когда попал впервые Беринг
 > В северо-западный проход,

@@ -1,7 +1,21 @@
-# Гай Юлий Кейнсарь
+---
+title: Гай Юлий Кейнсарь
+description: Кейнсианские взгляды римских императоров.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Не скажу, что блестяще учился в университете, но троек среди моих
 оценок было не слишком много. Сколько именно — не помню, вкладыш к

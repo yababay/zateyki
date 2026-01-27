@@ -1,4 +1,21 @@
-# Тихий омут Энгельса
+---
+title: Тихий омут Энгельса
+description: Почему соратник Маркса не был меннее токсичным, чем основатель марксизма?
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Если бы марксиств написали свой собственный вариант искусственного интеллекта, общение с ним могло бы выглядеть так:
 

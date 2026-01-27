@@ -1,4 +1,21 @@
-# Ленин и Youtube
+---
+title: Ленин и Youtube
+description: Образ Ленина в произведениях Ильи Эренбурга.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > В Горках знал его любой,
 > Старики на сходку звали,

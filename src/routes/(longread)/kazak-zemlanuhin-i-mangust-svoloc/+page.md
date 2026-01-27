@@ -1,7 +1,21 @@
-# Казак Землянухин и мангуст Сволочь
+---
+title: Казак Землянухин и мангуст Сволочь
+description: Особенности призывов в российские народные ополчения.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Мой дедушка по материнской линии Алексей Тимофеевич любил читать
 Чехова. У него было полное собрание сочинений, и запомнился он именно

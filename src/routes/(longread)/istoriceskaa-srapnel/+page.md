@@ -1,7 +1,21 @@
-# Историческая шрапнель
+---
+title: Историческая шрапнель
+description: Как историки превращают свою науку в недоступную для посторонних интеллектуальную сферу
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Шрапнель — множество мелких травмирующих предметов (например, гвоздей
 или просто металлических обломков), разлетающихся в хаотическом порядке

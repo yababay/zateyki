@@ -1,7 +1,21 @@
-# Подношение святому Янусу
+---
+title: Подношение святому Янусу
+description: Мысленный новогодний эксперимент с днем зимнего солнцестояния.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 [1*D4p3qxFQ6lXQwHKBWOjieg.jpeg]
 

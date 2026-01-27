@@ -1,4 +1,22 @@
-# Богемный милитаризм
+---
+title: Богемный милитаризм
+description: "Отношение Маяковского к первой мировой войне: милитаризм."
+---
+
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Если сравнивать отношение Маяковского к войне, выраженное в стихах с тем, которое складывается при чтении его биографии, может показаться, что речь идет о двух разных людях. Начнем с анализа жизнеописания, опираясь на одну из самых недавних и при этом самых толковых работ о поэте - книгу Б. Янгфельдта «Ставка - жизнь» (М.: 2009). 
 

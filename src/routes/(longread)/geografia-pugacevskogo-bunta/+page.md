@@ -1,7 +1,21 @@
-# География Пугачевского бунта
+---
+title: География Пугачевского бунта
+description: Пушкин как историограф народной войны XVIII в.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Одолел, наконец, “Историю Пугачевского бунта ” А.С. Пушкина и, прежде
 чем рассыпаться в стандартных дифирамбах по поводу того, что

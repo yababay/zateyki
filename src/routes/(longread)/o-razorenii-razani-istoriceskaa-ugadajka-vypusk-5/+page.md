@@ -5,9 +5,13 @@ description: Сколько раз разоряли Рязань и перено
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'О разорении Рязани'
-    const description = 'Сколько раз разоряли Рязань и переносили ее на новое место?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

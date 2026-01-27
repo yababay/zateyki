@@ -1,7 +1,21 @@
-# Бороться и искать, найти и перепрятать
+---
+title: Бороться и искать, найти и перепрятать
+description: Полярники в советской культуре
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Заставшие СССР могут почувствовать в этом заголовке знакомое веяние:
 советские люди любили обыграть что-нибудь возвышенное, в данном случае

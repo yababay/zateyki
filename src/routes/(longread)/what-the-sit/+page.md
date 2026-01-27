@@ -1,7 +1,21 @@
-# What the щит?
+---
+title: What the щит?
+description: Оружейное искусство Милана и доспехи Ахилла.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Посмотрите на этот прекрасный золоченый щит из Милана, изготовление
 которого приписывают римскому издателю и гравёру Антонио Саламанке.

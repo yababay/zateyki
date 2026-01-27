@@ -7,9 +7,10 @@ description: Как повесть о комсомольце-герое помо
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
     import src from './gorushna.webp'    
+    
+    export let data
 
-    const title = 'Павка Корчагин и оливковое масло'
-    const description = 'Как повесть о комсомольце-герое помогает в раскрытии загадок древнеславянской археологии.'
+    const { title, description } = data
     const caption = 'Древнеславянская надпись на керамическом сосуде'
 
 </script>

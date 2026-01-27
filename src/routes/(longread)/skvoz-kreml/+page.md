@@ -1,7 +1,21 @@
-# Сквозь Кремль
+---
+title: Сквозь Кремль
+description: Когда-то Кремль был таможней на берегу Яузы
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В предыдущем материале я попытался нащупать ведущий через Москву
 маршрут, соединяющий древние Смоленскую и Владимирскую дороги. Это

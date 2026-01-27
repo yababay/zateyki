@@ -7,12 +7,15 @@ description: Фамилия Шекспир как факт в копилку а�
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
     // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-    const title = 'Из-за леса, из-за гор показал мужик копьё'
-    const description = 'Фамилия Шекспир как факт в копилку альтернативной истории'
+    const { title, description } = data
     // const caption = ''
 
 </script>
+
+<Helper {title} {description} />
 
 (И не просто показал, а с историческими источниками увязал).
 

@@ -1,4 +1,21 @@
-# Рецензия, запоздавшая на 116 лет (часть 2)
+---
+title: Рецензия, запоздавшая на 116 лет (часть 2)
+description: Из цикла про «Материализм и эмпириокритицизм».
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 ## II. Наглость — второе счастье
 

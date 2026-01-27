@@ -1,7 +1,21 @@
-# Лукан и лукавство
+---
+title: Лукан и лукавство
+description: Участие русского царя в польских королевских выборах.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Где-то я писал, что работы по фальсификации истории выполняли, видимо,
 завзятые троечники. Иной раз в “официальной” концепции прошлого факты

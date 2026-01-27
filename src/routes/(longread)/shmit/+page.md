@@ -1,4 +1,21 @@
-# Дети фабриканта Шмита
+---
+title: Дети фабриканта Шмита
+description: Спонсирование революции 1905 г.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 «У вас в заголовке допущена ошибка — со строгим укором сказал бы, наверно, мой воображаемый оппонент [Юра](https://yababay.github.io/longread/echo-1917/yura/). — Видимо, имеется в виду герой революции 1905 года [Петр Петрович Шмидт](https://w.wiki/BgsV). Его фамилия пишется с буквой «д». И с чего это он вдруг фабрикант, а не лейтенант?»
 

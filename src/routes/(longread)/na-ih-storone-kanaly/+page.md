@@ -1,7 +1,21 @@
-# На их стороне каналы
+---
+title: На их стороне каналы
+description: Рассказ графа Миниха о строительстве Ладожского канала.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Говоря об экономических успехах тоталитарных режимов, их сторонники с
 пылом упоминают ДнепроГЭС, Сталинградский и Челябинский тракторные (на

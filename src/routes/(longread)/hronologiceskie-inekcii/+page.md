@@ -1,7 +1,21 @@
-# Хронологические инъекции
+---
+title: Хронологические инъекции
+description: Искажающие вставки в исторические источники.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Приступив к чтению книги Тадеуша Воланского “Письма о славянских
 древностях”, я нашел там древнелитовское языческое сказание о том, как

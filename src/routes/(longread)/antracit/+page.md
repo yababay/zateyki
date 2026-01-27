@@ -1,6 +1,23 @@
-# Макар Дедушкин и говорящий антрацит
+---
+title: Макар Дедушкин и говорящий антрацит
+description: Филосоское эссе.
+---
+<script>
 
-_(В материале использованы цитаты из предисловия А. Сараждева к «Пролегоменам» Иммануила Канта, издание 1934 г.)_
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+(В материале использованы цитаты из предисловия А. Сараждева к «Пролегоменам» Иммануила Канта, издание 1934 г.)
 
 > Если б каменный уголь умел говорить,
 > Он не стал бы вести беседы с тобой.

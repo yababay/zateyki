@@ -1,7 +1,21 @@
-# Максим Тимофеев. В котельной
+---
+title: В котельной
+description: Автобиографический рассказ Максима Тимофеева.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Валера уже и сам не помнит, за какой надобностью повар послал его в
 котельную. То ли отнести что-то туда, то ли забрать что-то оттуда.

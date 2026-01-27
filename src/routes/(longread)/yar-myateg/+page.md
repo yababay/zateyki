@@ -1,3 +1,7 @@
+---
+title: «Эль Ниньо» над Ярославлем
+description: Неожиданный источник по истории «Белогвардейского мятежа» в Ярославле
+---
 <script>
 
     import Figure from '$lib/components/Figure.svelte'
@@ -7,8 +11,9 @@
     import dvoryImg from './dvory.png'
     import rybinskayaImg from './rybinskaya-42.png'
     
-    const title = '«Эль Ниньо» над Ярославлем'
-    const description = 'Неожиданный источник по истории «Белогвардейского мятежа» в Ярославле'
+    export let data
+
+    const { title, description } = data
     const rybinskayaCap = 'Угловой дом на Рыбинской и пятиэтажка 1980-х на Лисицына'
     const dvoryCap = 'Дворы-прямоугольники с угловыми домами'
 

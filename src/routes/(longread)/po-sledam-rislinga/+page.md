@@ -1,7 +1,21 @@
-# По следам Рислинга
+---
+title: По следам Рислинга
+description: Как распространение виноградной лозы помогает понять историю Античности и Средневековья
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Экономические невзгоды 1990-х, так сказать, “обрушивались” на нашу
 страну не мгновенно, а с некоторым временным лагом. Наряду с

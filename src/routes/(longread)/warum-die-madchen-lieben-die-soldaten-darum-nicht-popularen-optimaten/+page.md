@@ -1,7 +1,21 @@
-# Warum die Mädchen lieben die Soldaten? Darum nicht Popularen! Optimaten!
+---
+description: Warum die Mädchen lieben die Soldaten? Darum nicht Popularen! Optimaten!
+title: Оптимальные армии оптиматов
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сначала о заголовке. Немецкое четверостишие, показавшееся мне забавным,
 я нашел недавно на одном из Телеграм-каналов. В исходной форме оно

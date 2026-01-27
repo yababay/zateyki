@@ -1,6 +1,23 @@
-# От Батума до батута 
+---
+title: От Батума до батута
+description: Тупиковый путь русских революций.
+---
+<script>
 
-_(Краткий курс истории производственных отношений в России)_
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+(Краткий курс истории производственных отношений в России).
 
 ## I.
 

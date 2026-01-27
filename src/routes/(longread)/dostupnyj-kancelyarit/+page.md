@@ -1,3 +1,7 @@
+---
+title: Доступный канцелярит
+description: Российские канцлеры — графы Священной римской империи.
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'
@@ -6,8 +10,9 @@
     import svg from './_Графы Римской империи среди российских канцлеров.svg?raw'
     import dogovorImg from './Русско-тевтонский_договор_1517_г.jpg'
 
-    const title = 'Доступный канцелярит'
-    const description = 'Российские канцлеры — графы Священной римской империи.'
+    export let data
+
+    const { title, description } = data    
     const caption = 'Графы Римской империи среди российских канцлеров'
     const dogovorCap = 'Русско-тевтонский договор 1517 г.'
 

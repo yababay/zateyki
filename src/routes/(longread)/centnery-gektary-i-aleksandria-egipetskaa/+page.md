@@ -1,9 +1,21 @@
-# Центнеры, гектары и Александрия Египетская
+---
+title: Египетский центнер с гектары и Александрия Египетская
+description: Парадоксы африканского земледелия в древнеримскую эпоху.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Сегодня увидел вот такую картинку
 [0*l9yJutuVNRzBGABT.jpg]

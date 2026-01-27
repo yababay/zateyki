@@ -1,7 +1,21 @@
-# Жоашен дю Белле — поэт-руинист
+---
+title: Жоашен дю Белле — поэт-руинист
+description: Отражение посткатастрофного мира в французской поэзии XVI в.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Художник-руинист Джованни Пиранези хорошо известен приверженцам
 альтернативной истории. Он для них один из главных аргументов в пользу

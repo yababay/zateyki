@@ -1,12 +1,17 @@
 ---
 title: Балкон как моветон
+description: Кто прохлаждался на балконах в городе, где можно наблюдать полярный день?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Балкон как моветон'
-    const description = 'Кто прохлаждался на балконах в городе, где можно наблюдать полярный день?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

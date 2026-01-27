@@ -1,9 +1,21 @@
-# Родина и гений
+---
+title: Родина и гений
+description: О репрессиях против работников умственного труда.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-ГуманитариумSeptember 27, 2018 Гуманитариум
+</script>
+
+<Helper {title} {description} />
 
 80 лет назад, 27 сентября 1938 года, начальник отдела ракетных
 летательных систем московского Ракетного научно-исследовательского

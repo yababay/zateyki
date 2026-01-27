@@ -1,6 +1,25 @@
-# Шелдон и Ильич
+---
+title: Шелдон и Ильич
+description: Как в американском сериале опровергается перспектива пролетарской революции.
+---
+<script>
 
-![Семья Куперов](https://storage.yandexcloud.net/historical-pictures/longread/sheldon.jpg)
+    import Helper from '$lib/components/Helper.svelte' 
+    import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    const caption = 'Семейство Куперов. Постер к сериалу «Детство Шелдона».'
+
+</script>
+
+<Helper {title} {description} />
+
+<Figure {caption} >
+    <img src="https://storage.yandexcloud.net/historical-pictures/longread/sheldon.jpg" alt={caption}>
+</Figure>
 
 Этот коллаж сделан на основе постера к комедийному сериалу [«Детство Шелдона»](https://w.wiki/9DbG). Сюжет таков. Вундеркинд Шелдон Купер настолько одарен, что перескакивает в школе через несколько лет обучения и оказывается сразу в высшей школе (в США под этим понятием подразумеваются старшие классы общеобразовательной школы). Девятилетний среди тинэйджеров, он постоянно попадает в трагикомические ситуации, но ситком интересен в контексте канала «Эхо русских революций», конечно, не этим.
 

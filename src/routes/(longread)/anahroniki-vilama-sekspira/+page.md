@@ -4,9 +4,13 @@ title: (Ана)хроники Вильяма Шекспира
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = '(Ана)хроники Вильяма Шекспира'
-    const description = 'Действительно ли об античности повествует драма Шекспира «Цезарь и Клеопатра»?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

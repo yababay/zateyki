@@ -1,7 +1,21 @@
-# Илья Муромец и Калигула
+---
+title: Илья Муромец и Калигула
+description: Отражение античного быта в русских былинах.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Былина об исцелении Ильи Муромца, который после 33-летнего лежания на
 печи неожиданно превратился в могучего богатыря, начинается так:

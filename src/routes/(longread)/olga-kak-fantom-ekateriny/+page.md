@@ -1,7 +1,21 @@
-# Ольга как фантом Екатерины
+---
+title: Ольга как фантом Екатерины
+description: Княгиня Ольга из ПВЛ — отражение Екатерины Великой?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Читая на днях в карамзинской “Истории Государства российского”
 страницы, посвященные правлению княгини Ольги, я обратил внимание на

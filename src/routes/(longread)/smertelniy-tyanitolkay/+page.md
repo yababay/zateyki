@@ -1,4 +1,21 @@
-# Смертельный Тянитолкай
+---
+title: Смертельный Тянитолкай
+description: "Железнодорожная катастрофа 1888 г. и русские революции. "
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Царь испугался,
 > Издал манифест:

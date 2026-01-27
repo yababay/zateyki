@@ -1,7 +1,21 @@
-# Макар Дедушкин и говорящий антрацит
+---
+title: Макар Дедушкин и говорящий антрацит
+description: Флософское эссе.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Если б каменный уголь умел говорить,
 > Он не стал бы вести беседы с тобой,
@@ -10,7 +24,7 @@
 > На тысячу вёрст и тысячу лет.
 > И я ничего не отвечу, когда меня спросят,
 > Как продолжается бой.
-
+> 
 > БГ
 
 Однажды зимой Макар Владимирович Дедушкин был отправлен в агитационный

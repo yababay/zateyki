@@ -1,7 +1,21 @@
-# Неглубокие предания неглубокой старины
+---
+title: Неглубокие предания неглубокой старины
+description: Как фальсифицировали отечественную историю.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Википедия сообщает один не слишком приметный, но удивительный факт из
 биографии российского императора Николая I:

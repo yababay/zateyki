@@ -1,5 +1,6 @@
 ---
-title: Битва Тарквиния с Редедей
+title: Бабайкина сарайка
+description: Лонгриды Михаила Белякова
 ---
 
 На этой сайте собраны лонгриды Михаила Белякова, написанные за последние годы: о русских революциях, альтернативной истории, автобиографические.
@@ -42,9 +43,10 @@ title: Битва Тарквиния с Редедей
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
     // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-    const title = ''
-    const description = ''
+    const { title, description } = data
     // const caption = ''
 
 </script>

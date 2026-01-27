@@ -1,7 +1,21 @@
-# Конный гладиатор
+---
+title: Конный гладиатор
+description: Почему на аренах Древнего Рима сражались только пешие воины?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 А действительно, почему во время римских зрелищ не показывали конных
 поединков? Ведь всё необходимое для этого было в наличии.

@@ -1,4 +1,21 @@
-# «Муму» написал не Булгаков
+---
+title: «Муму» написал не Булгаков
+description: Вклад в копилку доказательств того, что «12 стульев» написали не Ильф и Петров.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Прошу извинить за не совсем адекватный заголовок. Он навеян эпизодом фильма «День выборов», который я пересматривал на днях. 
 

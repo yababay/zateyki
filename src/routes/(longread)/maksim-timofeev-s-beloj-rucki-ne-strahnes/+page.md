@@ -1,15 +1,25 @@
-# Максим Тимофеев. С белой ручки не стряхнешь
+---
+title: С белой ручки не стряхнешь
+description: Автобиографический рассказ
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-Русский человек относится к женитьбе менее ответственно, чем к
-приобретению сапог.
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 > Русский человек относится к женитьбе менее ответственно, чем к
 > приобретению сапог.
-
+> 
 > Ф.М. Достоевский.
 
 В армию Валера ушел так и не испытав близости с женщиной, а попросту

@@ -1,4 +1,21 @@
-# Наполеон по-большому
+---
+title: Наполеон по-большому
+description: Понимание французских революций через биографию Наполеона III.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В последние недели я углубленно изучаю историю французских революций. Главное впечатление — они скроены по тем же лекалам, что и русские: 
 

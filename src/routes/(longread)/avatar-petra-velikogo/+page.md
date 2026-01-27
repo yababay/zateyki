@@ -1,7 +1,21 @@
 ---
 title: Аватар Петра Великого
+description: Влияние князя-кесаря Ф. Ю. Ромодановского на Петра Великого.
 ---
-# Аватар Петра Великого
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Про Петра I чего только не пишут историки, как профессиональные, так и
 альтернативные: и подменили-то его, и деспотом-то он был, а по другим

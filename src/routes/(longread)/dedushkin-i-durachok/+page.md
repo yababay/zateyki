@@ -1,4 +1,21 @@
-# Макар Дедушкин и дурни
+---
+title: Макар Дедушкин и дурни
+description: Эссе пПо мотивам книги В.И. Ленина «Материализм и эмпириокритицизм».
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 (По мотивам книги В.И. Ленина «Материализм и эмпириокритицизм»)
 

@@ -1,4 +1,21 @@
-# Квакерско-большевистское братство
+---
+title: Квакерско-большевистское братство
+description: О месте проведения Лондонского съезда РСДРП.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Долго объяснять, как меня занесло на страницу 4 газеты «Правда» от 5 марта 1936 г., да только обнаружилась там среди прочего удивительная заметка: 
 

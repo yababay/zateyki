@@ -1,9 +1,21 @@
-# Невероятные приключения суздальцев в Новгороде
+---
+title: Приключения суздальцев в Новгороде
+description: Русские летописи о феодальных войнах.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Решил я, всё-таки, повнимательнее вчитаться в источник “Слово о
 знамении святой Богородицы в год 6677 (1169)”, который был упомянут в

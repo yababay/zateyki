@@ -1,7 +1,21 @@
-# Ты их в окно — они в калитку
+---
+title: Ты их в окно — они в калитку
+description: Борьба Екатерины Великой за продовольственную безопасность.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Переписка Екатерины II с графом Н.И. Паниным — источник вполне
 безобидный. Он общедоступен, изучен историками вдоль и поперек и,

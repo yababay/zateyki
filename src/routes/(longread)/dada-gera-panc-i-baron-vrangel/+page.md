@@ -1,7 +1,21 @@
-# Дядя Гера, Панч и барон Врангель
+---
+title: Дядя Гера, Панч и барон Врангель
+description: Отражение обычаев дореволюционной России в воспоминаниях старшх современникв.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В начале 2000-х мне довелось пару лет прожить в коммунальной квартире с
 единственным соседом — дядей Герой. Это был обычный пенсионер, очень

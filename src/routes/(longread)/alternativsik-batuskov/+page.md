@@ -1,5 +1,6 @@
 ---
 title: Альтернативщик Батюшков
+description: О сходстве российской одежды XVIII в. с европейской средневековой.
 ---
 <script>
 
@@ -10,9 +11,9 @@ title: Альтернативщик Батюшков
     import src03 from './yaroslavna.jpg'  
 
     
-    const title = 'Альтернативщик Батюшков'
-    const description = 'О сходстве российской одежды XVIII в. с европейской средневековой.'
+    export let data
 
+    const { title, description } = data
     const caption01 = 'Картина В. М. Васнецова «Ковер-самолет»'
     const caption02 = 'Ферязь, вид старинного платья.'
     const caption03 = 'И. Я. Билибин. «Плач Ярославны».'

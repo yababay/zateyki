@@ -1,11 +1,16 @@
+---
+title: Японские деньги и ноты Риббентропа
+description: "Судьба советской номенклатуры: от Перовой руреволюции до Второй мировой войны"
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'
     import Svg from '$lib/components/Svg.svelte'
     import svg from './_Вооруженное восстание на японские деньги.svg?raw'
 
-    const title = 'От японских денег до ноты Риббентропа'
-    const description = 'По материалам брошюры «Вооруженное восстание в России на японские средства». СПб., 1906.'
+    export let data
+
+    const { title, description } = data
     const caption = 'Закупка оружия для революционеров на японские деньги в 1905 г.'
 
 </script>

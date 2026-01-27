@@ -5,9 +5,13 @@ description: Кто победил язычников,  устроивших м�
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Случай на Белоозере'
-    const description = 'Кто победил язычников, устроивших мятеж на Верхней Волге?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

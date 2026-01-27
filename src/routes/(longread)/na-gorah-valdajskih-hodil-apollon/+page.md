@@ -1,7 +1,21 @@
-# На горах валдайских ходил Аполлон
+---
+title: Аполлон на горах валдайских
+description: Античные элементы в литературе эпохи Петра Великого.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На телеграм-канале фирмы “Мелодия” мелькнул пост о пластинке “Славен
 мир”: необарочного ансамбля Novoselie. Раньше я об этой группе никогда

@@ -1,7 +1,21 @@
-# Максим Тимофеев. Фазенда (производственный минироман)
+---
+title: Максим Тимофеев. Фазенда
+description: Производственный минироман времен Перестройки.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Наладчика Валеру, пару лет назад вернувшегося из армии, много раз
 пытались переманить в технологи. Начальник техчасти пенял:

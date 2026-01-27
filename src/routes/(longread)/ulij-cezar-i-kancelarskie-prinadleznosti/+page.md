@@ -1,10 +1,21 @@
 ---
-title: Юлий Цезарь и канцелярские принадлежности
+title: Канцелярские принадлежности цезаря
+description: На чем древнеримская знать вела свои персональные дневники?
 ---
-# Юлий Цезарь и канцелярские принадлежности
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В одном из предыдущих текстов я рассматривал некоторые “анахронизмы”,
 встречающиеся в произведения Шекспира. В частности, таковым считается

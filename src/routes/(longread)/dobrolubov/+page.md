@@ -1,4 +1,21 @@
-# Господа демократы минувшего века
+---
+title: Господа демократы минувшего века
+description: Российские демократические писатели XIX в. как учителя грубости для Ленина.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На Ютубе есть канал, где выкладывают небольшие аудиозарисовки, с которыми Сергей Довлатов выступал во второй половине 1980-х гг. на радио «Свобода». Сегодня там появился [материал](https://www.youtube.com/watch?v=c-j4ckG0sok) о Николае Добролюбове. Это стало поводом порассуждать о его влиянии на становление большевизма. 
 

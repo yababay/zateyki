@@ -1,7 +1,21 @@
-# Долгорукий и Долгоруков
+---
+title: Долгорукий и Долгоруков
+description: Приемственность московской знати.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Юрий Долгорукий, основавший, как считается, Москву (к 1147 году
 относится первое упоминание об этом местечке, где князь принимал одного

@@ -1,4 +1,21 @@
-**Предисловие переводчика**
+---
+title: Корни Пол-Потовского режима в Кампучии
+description: Машинный перевод статьи Кэтлин Гоф.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Нижеследующий текст — машинный перевод статьи Кэтлин Гоф «Корни Пол-Потовского режима в Кампучии» ([Kathleen Gough. Roots of the Pol Pot Regime in Kampuchea](https://www.jstor.org/stable/29765842?read-now=1&seq=1#page_scan_tab_contents)), немного поправленный вручную. Возможно, я неправильно транскрибировал на русский некоторые камбоджийские имена и географические названия и остались еще какие-то шероховатости, но в целом получилось доходчиво.
 

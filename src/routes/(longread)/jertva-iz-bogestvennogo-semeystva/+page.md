@@ -1,12 +1,17 @@
 ---
 title: Жертва из божественного семейства
+description: Только ли Иисус Христос пал от рук нечестивцев во времена Тиберия?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Жертва из божественного семейства'
-    const description = 'Только ли Иисус Христос пал от рук нечестивцев во времена Тиберия?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

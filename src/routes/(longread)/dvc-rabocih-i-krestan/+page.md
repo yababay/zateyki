@@ -1,7 +1,21 @@
-# ДВЦ рабочих и крестьян
+---
+title: ДВЦ рабочих и крестьян
+description: Почму я не верю в «древнюю высокоразвитую цивилизацию».
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В стане альтернативщиков скандал. Исторический Вольнодумец Михаил
 недавно съездил в Египет для ознакомления с древними сооружениями. С

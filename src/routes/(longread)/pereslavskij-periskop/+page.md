@@ -1,7 +1,21 @@
-# Переславский перископ
+---
+title: Переславский перископ
+description: Засечная черта XVII в. на  западных рубежах России.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Отыскивая на карте старинные линии засек, защищавших границы России
 в степях близ Пензы, я как-то незаметно переключился на западные

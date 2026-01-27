@@ -1,7 +1,21 @@
-# Максим Тимофеев. Справочник
+---
+title: Максим Тимофеев. Справочник
+description: Автобографический рассказ.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Получив в начале 2000-х небольшое наследство после смерти отца, Валера
 решил попробовать себя в качестве предпринимателя. Уже тогда было

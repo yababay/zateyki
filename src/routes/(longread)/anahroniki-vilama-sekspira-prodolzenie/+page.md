@@ -1,12 +1,17 @@
 ---
 title: (Ана)хроники Вильяма Шекспира 2
+description: Содержатся ли нестыковки в  «итальянских» пьесах Шекспира?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = '(Ана)хроники Вильяма Шекспира 2'
-    const description = 'Содержатся ли нестыковки в  «итальянских» пьесах Шекспира?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

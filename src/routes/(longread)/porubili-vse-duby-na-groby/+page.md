@@ -1,7 +1,21 @@
-# Порубили все дубы на гробы
+---
+title: Порубили все дубы на гробы
+description: Повесть Пушкина «Дубровский» как исторический источник.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Опять в заголовок вынесена строка из песни В.С. Высоцкого, но ничего не
 поделаешь: как и многие талантливые люди, рано ушедшие из жизни, он,

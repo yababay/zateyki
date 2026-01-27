@@ -1,6 +1,23 @@
-# Мировая война Остапа Бендера
+---
+title: Мировая война Остапа Бендера
+description: Роман Ильи Эренбурга «Трест Д.Е. История гибели Европы» как источник по идеологии глобализма.
+---
+<script>
 
-*(Не следует путать с другим лонгридом, — [Остап Бендер на Гражданской войне](https://yababay.github.io/longread/echo-1917/ostap-na-grajdanskoy), — написанным несколько месяцев назад)*
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+(Не следует путать с другим лонгридом, — [Остап Бендер на Гражданской войне](https://yababay.github.io/longread/echo-1917/ostap-na-grajdanskoy), — написанным несколько месяцев назад)
 
 > Один неисправимый мизантроп
 > Сажал в своем саду один укроп

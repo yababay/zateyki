@@ -1,3 +1,7 @@
+---
+description: French Bondholders and the Repudiation of Russian Sovereign Debt
+title: Hope Springs Eternal
+---
 Hope Springs Eternal: French Bondholders and the Repudiation of Russian Sovereign Debt
 Передняя обложка
 Kim Oosterlinck

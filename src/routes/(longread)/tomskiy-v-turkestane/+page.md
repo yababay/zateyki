@@ -1,6 +1,23 @@
-# Томский в Туркестане
+---
+title: Томский в Туркестане
+description: Из книги Чартерса Уинна «Умеренный большевик Михаил Томский». Бостон / Санкт-Петербург, 2025. С. 179-203
+---
+<script>
 
-_(Из книги Чартерса Уинна «Умеренный большевик Михаил Томский». Бостон / Санкт-Петербург, 2025. С. 179-203)_
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+Из книги Чартерса Уинна «Умеренный большевик Михаил Томский». Бостон / Санкт-Петербург, 2025. С. 179-203.
 
 **Предисловие оцифровщика**
 

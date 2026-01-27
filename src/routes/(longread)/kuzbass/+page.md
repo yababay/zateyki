@@ -1,4 +1,21 @@
-# Чудо отчуждения
+---
+title: Чудо отчуждения
+description: История Кузбасса как пример рейдерского захвата.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Большевики — большие любители похваляться чудесами индустриализации, которая без них, якобы, не случилась бы. Давайте рассмотрим один из их несомненных прорывов — освоение [Кузбасса](https://w.wiki/6Qcf) — одного из крупнейших угольных месторождений в мире. Именно успехи этого проекта воспел В.В. Маяковский в своих знаменитых стихах:
 

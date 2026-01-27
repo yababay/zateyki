@@ -1,9 +1,21 @@
-# Между первой и второй перерывчик небольшой
+---
+title: Между первой и второй
+description: Был ли хронологический зазор между Римскими империями?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 “Зело крепок сей орех был”, — сказал Петр Первый после успешного штурма
 крепости Орешек. Ее германское название — Шлиссельбург — “Ключ-город”.

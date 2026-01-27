@@ -1,4 +1,21 @@
-# Нечто и ничто
+---
+title: Нечто и ничто
+description: Классическая немецкая философия и заблуждения марксизма.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Задумав проанализировать очевидные заблуждения Маркса, выявившиеся за более чем полтора столетия с момента издания его рекомендаций по улучшению общественного устройства, я оттолкнулся от ленинского деления источников марксизма на:
 

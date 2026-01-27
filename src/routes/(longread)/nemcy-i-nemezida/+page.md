@@ -1,9 +1,21 @@
-# Немцы и Немезида
+---
+title: Немцы и Немезида
+description: Богиня мщения в немецких завоеваниях
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-January 14, 2022
+</script>
+
+<Helper {title} {description} />
 
 (Возрастное ограничение 16+).
 

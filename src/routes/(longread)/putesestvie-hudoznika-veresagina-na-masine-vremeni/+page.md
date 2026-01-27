@@ -1,7 +1,21 @@
-# Путешествие художника Верещагина на машине времени
+---
+title: Путешествие Верещагина во времени
+description: Странные детали на картинах художника-баталиста.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Василий Васильевич Верещагин совместил в себе характеры, которые редко
 уживаются в одном человеке. С одной стороны, он был военным, да не…

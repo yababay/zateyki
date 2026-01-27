@@ -1,7 +1,21 @@
-# Убивалленштейн и Божья благодать
+---
+title: Убивалленштейн и Благодать
+description: Почему Тридцатилетняя война не затронула Россию?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Россию часто называют страной отстающей. Не отсталой, а именно
 отстающей, ибо в конце концов здесь происходит всё то же самое, что и в

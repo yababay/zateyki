@@ -1,7 +1,21 @@
-# Малуша — нехороший человек
+---
+title: Малуша — нехороший человек
+description: Отрицательные персонажи в Повести временных лет.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В “Повести временных лет” упомянуты два персонажа, в именах которых
 встречается корень “мал”: вождь древлян Мал, сватавшийся к княгине

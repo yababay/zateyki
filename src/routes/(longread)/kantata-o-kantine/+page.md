@@ -1,7 +1,21 @@
-# Кантата о кантине
+---
+title: Кантата о кантине
+description: О появлении трудовых поселений на территории Восточной Европы.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В университете я учился на вечернем отделении. Сейчас такое, кажется,
 уже не практикуется, а в СССР очень даже приветствовалось, когда

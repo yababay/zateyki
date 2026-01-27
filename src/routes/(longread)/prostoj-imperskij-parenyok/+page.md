@@ -1,3 +1,7 @@
+---
+title: Простой имперский паренёк
+description: О парадоксальных коммерческих и династических связях декабристов.
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'
@@ -5,8 +9,9 @@
     import Svg from '$lib/components/Svg.svelte'
     import svg from './_Муравьевы.svg?raw'
 
-    const title = 'Простой имперский паренёк'
-    const description = 'О парадоксальных коммерческих и династических связях декабристов.'
+    export let data
+
+    const { title, description } = data    
     const caption = 'Декабристы и государственные структуры.'
 
 </script>

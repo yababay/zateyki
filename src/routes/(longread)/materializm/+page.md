@@ -1,4 +1,21 @@
-# Материализм и эмпириогопницизм
+---
+title: Материализм и эмпириогопницизм
+description: Примтивность ленинского материализма
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Один из лучших способов привить школьнику интерес к точным наукам — внеклассное чтение трудов Я.И. Перельмана. «Занимательная математика», «Занимательная физика» и т.д. — книги из этой серии, написанные еще в 1920-е годы, издавались в СССР миллионными тиражами и были почти в каждой семье. Как не заинтересоваться научными фактами, если они изложены в такой живой манере:
 

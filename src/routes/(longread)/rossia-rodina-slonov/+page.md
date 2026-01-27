@@ -1,7 +1,21 @@
-# Россия — родина слонов
+---
+title: Россия — родина слонов
+description: Как в эпоху Античности удалось слонов перевести через Альпы?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Ниже изображен броневик времен Первой мировой войны, известный как
 “Слон Ганнибала”, созданный на на шасси двухтонного полноприводного

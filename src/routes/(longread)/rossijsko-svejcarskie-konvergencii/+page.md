@@ -1,7 +1,21 @@
-# Российско-швейцарские конвергенции
+---
+title: Российско-швейцарские конвергенции
+description: Перекличка между впечатлениями Кзина и приключениями Остапа и Кисы.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Фразы “Альпийское нищенство — святое дело”, приписываемой Остапу
 Бендеру, в романе “12 стульев” нет. Звучит она, разве что, в одной из

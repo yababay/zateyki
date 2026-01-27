@@ -1,11 +1,16 @@
+---
+title: Атлас Российской империи 1745 г.
+description: Атлас с генеральной картой Российской империи и 19-ю картими провинций, изданный Академией наук в 1745 г. (предисловие).
+---
 <script>
 
     import Figure from '$lib/components/Figure.svelte'
     import Helper from '$lib/components/Helper.svelte'
     import atlas from './atlas.png'
 
-    const title = 'Атлас Российской империи 1745 г.'
-    const description = 'Атлас с генеральной картой Российской империи и 19-ю картими провинций, изданный Академией наук в 1745 г.'
+    export let data
+
+    const { title, description } = data
     const caption = 'Генеральная карта Российской империи, 1745 г.'
 
 </script>

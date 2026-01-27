@@ -1,7 +1,21 @@
-# Дуэль Онегина с Бендером
+---
+title: Дуэль Онегина с Бендером
+description: Остап Бендер, он, вообще-то, хороший или плохой?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На днях мне на глаза попалось небольшое эссе Евгения Катаева (Петрова)
 “Нахал”, написанный в 1927 г. Скорее это даже фельетон, в котором с

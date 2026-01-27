@@ -1,4 +1,21 @@
-# Партийная арифметика
+---
+title: Партийная арифметика
+description: О финансировании Лондонкого съезда РСДРП.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Условия задачи:
 

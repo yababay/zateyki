@@ -1,7 +1,21 @@
-# Мышкующий Достоевский
+---
+title: Мышкующий Достоевский
+description: Прототип князя Мышкина в поэме  А. Н. Майкова.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На днях прочитал на Телеграм-канале, посвященном творчеству Ф.М.
 Достоевского, такое сообщение, датированное 1866 годом:

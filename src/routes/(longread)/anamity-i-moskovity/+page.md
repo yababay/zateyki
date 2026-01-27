@@ -1,7 +1,21 @@
 ---
 title: Анамиты и московиты
+description: Отражение ситуации в Индокитае в книге  К.М. Станюковича «Вокруг света на «Коршуне».
 ---
-# Анамиты и московиты
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На ютуб-канале “Разгадки истории”, посвященном альтернативным версиям
 прошлого, несколько дней назад вышел ролик о войнах XIX в.

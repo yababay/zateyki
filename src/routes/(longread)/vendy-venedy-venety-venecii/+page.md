@@ -1,7 +1,21 @@
-# Венды, венеды, венеты, Венеции
+---
+title: Венды, венеды, венеты
+description: Выходцы из Венеции на берегах Балтики.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В истории славян есть одна интересная двусмысленность. С одной стороны,
 первые упоминания об этом этносе официальная наука относит к середине

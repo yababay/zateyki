@@ -1,3 +1,7 @@
+---
+title: Юнона и Турксиб
+description: Идеологический анализ поэмы Андрея Вознесенского «Авось!».
+---
 <script>
 
     import Footnote from '$lib/components/Footnote.svelte'
@@ -6,8 +10,9 @@
     import Sup from '$lib/components/Sup.svelte'
     import diagram from './rezanov-hvostov-davydov.mmd?raw'
 
-    const title = 'Юнона и Турксиб'
-    const description = 'Идеологический анализ поэмы Андрея Вознесенского «Авось!».'
+    export let data
+
+    const { title, description } = data
     const caption = 'Экспедиция камергера Н. П. Резанова с инспекцией в Русскую Америку.'
 
 </script>

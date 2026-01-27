@@ -1,7 +1,21 @@
-# Иван кивает на Петра, а Пётр на Ивана
+---
+title: Иван кивает на Петра
+description: Сходство судеб Ивана Грозного и Петра Великого.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Много месяцев назад я пытался внедрить у себя в блоге жанр
 “Историческая угадайка”, когда под намеренно абстрагированное описание

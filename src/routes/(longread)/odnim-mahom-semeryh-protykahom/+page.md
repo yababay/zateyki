@@ -1,7 +1,21 @@
-# Одним махом семерых протыкахом
+---
+title: Одним махом семерых протыкахом
+description: Тяжеловооруженные рыцари Средневековья, их предшественники и наследники.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Изображение средневекового рыцаря — это прямо-таки гештальт, архетип,
 элемент коллективного бессознательного, устойчивый образ. Каждый

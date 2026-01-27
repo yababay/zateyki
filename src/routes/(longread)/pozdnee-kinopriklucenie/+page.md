@@ -1,7 +1,21 @@
-# Позднее киноприключение
+---
+title: Позднее киноприключение
+description: Впечатление от фильма  Микеланджело Антониони.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На днях выяснилось, что я совершенно не знаком с творчеством
 выдающегося итальянского кинорежиссера Микеланджело Антониони. Западное

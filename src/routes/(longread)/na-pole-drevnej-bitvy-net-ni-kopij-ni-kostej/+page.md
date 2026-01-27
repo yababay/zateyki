@@ -1,7 +1,21 @@
-# На поле древней битвы нет ни копий, ни костей
+---
+title: На поле древней битвы нет ни копий, ни костей
+description: Культура кулачного боя в истрии России.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Они, если верить Борису Борисовичу Гребенщикову, пошли на сувениры для
 туристов и гостей, но есть и другая версия.

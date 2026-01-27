@@ -1,4 +1,21 @@
-### Нота Государственного секретаря Соединенных штатов Америки Кольби
+---
+description: Нота Государственного секретаря Соединенных штатов Америки Кольби.
+title: Нота Кольби
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 на имя итальянского посла в Вашингтоне Роландо Риччи от 2 сентября 1920 г. об отношении США к Советской России
 

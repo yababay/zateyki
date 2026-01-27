@@ -1,7 +1,21 @@
-# Италия не резиновая
+---
+title: Италия не резиновая
+description: Почему Римская империя “выплеснулась” за пределы Италии.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Почему Римская империя “выплеснулась” за пределы Италии, подобно тому,
 как нынешняя Москва выползла некрасивой грыжей за пределы своих еще

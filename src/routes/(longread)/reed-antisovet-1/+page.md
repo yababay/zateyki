@@ -1,4 +1,21 @@
-# Джек Рид — «антисоветчик»
+---
+title: Джек Рид — «антисоветчик»
+description: Отражение нелицеприятных для большевиков обстоятельств в книге Джона Рида «10 дней, которые потрясли ми».
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Заголовок, конечно же, навеян названием фильма времен Перестройки — [«Джек Восьмёркин — «американец»](https://w.wiki/9onr) (вышел на экраны в 1988 г.). Речь в очередной раз пойдет об американском писателе Джоне Риде, авторе книги «Десять дней, которые потрясли мир». Он, кстати, тоже Джек, так иногда его называли близкие. 
 

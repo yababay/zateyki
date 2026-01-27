@@ -1,4 +1,21 @@
-# Рецензия, запоздавшая на 116 лет
+---
+title: Рецензия, запоздавшая на 116 лет
+description: Токсичные приемы из ленинской книги «Материализм и эмпириокритицизм».
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Светило Солнышко и ночью, и днем,
 > Не бывает атеистов в окопах под огнем.

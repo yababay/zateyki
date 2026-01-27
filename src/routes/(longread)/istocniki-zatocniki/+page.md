@@ -1,7 +1,21 @@
-# Источники-заточники
+---
+title: Источники-заточники
+description: О недоступности исторических источников для большинства исследователей
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Решил приостановить публикацию цикла “Домен Рыжебородых”, потому что
 каждый день появляется множество наблюдений, которые хочется кратко

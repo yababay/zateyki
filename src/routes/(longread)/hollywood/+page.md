@@ -1,4 +1,21 @@
-# Голливуд против Маркса
+---
+title: Голливуд против Маркса
+description: Почему марксизм не учитывает важнейших экономических факторов
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Среди анекдотов, которые я помню с советских времен, есть настолько глупые, детские, что не грех бы и забыть, если бы они время от времени не пригождались для доходчивого объяснения тех или иных мудреных теорий. Вот, например:
 

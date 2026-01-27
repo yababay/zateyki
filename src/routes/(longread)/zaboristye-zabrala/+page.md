@@ -1,7 +1,21 @@
-# Забористые забрала
+---
+title: Забористые забрала
+description: Парадоксы средневекового оружейного мастерства.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Если в предыдущем материале я сетовал на то, что у меня не получилось
 найти средневековый аналог античной кирасы, то со шлемами всё проще.

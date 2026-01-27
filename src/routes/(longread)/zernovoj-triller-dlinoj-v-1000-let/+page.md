@@ -1,11 +1,26 @@
-# Зерновой триллер длиной в 1000 лет
+---
+title: Зерновой триллер длиной в 1000 лет
+description: "Битва за урожай: от Екатерины Великой до Сталина."
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 > Я думал, что умру от старости. Но когда Россия, кормившая всю Европу
 > хлебом, стала закупать зерно, я понял, что умру от смеха.
-> - Приписывается У. Черчиллю.
+>
+> Приписывается У. Черчиллю.
 
 Хлеб в виде зерна (в основном пшеницы) столетиями был основным
 продуктом российского экспорта. Примерно тем же, чем в наши дни

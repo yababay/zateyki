@@ -1,7 +1,21 @@
-# Монета Moneta
+---
+title: Монета Moneta
+description: Альтернативное видение античного монетного обращения.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В Турции водится морская черепаха, которая по латыни называется двойным
 словом — carreta carreta. Я вспомнил про нее сегодня, увидев на одном

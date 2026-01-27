@@ -1,4 +1,21 @@
-# Гегель против Маркса
+---
+title: Гегель против Маркса
+description: Немецкая классическая философия и марксизм.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Пст… Пацанчик… Да, да, вот ты, родившийся в 90-е или даже позже и не заставший Советского Союза с его всепроникающей идеологической  пропагандой. Не хочешь немного марксизма? Товар знатный, ядреный. Одна его щепотка превращает уголовников, совершивших преступления глобального масштаба, в мягких и пушистых радетелей за всеобщее счастье. 
 

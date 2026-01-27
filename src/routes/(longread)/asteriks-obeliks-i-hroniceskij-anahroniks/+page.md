@@ -5,9 +5,13 @@ description: Были ли у героев французской комедии
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Астерикс, Обеликс и хронический анахроникс'
-    const description = 'Были ли у героев французской комедии про древних галлов реальные прототипы?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

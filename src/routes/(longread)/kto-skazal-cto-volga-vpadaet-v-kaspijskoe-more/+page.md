@@ -1,9 +1,21 @@
-# Кто сказал, что Волга впадает в Каспийское море?
+---
+title: Впадает ли Волга в Каспийское море?
+description: Географический  посткатастрофный феномен.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 В советское время была песня со словами, вынесенными в заголовок.
 Продолжалась она так: “Волга в сердце впадает мое”. Сомнений в одной из

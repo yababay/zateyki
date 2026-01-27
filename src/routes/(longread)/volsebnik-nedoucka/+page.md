@@ -1,7 +1,21 @@
-# Волшебник недоучка
+---
+title: Волшебник недоучка
+description: "Патриции и плебеи: не классовая, а сословная борьба."
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Оказывается, Карл Маркс плоховато знал историю. В “Манифесте
 коммунистической партии” они с Энгельсом пишут:

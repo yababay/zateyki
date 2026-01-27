@@ -1,6 +1,23 @@
-# Атака прилагательных
+---
+title: Атака прилагательных
+description: Пропагандистские приемы в книге Джона Рида «Десять дней, которые потрясли мир».
+---
+<script>
 
-_(Из цикла «Джек Рид — антисоветчик»)_
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+
+(Из цикла «Джек Рид — антисоветчик»).
 
 А не обратиться ли нам к Джону нашему Риду, о произведении которого «Десять дней, которые потрясли мир» уже шла речь [здесь](https://yababay.github.io/longread/echo-1917/reed-america/) и [здесь](https://yababay.github.io/longread/echo-1917/reed-antisovet/)? Сегодня поговорим о сплошь и рядом встречающихся там лингвистических приемах, позволяющих очернить оппонентов или обелить союзников.
 

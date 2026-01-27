@@ -1,7 +1,21 @@
-# Загадочный город Пордугодев
+---
+title: Загадочный город Пордугодев
+description: Странные сообщения из хроник времен царя Федора Ианновича.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Исторические источники — как люди. Среди них есть
 “знать” — прославленные и изученные вдоль и поперек авторитетными

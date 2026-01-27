@@ -1,7 +1,21 @@
-# Что наврал Маркс про рабочий класс
+---
+title: Что наврал Маркс про рабочий класс
+description: Аргументы против социальной доктрины маркизма
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 С падением Советского Союза как-то сам собой решился “рабочий вопрос”.
 Не без треволнений, конечно. Чего только не было: и задержки зарплат, и

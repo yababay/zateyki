@@ -1,7 +1,21 @@
-# Чморить Богданова и Маха
+---
+title: Чморить Богданова и Маха
+description: Токсичные приемы Ленина.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Предыдущие подборки ленинских грубостей ( 1, 2, 3) можно было
 бы воспринимать как философский курьез. У меня в процессе компьютерной

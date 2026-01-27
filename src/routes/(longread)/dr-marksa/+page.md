@@ -1,4 +1,21 @@
-# Ко дню рождения Карла Маркса
+---
+title: Ко дню рождения Карла Маркса
+description: Чем же меня не устроил марксизм.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сегодня день рождения [Карла Маркса](https://w.wiki/8DPL). В связи с этим хотелось бы «закрыть гештальт». 
 

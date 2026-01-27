@@ -1,7 +1,21 @@
-# Крица и корица
+---
+title: Крица и корица
+description: Что экспортировали купцы, руду или специи?
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Заинтересовавшись на днях историей металлургии, я задумался об
 этимологии слова “крица”. Это такой полуфабрикат в процессе древнего

@@ -1,7 +1,21 @@
-# Хорваты и хороводы
+---
+title: Хорваты и хороводы
+description: Счастливый быт российского крестьянства в XVIII в
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сегодня случайно увидел на одном сайте картину Сильвестра Щедрина “
 Пейзаж в окрестностях Петербурга” и вспомнил несколько давних

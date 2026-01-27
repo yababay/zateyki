@@ -1,7 +1,21 @@
-# Остап Бендер на Гражданской войне
+---
+title: Бендер на Гражданской войне
+description: Малоизвестный эпизод книги Ильфа и Петрова, проливающий свет на ранние годы становления Советской власти.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сегодня “сенсаций” не будет. Я перечитываю “12 стульев” (с ребенком) и
 с удивлением обнаруживаю в этом бессмертном булгаковском тексте

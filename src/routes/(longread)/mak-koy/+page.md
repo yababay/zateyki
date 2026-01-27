@@ -1,4 +1,21 @@
-# Потомок Мак-Коя и нелюбовь к жизни
+---
+title: Потомок Мак-Коя и нелюбовь к жизни
+description: Об убогости литературных предпочтений Ленина.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 На днях, читая воспоминания А.Н. Бенуа, нашел такое высказывание:
 

@@ -1,7 +1,21 @@
-# Чудеса, чудеса, небывальщина
+---
+title: Чудеса, чудеса, небывальщина
+description: Фантастические факты в книгах Светония, Аппиана, Тацита.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Читая “античные” источники — книги Светония, Аппиана, Тацита — иногда
 трудно избавиться от впечатления, что всё это действительно написано по

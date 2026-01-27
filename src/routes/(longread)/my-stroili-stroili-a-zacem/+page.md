@@ -1,7 +1,21 @@
-# Мы строили, строили… А зачем?
+---
+title: Мы строили, строили… А зачем?
+description: Зачем нужны стены, не выдержавшие ни одной осады
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Нашел на просторах Телеграм очередное удивительное изображение:
 [0*sj78KoBKdWmMlNpP.jpg]

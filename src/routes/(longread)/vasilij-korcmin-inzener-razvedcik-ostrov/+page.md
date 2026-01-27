@@ -1,9 +1,21 @@
-# Василий Корчмин: инженер, разведчик, остров
+---
+title: Инженер, разведчик, остров
+description: Василий Корчмин — соратник Петра Великого.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Из всех версий происхождения питерского топонима Васильевский остров
 мне наиболее разумной кажется его связь с именем Василия Дмитриевича

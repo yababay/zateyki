@@ -1,7 +1,21 @@
-# Под небом голубым был город золотой
+---
+title: Под небом голубым был город золотой
+description: Ранняя русь в коллекции рукописей Татищева
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Иоакимовская летопись в изложении В.Н. Татищева свидетельствует, что
 судьбы братьев Скифа и Словена (так в тексте названы первые правители

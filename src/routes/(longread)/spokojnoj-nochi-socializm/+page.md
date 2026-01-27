@@ -1,11 +1,16 @@
+---
+title: Спокойной ночи, социализм
+description: Как советская власть приучала трудящихся к буржуазности.
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'
     import Figure from '$lib/components/Figure.svelte'
     import src from './spokoynoy-nochi.png'
 
-    const title = 'Спокойной ночи, социализм'
-    const description = 'Как советская власть приучала трудящихся к буржуазности.'
+    export let data
+
+    const { title, description } = data
     const caption = 'Валентина Леонтьева рассказывает миф о Прекрасной Елене, а Хрюша и Филя ей мешают (1983).'
 
 </script>

@@ -1,14 +1,16 @@
 ---
 title: …а осадочек остался
+description: Столовые приборы как признак подмены хронологии.
 ---
 <script>
-
-    import Figure from '$lib/components/Figure.svelte'    
+    
     import Helper from '$lib/components/Helper.svelte' 
+    import Figure from '$lib/components/Figure.svelte' 
     import src from './osadochek-1.webp'   
     
-    const title = '…а осадочек остался'
-    const description = 'Столовые приборы как признак подмены хронологии.'
+    export let data
+
+    const { title, description } = data
     const caption = 'Уменьшение вероятности при перемножении чисел меньше единицы.'
 
 </script>

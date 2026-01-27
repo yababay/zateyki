@@ -1,7 +1,21 @@
-# За крутыми тянутся берега пологие
+---
+title: За крутыми тянутся берега пологие
+description: Странности рельефа вдоль волжских берегов.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В заголовок вынесена строчка из песни Владимира Высоцкого, которая
 часто заставляла меня, как человека прожившего без малого 40 лет в

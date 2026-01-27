@@ -1,7 +1,21 @@
-# Илейка Муромец прокладывает путь на запад
+---
+title: Илейка Муромец и его путь на запад
+description: Гипотеза о былом единстве Смоленской и Владимирской дорог.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Гипотеза о былом единстве Смоленской и Владимирской дорог проливает
 свет на некоторые важные события российской истории. Особенно интересен

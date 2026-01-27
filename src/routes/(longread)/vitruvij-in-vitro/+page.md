@@ -1,7 +1,21 @@
-# Витрувий in vitro
+---
+title: Витрувий in vitro
+description: Античная архитектура в эпоху Возрождения.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Видео историка Юрия Абарина об античном архитекторе Витрувии и
 связанных с ним фальсификациях — хороший материал для применения языка

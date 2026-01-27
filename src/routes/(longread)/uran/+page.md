@@ -1,4 +1,21 @@
-# Урановое «Ура!»
+---
+title: Урановое «Ура!»
+description: Месторождения урана в Канаде и Чехословакии.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Сегодня на одном из Телеграм-каналов увидел [письмо](https://t.me/brane_upgrade/9990) Альберта Эйнштейна Франклину Рузвельту от 2 Августа 1939 г., в котором физик предупреждает президента США о необходимости форсированной разработки ядерного оружия. Факт известный, но в нем есть факт, на который я раньше не обратил бы внимания. Прочитав же за последние месяцы десятки монографий по истории революций 1917 г. в России, задумался:
 

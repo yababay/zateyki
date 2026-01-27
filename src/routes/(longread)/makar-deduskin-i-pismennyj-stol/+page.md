@@ -1,7 +1,21 @@
-# Макар Дедушкин и письменный стол
+---
+title: Макар Дедушкин и письменный стол
+description: Философское эссе по мотивам книги В.И. Ленина “Материализм и эмпириокритицизм”.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 (По мотивам книги В.И. Ленина “Материализм и эмпириокритицизм”).
 

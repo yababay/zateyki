@@ -1,7 +1,21 @@
-# От японских денег до ноты Риббентропа
+---
+title: Японские деньги и нота Риббентропа
+description: Как агрессивные авантбристы становились советскими государственными деятелями.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Крупнейший издатель конца XIX — начала XX в. А. С. Суворин был не
 только подвижником в сфере культуры (благодаря его опеке ярко расцвел

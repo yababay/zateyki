@@ -1,7 +1,21 @@
-# Две Софии, два Голицына
+---
+title: Две Софии, два Голицына
+description: К истории покорения Крыма.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В российской истории известны три яркие женские фигуры, названные в
 честь святой Софии: Софья Палеолог, царевна Софья, и София Августа

@@ -1,10 +1,15 @@
+---
+title: Подношение святому Янусу
+description: О юлианском и григорианском календарях в связи с днем зимнего солнцестояния.
+---
 <script>
 
     import Helper from '$lib/components/Helper.svelte'
 
-    const title = 'Подношение святому Янусу'
-    const description = 'О юлианском и григорианском календарях в связи с днем зимнего солнцестояния.'
+    export let data
 
+    const { title, description } = data
+    
 </script>
 
 <Helper { title } { description } />

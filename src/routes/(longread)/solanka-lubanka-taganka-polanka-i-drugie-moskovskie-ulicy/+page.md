@@ -1,9 +1,21 @@
-# Солянка, Лубянка, Таганка, Полянка и другие московские улицы
+---
+description: Солянка, Лубянка, Таганка, Полянка и другие московские улицы
+title: Центр Москвы как старая таможня
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Наблюдение о том, что Смоленская и Владимирская дороги некогда
 представляли собой единый тракт, шедший из Европы до Волги (конечный

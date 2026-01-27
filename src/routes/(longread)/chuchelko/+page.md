@@ -1,4 +1,21 @@
-# Лёд против пламенного революционера
+---
+title: Лёд и пламенный революционер
+description: Как удается сохранить тло Ленина.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Еще одна школьная задача со звездочкой, на этот раз по биологии:
 

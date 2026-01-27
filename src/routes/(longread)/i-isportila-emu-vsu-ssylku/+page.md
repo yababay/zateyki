@@ -1,7 +1,21 @@
-# “…и испортила ему всю ссылку”
+---
+title: “…и испортила ему всю ссылку”
+description: Судьбы женщин, сосланных российским государством в Сибирь.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Анекдот, окончание которого вынесено в заголовок, часто вспоминают,
 когда речь заходит о женах декабристов. Да, права посмеяться над

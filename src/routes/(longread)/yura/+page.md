@@ -1,4 +1,21 @@
-# Надменный советский подросток Юра
+---
+title: Надменный советский подросток Юра
+description: Создание виртуального оппонента.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Поскольку при написании своих лонгридов мне часто приходится беседовать с воображаемым оппонентом, придерживающимся пробольшевистских взглядов, я решил создать его образ с помощью искусственного интеллекта.
 

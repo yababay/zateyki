@@ -1,6 +1,22 @@
-# Гарнитур мастера Мастера
+---
+title: Гарнитур мастера Мастера
+description: Написание романа «12 стульев» приписывается Булгакову.
+---
+<script>
 
-   
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
+  
    В наши дни насчитывается немало литературоведов и читателей, которые возмущаются уже не
    тем, что написание романа «12 стульев» приписывается Булгакову, а наоборот,
    когда слышат об авторстве Ильфа и Петрова. К этому кругу всё больше

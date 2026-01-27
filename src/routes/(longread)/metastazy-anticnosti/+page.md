@@ -1,7 +1,21 @@
-# Метастазы античности
+---
+title: Метастазы античности
+description: Античая мифология в операх эпохи Барокко.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Жил в XVIII веке (в широком смысле, так как жизнь его продолжалась с
 1698 по 1782 гг.) писатель по прозвищу Пьетро Метастазио. Это сейчас у

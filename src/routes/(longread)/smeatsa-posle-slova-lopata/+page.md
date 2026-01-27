@@ -1,7 +1,21 @@
-# Смеяться после слова “лопата”
+---
+title: Смеяться после слова “лопата”
+description: Парадосы средневекового жения для всадников.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Возрастное ограничение 16+
 

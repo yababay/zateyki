@@ -1,4 +1,21 @@
-# Беросс как гвоздь официальной хронологии
+---
+title: Гвоздь Беросса
+description: Как на единственном источнике держится вся официальная хронология Древнего мира.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В предыдущем материале я запланировал рассказать о
 Бероссе — вавилонском историке, на которого ссылаются многие античные

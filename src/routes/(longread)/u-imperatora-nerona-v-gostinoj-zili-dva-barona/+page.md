@@ -1,9 +1,26 @@
-# У императора Нерона в гостиной жили два барона
+---
+title: Бароны императора Нерона
+description: Хронологические парадоксы эпохи древнеримских императоров.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
+
+> У императора Нерона<br> 
+> В гостиной жили два барона.<br>
+>
+> БГ.
 
 Предыдущий материал — про античные чудеса — был написан неспроста. Идея
 о маркерах “Не верь написанному, читатель!” родилась у меня не из-за

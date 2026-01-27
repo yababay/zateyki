@@ -1,7 +1,21 @@
-# “Его принес сюда ледник!” (С)
+---
+title: Его принес сюда ледник!
+description: Почему не хочется верить в ледниковую теорию.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 В студенческие годы один мой друг рассказывал, как гуляя по пригороду в
 составе пьяной компании таких же шалопаев, он обнаружил застывшую глыбу

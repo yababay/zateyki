@@ -1,7 +1,21 @@
-# Андрей Платонович Мария Кафка фон Григорян
+---
+title: Андрей Платонович Кафка
+description: Депрессивная проза Андрея Платонова.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Прочитал рассказ “Мусорный ветер” Андрея Платонова. Раньше это
 словосочетание ассоциировалось для меня исключительно с песней группы…

@@ -1,7 +1,21 @@
-# Не Булгаков? К вам!
+---
+title: Не Булгаков? К вам!
+description: Аргументы в пользу участия М.А. Булгакова в написании книг об Остапе Бендере.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 “Вы всё ещё не верите в то, что роман “12 стульев” написал Михаил
 Булгаков? Тогда мы идем к вам!” — так я хотел бы назвать эти

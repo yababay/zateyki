@@ -1,10 +1,21 @@
 ---
 title: Шведский хрен и царская редька
+description: Русская засечная черта XVII в
 ---
-# Шведский хрен и царская редька
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Деталировка карты, о которой я писал в предыдущем посте, всё-таки
 нашлась. Нашлась, как это часто бывает, на ресурсе

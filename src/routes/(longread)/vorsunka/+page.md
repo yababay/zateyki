@@ -1,4 +1,21 @@
-# Ворсунька и Валега
+---
+title: Ворсунька и Валега
+description: "Ординарцы советскх офицеров: товарищи или слуги?."
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Книга В. П. Некрасова «В окопах Сталинграда» написана от лица 30-летнего лейтенанта Юрия Керженцева (если не ошибаюсь с именем). Лейтенант — это какой-никакой офицер, а офицеру положен ординарец, т. е. помощник, который решает бытовые проблемы своего начальника: обеспечивает исправность одежды, питание, крышу над головой. С этим главному герою книги повезло:
 

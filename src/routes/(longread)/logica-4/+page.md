@@ -1,4 +1,21 @@
-# Четверка по логике
+---
+title: Четверка по логике
+description: Вольюнтаризм в большевистской экономической науке.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Рассмотрим еще один «перл» большевистской логики:
 

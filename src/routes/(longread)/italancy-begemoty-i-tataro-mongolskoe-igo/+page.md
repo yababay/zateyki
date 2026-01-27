@@ -1,9 +1,21 @@
-# Итальянцы, бегемоты и татаро-монгольское иго
+---
+title: Бегемоты и татаро-монгольское иго
+description: Почему русский народ так же ленив, как некоторые африканские племена.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Мышление нынешней молодежи называют клиповым. Людям же советской эпохи
 было присуще “анекдотное” мышление. При обсуждении любой ситуации у

@@ -1,10 +1,21 @@
-# Дополнительные подтверждения гипотезы о тождестве Ярославля и летописного
+---
+title: Тождество Ярославля и Новгорода
+description: Дополнительные подтверждения гипотезы о тождестве Ярославля и летописного Новгорода.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
 
-                               Новгорода
-> __________________________________________________________________
+</script>
+
+<Helper {title} {description} />
 
 Г.В. Носовский и А.Т. Фоменко темой “Ярославль это Новгород”,
 видимо, уже не занимаются. По крайней мере свежих публикаций не видно.

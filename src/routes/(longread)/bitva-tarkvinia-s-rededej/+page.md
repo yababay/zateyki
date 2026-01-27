@@ -5,9 +5,13 @@ description: "Традиция предводительских поединко
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Битва Тарквиния с Редедей'
-    const description = 'Традиция предводительских поединков: от Древнего Рима до Тмутаракани.'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

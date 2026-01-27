@@ -1,7 +1,21 @@
-# Карл Маркс и подкустовый выползень. Часть 1
+---
+title: Карл Маркс и подкустовый выползень
+description: Почему марксизм неправильно понимает возникновение монетного обращения.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Продолжая разговор об античных монетах, хотелось бы изложить свои
 взгляды на происхождение денег как таковых. Когда об этом заходит речь,

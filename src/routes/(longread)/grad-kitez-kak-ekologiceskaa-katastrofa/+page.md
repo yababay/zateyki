@@ -1,7 +1,21 @@
-# Град Китеж как экологическая катастрофа
+---
+title: Град Китеж как экологическая катастрофа
+description: Влияние средневекового земляделия на природу
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Вот необычная карта, на которой отсутствует Ладожское озеро. Я
 “сфотошопил” ее полчаса назад.

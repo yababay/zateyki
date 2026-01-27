@@ -1,7 +1,21 @@
-# Готский двор на острове Буяне
+---
+title: Готский двор на острове Буяне
+description: Следы средневкового Новгорода в Балтийском море.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Готский двор — одна из загадочных достопримечательностей Великого
 Новгорода. В этом древнем городе было еще два сопоставимых по

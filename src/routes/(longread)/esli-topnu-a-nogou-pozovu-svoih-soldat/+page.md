@@ -1,12 +1,17 @@
 ---
 title: Если топну я ногою, позову своих солдат…
+description: Только ли Мойдодыр топал ногою, чтобы позвать своих солдат?
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = 'Если топну я ногою, позову своих солдат…'
-    const description = 'Только ли Мойдодыр топал ногою, чтобы позвать своих солдат?'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

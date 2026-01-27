@@ -1,4 +1,21 @@
-# Непредсказуемое прошлое<br> Владимира Владимировича
+---
+title: Непредсказуемое прошлое Владимира Владимировича
+description: Извилистый путь интеллектуального развития Маяковского.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Среди выдающихся соотечественников можно припомнить несколько знаменитых Владимиров Владимировичей, не затрагивая нынешнего российского лидера: В.В. Позднер, В.В. Набоков... Ну, а с тематикой данного веб-ресурса связано, конечно же, имя Владимира Владимировича Маяковского.
 

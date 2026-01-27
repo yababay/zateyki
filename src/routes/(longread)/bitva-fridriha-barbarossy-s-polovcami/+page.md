@@ -7,9 +7,10 @@ description: Как немцы не помогли славянам в борь�
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
     // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-    const title = 'Битва Фридриха Барбароссы с половцами'
-    const description = 'Как немцы не помогли славянам в борьбе с кочевниками.'
+    const { title, description } = data
     // const caption = ''
 
 </script>

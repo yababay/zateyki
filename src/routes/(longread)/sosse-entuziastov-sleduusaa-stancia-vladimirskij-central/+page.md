@@ -1,14 +1,16 @@
 ---
-title: Шоссе энтузиастов. Следующая станция — Владимирский централ
+title: Энтузиасты  Владимирского централа
+description: Москва как точка слияния Смоленской дороги и Владимирского тракта
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
     import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-    const title = 'Шоссе энтузиастов. Следующая станция — Владимирский централ'
-    const description = 'Москва была лишь станцией на прямоезжей дороге из Европы к Волге.'
+    const { title, description } = data
     const caption = 'Шоссе Энтузиастов и Смоленская дорога.'
 
 </script>

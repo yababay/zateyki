@@ -1,12 +1,17 @@
 ---
 title: …а осадочек остался 2
+description: Немного кулинарии в пользу альтернативной истории.
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
     
-    const title = '…а осадочек остался 2'
-    const description = 'Немного кулинарии в пользу альтернативной истории.'
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
 
 </script>
 

@@ -1,7 +1,21 @@
-# Плодотворный могильничек
+---
+title: Плодотворный могильничек
+description: Происхождение средневековых рукописей
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 “Но есть у меня один могильничек…” Эта фраза комического
 персонажа — археолога Сергея Ивановича Копая в исполнении Вадима

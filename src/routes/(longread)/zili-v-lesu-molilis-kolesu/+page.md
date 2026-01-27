@@ -1,7 +1,21 @@
-# Жили в лесу, молились колесу
+---
+title: Жили в лесу, молились колесу
+description: Почему татарао-монголам приписывают обычай истреблять мужское население вражеских племен “ростом выше тележной оси”.
+---
+<script>
 
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-<p class="text-end time-holder"><time></time></p>
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 Татарао-монголам приписывают обычай истреблять мужское население
 вражеских племен “ростом выше тележной оси”. Я еще застал времена

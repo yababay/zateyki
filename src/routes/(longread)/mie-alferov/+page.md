@@ -1,4 +1,21 @@
-# История Жореса Алфёрова, который любил СССР, да продал видеомагнитофон
+---
+title: Простой советсий гений
+description: История Жореса Алфёрова, который любил СССР, да продал видеомагнитофон.
+---
+<script>
+
+    import Helper from '$lib/components/Helper.svelte' 
+    // import Figure from '$lib/components/Figure.svelte' 
+    // import src from './shosse-entuziastov.webp'    
+    
+    export let data
+
+    const { title, description } = data
+    // const caption = ''
+
+</script>
+
+<Helper {title} {description} />
 
 *(Этот лонгрид в большой степени базируется на тексте другого автора, поэтому я предлагаю его как приложение к циклу материалов «Рецензия, запоздавшая на 116 лет», а не как самостоятельное рассуждение)*.
 

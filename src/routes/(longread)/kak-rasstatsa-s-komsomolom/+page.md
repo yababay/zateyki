@@ -7,9 +7,10 @@ description: История о том, что вовсе не обязатель
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
     // import src from './shosse-entuziastov.webp'    
+    
+    export let data
 
-    const title = 'Как расстаться с комсомолом'
-    const description = 'История о том, что вовсе не обязательно подчиняться навязанным дарствам рекомендациям.'
+    const { title, description } = data
     // const caption = ''
 
 </script>
