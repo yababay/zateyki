@@ -1,20 +1,23 @@
 ---
-title: Гастарбайтеры из Российской империи
+title: Имперские гастарбайтеры
 description: Оцифровка материала с Youtube «Гастарбайтеры Российской империи. Отток крестьянского населения».
 canonical: https://www.youtube.com/watch?v=9WMKTWxBpkE
 ---
 <script>
 
     import Helper from '$lib/components/Helper.svelte' 
+    import banner from './banner.webp'
     // import Figure from '$lib/components/Figure.svelte' 
 
     export let data
 
-    const { title, description, canonical } = data
+    const { title, description, canonical, image } = data
 
 </script>
 
-<Helper {title} {description} {canonical} />
+<Helper {title} {description} {canonical} {image} >
+    <img src={banner} alt="banner" class="d-none">
+</Helper>
 
 <!--
 
