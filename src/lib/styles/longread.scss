@@ -1,0 +1,51 @@
+@use 'header';
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    article > p:first-of-type {
+        margin-top: 2rem;
+        font-style: italic;
+    }
+
+    article, svg, figure, img {
+        max-width: 80ch;
+    }
+
+    figure {
+        img, svg {
+            max-width: 78ch;
+            height: auto;
+        }
+    }
+
+    .modal-body {
+        img, svg {
+            width: 50vw;
+            height: auto;
+        }
+    }
+
+    ul {
+        min-height: 1rem;
+    }
+
+    $blockquote-color: #777;
+
+    blockquote {
+        border-left: 1rem solid silver;
+        color: $blockquote-color;
+        padding-left: 1rem;
+        margin-block: 1rem;
+        a {
+            color: $blockquote-color;
+        }
+    }
+
+    code {
+        color: $blockquote-color;
+    }
+}
