@@ -13,5 +13,6 @@ export const extractMdxMeta = (page: string) => {
 
     const title = getMeta('title')
     const description = getMeta('description') 
-    return { title, description }
+    const canonical = getMeta('canonical') 
+    return { title, description, canonical }
 }
