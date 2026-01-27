@@ -9,11 +9,11 @@ description: Памяти четвероногого друга, скрасив�
 
     export let data
 
-    const { title, description } = data
+    const { title, description, banner, image } = data
 
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {description} {banner} {image} />
 
 <!--
 
