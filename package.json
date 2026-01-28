@@ -10,6 +10,7 @@
 		"postbuild": "./scripts/aws-sync.sh",
 		"readme":  "./scripts/readme.sh",
 		"git:local": "npm run readme && read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT",
+		"git:article": "git checkout article",
 		"git:remote": "git push origin main",
 		"git": "npm run git:local && npm run git:remote",
 		"preview": "vite preview",
