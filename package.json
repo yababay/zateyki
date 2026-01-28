@@ -10,7 +10,7 @@
 		"postbuild": "./scripts/aws-sync.sh",
 		"git:create": "read -p 'Введите имя пути: ' SLUG; echo 'https://yababay.website.yandexcloud.net/'$SLUG'/' ; git checkout -b $SLUG && mv 'src/routes/(longread)/zyxel-the-cat' 'src/routes/(longread)'/$SLUG",
 		"git:local": "read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT",
-		"git:remote": "git push origin $SLUG",
+		"git:remote": "git push origin article",
 		"git": "npm run git:local && npm run git:remote",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
