@@ -2,22 +2,16 @@
 title: Битва Фридриха Барбароссы с половцами
 description: Как немцы не помогли славянам в борьбе с кочевниками.
 ---
+
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
     export let data
-
-    const { title, description } = data
-    // const caption = ''
-
+    const { title, description, banner, image } = data
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {description} {banner} {image} />
 
-Спешу успокоить читателей: эта битва не состоялась. А могла бы. Не
+Спешу успокоить читателей: эта битва не состоялась, хотя и могла бы. Не
 нагнетая интригу, процитирую сразу «Кельнскую Королевскую хронику»,
 описывающую деяния Фридриха Барбароссы:
 
@@ -72,3 +66,4 @@ description: Как немцы не помогли славянам в борь�
 предположил в предыдущем материале, происходит рыцарство как таковое.
 
 [Публикация в Telegraph](https://telegra.ph/Bitva-Fridriha-Barbarossy-s-polovcami-05-23)
+
