@@ -11,6 +11,7 @@
 		"postbuild": "npm run sync && npm run git:return",
 		"sync": "./scripts/aws-sync.sh",
 		"git:create": "read -p 'Введите имя пути: ' SLUG && git checkout -b $SLUG && mv 'src/routes/(longread)/zyxel-the-cat' 'src/routes/(longread)'/$SLUG",
+		"git:edit": "npm run git:create && ./scripts/checkout.sh",
 		"git:local": "read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT",
 		"git:remote": "git push origin article",
 		"git:return": "./scripts/git-return.sh",
