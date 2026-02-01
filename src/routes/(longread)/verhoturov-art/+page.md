@@ -10,8 +10,8 @@ description: Таинственный и многогранный художни
     import src02 from './friz.webp'
     export let data
     const { title, description, banner, image } = data
-    const capture01 = 'Верхотуров Н.И. «Пропагандистка в рабочем кружке». 1906 г.'
-    const capture02 = 'Фрагмент фриза Волковского театра в Ярославле.'
+    const caption01 = 'Верхотуров Н.И. «Пропагандистка в рабочем кружке». 1906 г.'
+    const caption01 = 'Фрагмент фриза Волковского театра в Ярославле.'
 </script>
 
 <Helper {title} {description} {banner} {image} />
