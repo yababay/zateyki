@@ -1,7 +1,8 @@
 import { extractMdxMeta } from '$lib'
 import page from './+page.md?raw'
+import image from './image.webp'
+import banner from './banner.webp'
 
 export const load = () => {
-    const { title, description } = extractMdxMeta(page)
-    return { title, description }
+    return { ...extractMdxMeta(page), image, banner }
 }
