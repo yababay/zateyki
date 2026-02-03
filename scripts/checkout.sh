@@ -4,4 +4,4 @@
 
 set_envs
 
-git checkout main -- src/routes/\(longread\)/$CURRENT_BRANCH
+git show main:src/routes/\(longread\)/$CURRENT_BRANCH/+page.md >> src/routes/\(longread\)/$CURRENT_BRANCH/+page.md
