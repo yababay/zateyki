@@ -2,17 +2,11 @@
 title: Если топну я ногою, позову своих солдат…
 description: Только ли Мойдодыр топал ногою, чтобы позвать своих солдат?
 ---
+
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
     export let data
-
     const { title, description } = data
-    // const caption = ''
-
 </script>
 
 <Helper {title} {description} />
@@ -45,7 +39,8 @@ description: Только ли Мойдодыр топал ногою, чтоб�
 > видит войска, которое будет сражаться против Цезаря, если тот пойдет
 > на Рим, Помпей с веселой улыбкой просил не беспокоиться. «Стоит мне
 > только, — говорил он, — топнуть ногой в любом месте Италии, как
-> тотчас же из-под земли появится и пешее и конное войско». [Плутарх.
+> тотчас же из-под земли появится и пешее, и конное войско». [Плутарх.
 > Помпей, 57].
 
 [Публикация в Telegraph](https://telegra.ph/Esli-topnu-ya-nogoyu-pozovu-svoih-soldat-07-04)
+
