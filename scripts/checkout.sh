@@ -4,4 +4,9 @@
 
 set_envs
 
-git show main:src/routes/\(longread\)/$CURRENT_BRANCH/+page.md >> src/routes/\(longread\)/$CURRENT_BRANCH/+page.md
+PAGE=src/routes/\(longread\)/$CURRENT_BRANCH/+page.md
+
+git show main:src/routes/\(longread\)/$CURRENT_BRANCH/+page.md >> $PAGE
+
+/usr/bin/gnome-text-editor $PAGE
+
