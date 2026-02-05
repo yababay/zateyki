@@ -9,61 +9,62 @@ description: Лонгриды Михаила Белякова
 
 ## Альтернативная история, хронология
 
-* [Локомотив альтернатив](/locomotiv-alternativ/)
-* [Подношение святому Янусу](/podnoshenie-svyatomu-yanusu/)
 * [1492 год как начало новой эры](/1492-god-kak-nacalo-novoj-ery/)
-* [А что это такое бумкнуло?](/a-cto-eto-takoe-bumknulo/)
-* […а осадочек остался](/a-osadocek-ostalsa/)
-* […а осадочек остался 2](/a-osadocek-ostalsa-2/)
-* [А шапочка, извините, откуда?](/a-sapocka-izvinite-otkuda/)
+* [Абырвалг Новерлендский](/abyrvalg-noverlendskij/)
 * [Альтернативщик Батюшков](/alternativsik-batuskov/)
-* [Ирония судьбы и классовой борьбы](/ironiya-sudby-kak-klassovoj-borby/)
+* [Анамиты и московиты](/anamity-i-moskovity/)
 * [(Ана)хроники Вильяма Шекспира](/anahroniki-vilama-sekspira/)
-* [(Ана)хроники Вильяма Шекспира 2](/anahroniki-vilama-sekspira-prodolzenie/)
-* [Из-за леса, из-за гор показал мужик копьё](/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
-* [Астерикс, Обеликс и хронический анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/) 
-* [Квадратно-гнездовая христианизция](/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
-* [Жертва из божественного семейства](/jertva-iz-bogestvennogo-semeystva/) 
-* [Если топну я ногою, позову своих солдат…](/esli-topnu-a-nogou-pozovu-svoih-soldat/) 
-* [Балкон как моветон](/balkon-kak-moveton/) 
-* [Праздник непослушания](/prazdnik-neposlusania/) 
-* [Горят-шумят Бадаевские склады](/gorat-sumat-badaevskie-sklady/) 
-* [Случай на Белоозере](/slucaj-na-beloozere-istoriceskaa-ugadajka-vypusk-3/) 
-* [О разорении Рязани](/o-razorenii-razani-istoriceskaa-ugadajka-vypusk-5/) 
-* […дык ёлы-палы, здравствуй, сестра!](/dyk-ely-paly-zdravstvuj-sestra/) 
-* [Шоссе энтузиастов. Следующая станция — Владимирский централ](/sosse-entuziastov-sleduusaa-stancia-vladimirskij-central/) 
+* [Андрей Кафкович фон Григорян](/andrej-platonovic-maria-kafka-fon-grigoran/)
+* […а осадочек остался](/a-osadocek-ostalsa/)
+* [Астерикс, Обеликс и анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/)
+* [А что это такое бумкнуло?](/a-cto-eto-takoe-bumknulo/)
+* [А шапочка, извините, откуда?](/a-sapocka-izvinite-otkuda/)
+* [Балкон как моветон](/balkon-kak-moveton/)
 * [Битва Тарквиния с Редедей](/bitva-tarkvinia-s-rededej/) 
+* [Битва Фридриха Барбароссы с половцами](/bitva-fridriha-barbarossy-s-polovcami/)
+* [Битва ярославцев с суздальцами](/bitva-aroslavcev-s-suzdalcami/)
+* [Богемно-пропагандистские шатания](/bogemniy-militarizm/)
+* [Верхотура Верхотурова](/verhoturov-art/)
+* [Гай Юлий Кейнсарь](/gaj-ulij-kejnsar/)
+* [Гвоздь Беросса](/beross-kak-gvozd-oficialnoj-hronologii/)
+* [Горят-шумят Бадаевские склады](/gorat-sumat-badaevskie-sklady/)
+* [Гусли и хоккей](/gusli-i-hokkej/)
+* [Две Софии, два Голицына](/dve-sofii-dva-golicyna/)
+* [ДВЦ рабочих и крестьян](/dvc-rabocih-i-krestan/)
+* [Дело было под Тулой](/delo-bylo-pod-tuloj/)
+* [Дело пахнет кирасиром](/delo-pahnet-kirasirom/)
+* [Долгорукий и Долгоруковы](/dolgorukij-i-dolgorukov/)
+* [Древнегреческая смоковница](/drevnegreceskaa-smokovnica/)
+* [Древнеримский Мойдодыр](/esli-topnu-a-nogou-pozovu-svoih-soldat/)
+* [Дуэль Онегина с Бендером](/duel-onegina-s-benderom/)
+* […дык ёлы-палы, здравствуй, сестра!](/dyk-ely-paly-zdravstvuj-sestra/) 
+* [Дядя Гера, Панч и барон Врангель](/dada-gera-panc-i-baron-vrangel/)
+* [Египетский центнер с гектара](/centnery-gektary-i-aleksandria-egipetskaa/)
+* [Его принес сюда ледник!](/ego-prines-suda-lednik-s/)
+* [Если топну я ногою, позову своих солдат…](/esli-topnu-a-nogou-pozovu-svoih-soldat/) 
+* [Жертва из божественного семейства](/jertva-iz-bogestvennogo-semeystva/) 
+* [Из-за леса, из-за гор показал мужик копьё](/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
+* [Ирония судьбы и классовой борьбы](/ironiya-sudby-kak-klassovoj-borby/)
+* [Квадратно-гнездовая христианизция](/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
+* [Китеж как экологическая катастрофа](/grad-kitez-kak-ekologiceskaa-katastrofa/)
+* [Локомотив альтернатив](/locomotiv-alternativ/)
+* [«Неправильные пчелы» древней Индии](/aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
+* [О разорении Рязани](/o-razorenii-razani-istoriceskaa-ugadajka-vypusk-5/) 
 * [Павка Корчагин и оливковое масло](/pavka-korcagin-i-olivkovoe-maslo/) 
-* [Битва Фридриха Барбароссы с половцами](/bitva-fridriha-barbarossy-s-polovcami/) 
-
-<!-- 
-* [](//) 
-<script>
-
-    import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
-    export let data
-
-    const { title, description } = data
-    // const caption = ''
-
-</script>
-
-<Helper {title} {description} />
-
-<Figure {caption}>
-    <img {src} alt={caption}>
-</Figure>
-
--->
+* [Подношение святому Янусу](/podnoshenie-svyatomu-yanusu/)
+* [Праздник непослушания](/prazdnik-neposlusania/) 
+* [Случай на Белоозере](/slucaj-na-beloozere-istoriceskaa-ugadajka-vypusk-3/) 
+* [Чай товарища Петросяна](/french-theatre-memes/)
+* [Чем накормить слугъ](/a-osadocek-ostalsa-2/)
+* [Чудеса, чудеса, небывальщина](/cudesa-cudesa-nebyvalsina/)
+* [Шоссе энтузиастов. Следующая станция — Владимирский централ](/sosse-entuziastov-sleduusaa-stancia-vladimirskij-central/) 
 
 ## История Российской империи
 
 * [Декабристы и шкурный интерес](/dekabristy-i-shkurnyj-interes/)
 * [Доступный канцелярит](/dostupnyj-kancelyarit/)  
 * [Простой имперский паренёк](/prostoj-imperskij-parenyok/)  
+* [Гастарбайтеры из Российской империи](/gastarbeiters-from-russian-empire/)
 
 ## Эхо русских революций
 
