@@ -2,20 +2,14 @@
 title: Как стать Вещим Олегом
 description: Карамзин как автор мифа о Вещем Олеге.
 ---
+
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
     export let data
-
-    const { title, description } = data
-    // const caption = ''
-
+    const { title, description, banner, image } = data
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {description} {banner} {image} />
 
 В эфире “историческая угадайка”. Один очень известный и влиятельный
 персонаж российской истории видит, как вокруг его ноги обвивается
@@ -75,7 +69,6 @@ description: Карамзин как автор мифа о Вещем Олег�
 даже померещиться, что сюжет об укушенном гадюкой князе Карамзин сам и
 придумал, вписав фрагмент собственной биографии в свой многотомный
 труд…
-> __________________________________________________________________
 
-1. [Публикация в Telegraph](https://telegra.ph/Kak-stat-Veshchim-Olegom-11-30)
+[Публикация в Telegraph](https://telegra.ph/Kak-stat-Veshchim-Olegom-11-30)
 
