@@ -10,8 +10,8 @@ description: Почему на аренах Древнего Рима не ср�
     import src01  from './ippodrom-02.webp'
     export let data
     const { title, description, banner, image } = data
-    const caption = 'Античный ипподром.'
-    const caption01 = 'Скачки на льду Невы в середине XIX в.'
+    const caption = 'Скачки на льду Невы в середине XIX в.'
+    const caption01 = 'Античный ипподром.'
 </script>
 
 <Helper {title} {description} {banner} {image} />
