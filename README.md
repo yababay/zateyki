@@ -10,61 +10,62 @@ description: Лонгриды Михаила Белякова
 
 ## Альтернативная история, хронология
 
-* [Локомотив альтернатив](https://yababay.website.yandexcloud.net/locomotiv-alternativ/)
-* [Подношение святому Янусу](https://yababay.website.yandexcloud.net/podnoshenie-svyatomu-yanusu/)
 * [1492 год как начало новой эры](https://yababay.website.yandexcloud.net/1492-god-kak-nacalo-novoj-ery/)
-* [А что это такое бумкнуло?](https://yababay.website.yandexcloud.net/a-cto-eto-takoe-bumknulo/)
-* […а осадочек остался](https://yababay.website.yandexcloud.net/a-osadocek-ostalsa/)
-* […а осадочек остался 2](https://yababay.website.yandexcloud.net/a-osadocek-ostalsa-2/)
-* [А шапочка, извините, откуда?](https://yababay.website.yandexcloud.net/a-sapocka-izvinite-otkuda/)
+* [Абырвалг Новерлендский](https://yababay.website.yandexcloud.net/abyrvalg-noverlendskij/)
 * [Альтернативщик Батюшков](https://yababay.website.yandexcloud.net/alternativsik-batuskov/)
-* [Ирония судьбы и классовой борьбы](https://yababay.website.yandexcloud.net/ironiya-sudby-kak-klassovoj-borby/)
+* [Анамиты и московиты](https://yababay.website.yandexcloud.net/anamity-i-moskovity/)
 * [(Ана)хроники Вильяма Шекспира](https://yababay.website.yandexcloud.net/anahroniki-vilama-sekspira/)
-* [(Ана)хроники Вильяма Шекспира 2](https://yababay.website.yandexcloud.net/anahroniki-vilama-sekspira-prodolzenie/)
-* [Из-за леса, из-за гор показал мужик копьё](https://yababay.website.yandexcloud.net/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
-* [Астерикс, Обеликс и хронический анахроникс](https://yababay.website.yandexcloud.net/asteriks-obeliks-i-hroniceskij-anahroniks/) 
-* [Квадратно-гнездовая христианизция](https://yababay.website.yandexcloud.net/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
-* [Жертва из божественного семейства](https://yababay.website.yandexcloud.net/jertva-iz-bogestvennogo-semeystva/) 
-* [Если топну я ногою, позову своих солдат…](https://yababay.website.yandexcloud.net/esli-topnu-a-nogou-pozovu-svoih-soldat/) 
-* [Балкон как моветон](https://yababay.website.yandexcloud.net/balkon-kak-moveton/) 
-* [Праздник непослушания](https://yababay.website.yandexcloud.net/prazdnik-neposlusania/) 
-* [Горят-шумят Бадаевские склады](https://yababay.website.yandexcloud.net/gorat-sumat-badaevskie-sklady/) 
-* [Случай на Белоозере](https://yababay.website.yandexcloud.net/slucaj-na-beloozere-istoriceskaa-ugadajka-vypusk-3/) 
-* [О разорении Рязани](https://yababay.website.yandexcloud.net/o-razorenii-razani-istoriceskaa-ugadajka-vypusk-5/) 
-* […дык ёлы-палы, здравствуй, сестра!](https://yababay.website.yandexcloud.net/dyk-ely-paly-zdravstvuj-sestra/) 
-* [Шоссе энтузиастов. Следующая станция — Владимирский централ](https://yababay.website.yandexcloud.net/sosse-entuziastov-sleduusaa-stancia-vladimirskij-central/) 
+* [Андрей Кафкович фон Григорян](https://yababay.website.yandexcloud.net/andrej-platonovic-maria-kafka-fon-grigoran/)
+* […а осадочек остался](https://yababay.website.yandexcloud.net/a-osadocek-ostalsa/)
+* [Астерикс, Обеликс и анахроникс](https://yababay.website.yandexcloud.net/asteriks-obeliks-i-hroniceskij-anahroniks/)
+* [А что это такое бумкнуло?](https://yababay.website.yandexcloud.net/a-cto-eto-takoe-bumknulo/)
+* [А шапочка, извините, откуда?](https://yababay.website.yandexcloud.net/a-sapocka-izvinite-otkuda/)
+* [Балкон как моветон](https://yababay.website.yandexcloud.net/balkon-kak-moveton/)
 * [Битва Тарквиния с Редедей](https://yababay.website.yandexcloud.net/bitva-tarkvinia-s-rededej/) 
+* [Битва Фридриха Барбароссы с половцами](https://yababay.website.yandexcloud.net/bitva-fridriha-barbarossy-s-polovcami/)
+* [Битва ярославцев с суздальцами](https://yababay.website.yandexcloud.net/bitva-aroslavcev-s-suzdalcami/)
+* [Богемно-пропагандистские шатания](https://yababay.website.yandexcloud.net/bogemniy-militarizm/)
+* [Верхотура Верхотурова](https://yababay.website.yandexcloud.net/verhoturov-art/)
+* [Гай Юлий Кейнсарь](https://yababay.website.yandexcloud.net/gaj-ulij-kejnsar/)
+* [Гвоздь Беросса](https://yababay.website.yandexcloud.net/beross-kak-gvozd-oficialnoj-hronologii/)
+* [Горят-шумят Бадаевские склады](https://yababay.website.yandexcloud.net/gorat-sumat-badaevskie-sklady/)
+* [Гусли и хоккей](https://yababay.website.yandexcloud.net/gusli-i-hokkej/)
+* [Две Софии, два Голицына](https://yababay.website.yandexcloud.net/dve-sofii-dva-golicyna/)
+* [ДВЦ рабочих и крестьян](https://yababay.website.yandexcloud.net/dvc-rabocih-i-krestan/)
+* [Дело было под Тулой](https://yababay.website.yandexcloud.net/delo-bylo-pod-tuloj/)
+* [Дело пахнет кирасиром](https://yababay.website.yandexcloud.net/delo-pahnet-kirasirom/)
+* [Долгорукий и Долгоруковы](https://yababay.website.yandexcloud.net/dolgorukij-i-dolgorukov/)
+* [Древнегреческая смоковница](https://yababay.website.yandexcloud.net/drevnegreceskaa-smokovnica/)
+* [Древнеримский Мойдодыр](https://yababay.website.yandexcloud.net/esli-topnu-a-nogou-pozovu-svoih-soldat/)
+* [Дуэль Онегина с Бендером](https://yababay.website.yandexcloud.net/duel-onegina-s-benderom/)
+* […дык ёлы-палы, здравствуй, сестра!](https://yababay.website.yandexcloud.net/dyk-ely-paly-zdravstvuj-sestra/) 
+* [Дядя Гера, Панч и барон Врангель](https://yababay.website.yandexcloud.net/dada-gera-panc-i-baron-vrangel/)
+* [Египетский центнер с гектара](https://yababay.website.yandexcloud.net/centnery-gektary-i-aleksandria-egipetskaa/)
+* [Его принес сюда ледник!](https://yababay.website.yandexcloud.net/ego-prines-suda-lednik-s/)
+* [Если топну я ногою, позову своих солдат…](https://yababay.website.yandexcloud.net/esli-topnu-a-nogou-pozovu-svoih-soldat/) 
+* [Жертва из божественного семейства](https://yababay.website.yandexcloud.net/jertva-iz-bogestvennogo-semeystva/) 
+* [Из-за леса, из-за гор показал мужик копьё](https://yababay.website.yandexcloud.net/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
+* [Ирония судьбы и классовой борьбы](https://yababay.website.yandexcloud.net/ironiya-sudby-kak-klassovoj-borby/)
+* [Квадратно-гнездовая христианизция](https://yababay.website.yandexcloud.net/kvadratno-gnezdovaa-hristianizcia-istoriceskaa-ugadajka-vypusk-4/)
+* [Китеж как экологическая катастрофа](https://yababay.website.yandexcloud.net/grad-kitez-kak-ekologiceskaa-katastrofa/)
+* [Локомотив альтернатив](https://yababay.website.yandexcloud.net/locomotiv-alternativ/)
+* [«Неправильные пчелы» древней Индии](https://yababay.website.yandexcloud.net/aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
+* [О разорении Рязани](https://yababay.website.yandexcloud.net/o-razorenii-razani-istoriceskaa-ugadajka-vypusk-5/) 
 * [Павка Корчагин и оливковое масло](https://yababay.website.yandexcloud.net/pavka-korcagin-i-olivkovoe-maslo/) 
-* [Битва Фридриха Барбароссы с половцами](https://yababay.website.yandexcloud.net/bitva-fridriha-barbarossy-s-polovcami/) 
-
-<!-- 
-* [](https://yababay.website.yandexcloud.net//) 
-<script>
-
-    import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
-    export let data
-
-    const { title, description } = data
-    // const caption = ''
-
-</script>
-
-<Helper {title} {description} />
-
-<Figure {caption}>
-    <img {src} alt={caption}>
-</Figure>
-
--->
+* [Подношение святому Янусу](https://yababay.website.yandexcloud.net/podnoshenie-svyatomu-yanusu/)
+* [Праздник непослушания](https://yababay.website.yandexcloud.net/prazdnik-neposlusania/) 
+* [Случай на Белоозере](https://yababay.website.yandexcloud.net/slucaj-na-beloozere-istoriceskaa-ugadajka-vypusk-3/) 
+* [Чай товарища Петросяна](https://yababay.website.yandexcloud.net/french-theatre-memes/)
+* [Чем накормить слугъ](https://yababay.website.yandexcloud.net/a-osadocek-ostalsa-2/)
+* [Чудеса, чудеса, небывальщина](https://yababay.website.yandexcloud.net/cudesa-cudesa-nebyvalsina/)
+* [Шоссе энтузиастов. Следующая станция — Владимирский централ](https://yababay.website.yandexcloud.net/sosse-entuziastov-sleduusaa-stancia-vladimirskij-central/) 
 
 ## История Российской империи
 
 * [Декабристы и шкурный интерес](https://yababay.website.yandexcloud.net/dekabristy-i-shkurnyj-interes/)
 * [Доступный канцелярит](https://yababay.website.yandexcloud.net/dostupnyj-kancelyarit/)  
 * [Простой имперский паренёк](https://yababay.website.yandexcloud.net/prostoj-imperskij-parenyok/)  
+* [Гастарбайтеры из Российской империи](https://yababay.website.yandexcloud.net/gastarbeiters-from-russian-empire/)
 
 ## Эхо русских революций
 
