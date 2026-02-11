@@ -6,10 +6,10 @@ description: Богиня мщения в немецких завоевания�
 <script>
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
-    import src from './codex-06.webp'
-    import src01 from './codex-06.webp'
-    import src02 from './codex-06.webp'
-    import src03 from './codex-06.webp'
+    import src   from './codex-06.webp'
+    import src01 from './codex-07.webp'
+    import src02 from './codex-08.webp'
+    import src03 from './codex-09.webp'
     import src04 from './nemezida-09.webp'
     export let data
     const { title, description, banner, image } = data
