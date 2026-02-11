@@ -5,6 +5,7 @@ description: Зачем нужны стены, не выдержавшие ни 
 
 <script>
     import Helper from '$lib/components/Helper.svelte'
+    import Figure from '$lib/components/Figure.svelte' 
     import src   from './zamok.webp'
     import src01 from './krepost.webp'
     import src02 from './bashnya.webp'
@@ -17,7 +18,7 @@ description: Зачем нужны стены, не выдержавшие ни 
     const caption03 = 'Оборонительные стены в Ярославле.'
 </script>
 
-<Helper {title} {description} {banner} {image} />
+<Helper {title} {description} {banner} />
 
 Нашел на просторах Телеграм очередное удивительное изображение:
 
