@@ -5,6 +5,7 @@ description: Парадоксы итальянских народных сказ
 
 <script>
     import Helper from '$lib/components/Helper.svelte' 
+    import Figure from '$lib/components/Figure.svelte'
     import src   from './skaz-01.webp'
     import src01 from './skaz-02.webp'
     export let data
