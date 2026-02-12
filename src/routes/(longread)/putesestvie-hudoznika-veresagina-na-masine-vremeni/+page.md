@@ -10,7 +10,8 @@ description: Странные детали на картинах художни�
     import src01  from './vereshagin-02.webp'
     export let data
     const { title, description, banner, image } = data
-    const caption = 'Василий Верещагин. '
+    const caption = 'Василий Верещагин. Из среднеазиатских впечатлений.'
+    const caption01 = 'Вооружение русского воина XVI-XVII вв.'
 </script>
 
 <Helper {title} {description} />
