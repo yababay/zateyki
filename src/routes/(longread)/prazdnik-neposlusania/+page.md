@@ -2,17 +2,11 @@
 title: Праздник непослушания
 description: Еще раз о затруднениях в «Крещении Руси».
 ---
+
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
-    // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
     export let data
-
-    const { title, description } = data
-    // const caption = ''
-
+    const { title, description, banner, image } = data
 </script>
 
 <Helper {title} {description} />
