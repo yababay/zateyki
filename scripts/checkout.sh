@@ -11,7 +11,7 @@ git checkout article
 git checkout -b "$SLUG"
 git checkout main -- "$DIR"
 
-git "$ZTC/+page.md" >> $PAGE
+cat "$ZTC/+page.md" >> $PAGE
 cat "$ZTC/+page.ts" > $CODE
 git rm -r "$ZTC"
 
