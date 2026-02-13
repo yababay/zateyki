@@ -1,21 +1,54 @@
 ---
 title: Случай на Белоозере
-description: Кто победил язычников,  устроивших мятеж на Верхней Волге?
+description: Кто победил язычников, устроивших мятеж на Верхней Волге?
 ---
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
-    // import src from './shosse-entuziastov.webp'    
-    
+    // import src   from './'
+    // import src01 from './'
+    // import src02 from './'
+    // import src03 from './'
+    // import src04 from './'
     export let data
-
-    const { title, description } = data
-    // const caption = ''
-
+    const { title, description, banner, image } = data
+    //const caption = ''
+    //const caption01 = ''
+    //const caption02 = ''
+    //const caption03 = ''
+    //const caption04 = ''
+    //const caption05 = ''
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {description} {banner} {image} />
+
+<!--
+
+<Figure {caption}>
+    <img {src} alt={caption}>
+</Figure>
+
+<Figure caption={caption01}>
+    <img src={src01} alt={caption01}>
+</Figure>
+
+<Figure caption={caption02}>
+    <img src={src02} alt={caption02}>
+</Figure>
+
+<Figure caption={caption03}>
+    <img src={src03} alt={caption03}>
+</Figure>
+
+<Figure caption={caption04}>
+    <img src={src04} alt={caption04}>
+</Figure>
+
+<Figure caption={caption05}>
+    <img src={src05} alt={caption05}>
+</Figure>
+
+-->
 
 Один воевода с дружиной поехал на Белоозеро собирать дань для своего
 князя. Времена были неблагоприятные, голодные, поэтому сборщики
@@ -28,8 +61,8 @@ description: Кто победил язычников,  устроивших м�
 сюжет древнерусских летописей о Яне Вышатиче, подавившем вспыхнувшее на
 Белоозере в начале 1070-х гг. восстание. Сколько там смачных деталей! И
 о знатных женщинах, укрывавших в своих спинах продовольственные
-припасы, и о языческом боге-творце, который однажды, “утершись
-ветошкой” после бани, создал человека, и о повешенных на березе
+припасы, и о языческом боге-творце, который однажды, «утершись
+ветошкой» после бани, создал человека, и о повешенных на березе
 волхвах. Только я-то во вводном абзаце имел в виду совсем другие
 события. У С. М. Соловьева они описаны так:
 
@@ -44,7 +77,7 @@ description: Кто победил язычников,  устроивших м�
 
 Это о первых годах после смуты, примерно 1617-й год. История
 повторяется. Ну не полагать же, в самом деле, что поездка Яна Вышатича
-(т.е. того, кто поднимает на высоту, вешает) и сбор податей для Михаила
+(т. е. того, кто поднимает на высоту, вешает) и сбор податей для Михаила
 Федоровича — это одно и то же событие. Эдак у нас и Ярослав Мудрый в
 XVI век «переехать» может. Хотя, по-моему, там ему самое бы место.
 
