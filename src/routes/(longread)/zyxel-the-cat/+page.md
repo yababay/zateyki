@@ -1,16 +1,19 @@
----
-title: История кота Зухеля
-description: Памяти четвероногого друга, скрасившего мне жизнь в самые одинокие годы.
----
 <script>
-
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
-
+    // import src   from './'
+    // import src01 from './'
+    // import src02 from './'
+    // import src03 from './'
+    // import src04 from './'
     export let data
-
     const { title, description, banner, image } = data
-
+    //const caption = ''
+    //const caption01 = ''
+    //const caption02 = ''
+    //const caption03 = ''
+    //const caption04 = ''
+    //const caption05 = ''
 </script>
 
 <Helper {title} {description} {banner} {image} />
@@ -21,9 +24,24 @@ description: Памяти четвероногого друга, скрасив�
     <img {src} alt={caption}>
 </Figure>
 
--->
+<Figure caption={caption01}>
+    <img src={src01} alt={caption01}>
+</Figure>
 
-С детства я был приучен к мысли, что держать дома питомцев (тех, что
-американцы обозначают понятием pets) — плохая затея. Это, мол, не для нас: 
-ответственность, расходы и т.п. Я охотно придерживался этого мнения до
-2002 года, одного из самых сложных в моей жизни.
+<Figure caption={caption02}>
+    <img src={src02} alt={caption02}>
+</Figure>
+
+<Figure caption={caption03}>
+    <img src={src03} alt={caption03}>
+</Figure>
+
+<Figure caption={caption04}>
+    <img src={src04} alt={caption04}>
+</Figure>
+
+<Figure caption={caption05}>
+    <img src={src05} alt={caption05}>
+</Figure>
+
+-->

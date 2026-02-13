@@ -1,17 +1,17 @@
 #!/bin/bash
 
-. scripts/functions.sh
+read -p 'Введите имя пути: ' SLUG 
 
-set_envs
+DIR="src/routes/(longread)/$SLUG"
+PAGE="$DIR/+page.md"
+CODE="$DIR/+page.ts"
 
-PAGE=src/routes/\(longread\)/$CURRENT_BRANCH/+page.md
+git checkout article
+git checkout -b "$SLUG"
+git checkout main -- "$DIR"
 
-git show main:src/routes/\(longread\)/$CURRENT_BRANCH/+page.md >> $PAGE
-
-if [ -n "`git show main:src/routes/\(longread\)/$CURRENT_BRANCH/*.webp`" ]; then 
-    git checkout main -- src/routes/\(longread\)/$CURRENT_BRANCH/*.webp
-fi
-
-sleep 3
+git "src/routes/(longread)/zyxel-the-cat/+page.md" >> $PAGE
+cat "src/routes/(longread)/zyxel-the-cat/+page.ts" > $CODE
+git rm -r "src/routes/(longread)/zyxel-the-cat"
 
 /usr/bin/gnome-text-editor $PAGE &>/dev/null &
