@@ -6,7 +6,7 @@ description: Когда-то Кремль был таможней на бере�
 <script>
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
-    import srt from './kreml-01.webp'
+    import src from './kreml-01.webp'
     export let data
     const { title, description, banner, image } = data
     const caption = 'Соединение Смоленской и Владимирской дорог.'
