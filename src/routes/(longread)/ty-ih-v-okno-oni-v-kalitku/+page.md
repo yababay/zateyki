@@ -9,7 +9,7 @@ description: Борьба Екатерины Великой за продово�
     const { title, description, image } = data
 </script>
 
-<Helper {title} {description} {banner} {image} />
+<Helper {title} {description} {image} />
 
 Переписка Екатерины II с графом Н. И. Паниным — источник вполне
 безобидный. Он общедоступен, изучен историками вдоль и поперек и,
@@ -183,4 +183,3 @@ P.S. По поводу торговли зерном с Гамбургом. Ес
 называли окончательные цены в пункте назначения, а не у посредников.
 
 [Публикация в Telegraph](https://telegra.ph/Ty-ih-v-okno---oni-v-kalitku-04-16)
-
