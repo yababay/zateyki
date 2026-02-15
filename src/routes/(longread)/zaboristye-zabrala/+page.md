@@ -64,4 +64,3 @@ description: Парадоксы средневекового оружейног�
 нацепил очки.
 
 [Публикация в Telegraph](https://telegra.ph/Zaboristye-zabrala-09-11)
-
