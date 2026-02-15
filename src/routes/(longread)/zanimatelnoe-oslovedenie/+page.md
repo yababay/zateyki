@@ -258,4 +258,3 @@ description: Неожиданные интерпретации знакомог�
 Смотрите, не перепутайте!»
 
 [Публикация в Telegraph](https://telegra.ph/Zanimatelnoe-oslovedenie-08-30)
-
