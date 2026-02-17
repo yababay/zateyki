@@ -24,6 +24,10 @@ description: Лонгриды Михаила Белякова
 
 * [Локомотив альтернатив](https://yababay.website.yandexcloud.net/locomotiv-alternativ/)
 
+### Исторический Prolog
+
+* [Пушкин и саранча](https://yababay.website.yandexcloud.net/pushkin-i-sarancha/)
+
 ### Источники-заточники
 
 * [Источники-заточники](https://yababay.website.yandexcloud.net/istocniki-zatocniki/)
