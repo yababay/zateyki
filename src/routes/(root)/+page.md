@@ -23,6 +23,10 @@ description: Лонгриды Михаила Белякова
 
 * [Локомотив альтернатив](/locomotiv-alternativ/)
 
+### Исторический Prolog
+
+* [Пушкин и саранча](/pushkin-i-sarancha/)
+
 ### Источники-заточники
 
 * [Источники-заточники](/istocniki-zatocniki/)
