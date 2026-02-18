@@ -25,6 +25,7 @@ description: Лонгриды Михаила Белякова
 
 ### Исторический Prolog
 
+* [Исторический Prolog](/istoriceskij-prolog/)
 * [Пушкин и саранча](/pushkin-i-sarancha/)
 
 ### Источники-заточники
