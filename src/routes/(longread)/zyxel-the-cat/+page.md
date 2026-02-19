@@ -6,6 +6,8 @@ description: description
 <script>
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
+    // import Footnote from '$lib/components/Footnote.svelte' 
+    // import Sup from '$lib/components/Sup.svelte' 
     // import Prolog from '$lib/components/Prolog.svelte' 
     // import div from './Prolog.swinb?raw'
     // import src   from './'
@@ -23,9 +25,13 @@ description: description
     //const caption05 = ''
 </script>
 
-<Helper {title} {description} {banner} {image} />
+<Helper {title} {description} />
 
 <!--
+
+<Helper {title} {description} {banner} {image} />
+
+<Prolog {div} />
 
 <Figure {caption}>
     <img {src} alt={caption}>
