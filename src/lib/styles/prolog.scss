@@ -6,3 +6,10 @@ pre {
 .notebook em {
     color: darkred;
 }
+
+code.result {
+    background-color: #ddd;
+    padding-block: .2rem;
+    padding-inline: .2rem;
+    margin-inline: .2rem;
+}

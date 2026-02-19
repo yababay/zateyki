@@ -8,6 +8,7 @@
     export let div
     export let show = false
 
+
     let count = 100
     const getId = () => `prolog-${count++}`
     const cloneTemplate = (pre: HTMLElement) => {
@@ -26,7 +27,19 @@
     }
 
     onMount(() => {
-        let divs = document.querySelectorAll('.nb-cell.program')
+        let divs = document.querySelectorAll('.nb-cell.query')
+        for(const div of divs){ 
+            div.classList.remove('query')
+            div.classList.add('markdown')
+            const query = div.textContent.trim()
+            div.textContent = `__Итак, запрос <code class="result">${query}</code> и результат работы:__`
+        }
+        divs = document.querySelectorAll('.nb-cell.markdown')
+        for(const div of divs){
+            div.innerHTML = convetrer.makeHtml(div.textContent.trim())
+            div.classList.remove('markdown')
+        }
+        divs = document.querySelectorAll('.nb-cell.program')
         for(const div of divs){
 
             const pre = document.createElement('pre')
@@ -41,19 +54,13 @@
             parent?.replaceChild(section, div)
         }
         hljs.highlightAll()
-        divs = document.querySelectorAll('.nb-cell.query')
-        for(const div of divs) div.classList.add('d-none')
-        divs = document.querySelectorAll('.nb-cell.markdown')
-        for(const div of divs){
-            div.innerHTML = convetrer.makeHtml(div.textContent)
-        }
     })
     let template: HTMLElement
 </script>
 
 {@html div}
 
-<section class="d-none mb-3" bind:this={template}>
+<section class="mb-3" bind:this={template}>
     <p class="w-100 text-end">
         <!-- svelte-ignore a11y_missing_attribute -->
         <a class="icon-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseExample">
@@ -63,7 +70,8 @@
             Показать/скрыть код на языке Prolog 
         </a>
     </p>
-    <div class="collapse" class:show={show}></div>
+    <div class="collapse" class:show={show}>
+    </div>
 </section>
 
 <style>
