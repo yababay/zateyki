@@ -18,6 +18,11 @@ description: Лонгриды Михаила Белякова
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
 -->
 
 ## Альтернативная история, хронология
@@ -26,7 +31,10 @@ description: Лонгриды Михаила Белякова
 
 ### Исторический Prolog
 
+* [Исторический Prolog](https://yababay.website.yandexcloud.net/istoriceskij-prolog/)
 * [Пушкин и саранча](https://yababay.website.yandexcloud.net/pushkin-i-sarancha/)
+* [Две Екатерины](https://yababay.website.yandexcloud.net/dve-ekateriny/)
+* [Витрувий, Беросс и другие фальсификаты](https://yababay.website.yandexcloud.net/vitruvij-in-vitro/)
 
 ### Источники-заточники
 
