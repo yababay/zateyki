@@ -1,6 +1,6 @@
 ---
-title:  Fernando, или бойцы вспоминают минувшие дни
-description: description
+title:  Fernando, или Бойцы вспоминают минувшие дни
+description: Экскурс в историю Мексиканской революции от группы ABBA.
 ---
 
 <script>
