@@ -20,9 +20,6 @@ description: Лонгриды Михаила Белякова
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
-* [](https://yababay.website.yandexcloud.net//)
-* [](https://yababay.website.yandexcloud.net//)
-* [](https://yababay.website.yandexcloud.net//)
 -->
 
 ## Альтернативная история, хронология
@@ -168,6 +165,8 @@ description: Лонгриды Михаила Белякова
 * [Убивалленштейн и Благодать](https://yababay.website.yandexcloud.net/ubivallenstejn-i-boza-blagodat/)
 * [Российско-швейцарские конвергенции](https://yababay.website.yandexcloud.net/rossijsko-svejcarskie-konvergencii/)
 * [Неглубокие предания неглубокой старины](https://yababay.website.yandexcloud.net/neglubokie-predania-neglubokoj-stariny/)
+* [Двое из дворца](https://yababay.website.yandexcloud.net/dvoe-iz-dvortsa/)
+* [Обнаруживая Ольгу](https://yababay.website.yandexcloud.net/obnarujivaya-olgu/)
 
 ## Эхо русских революций
 
@@ -200,7 +199,6 @@ description: Лонгриды Михаила Белякова
 * [Винегрет из съездов: правила дегустации](https://yababay.website.yandexcloud.net/so-many-congresses/)
 * [Господа демократы минувшего века](https://yababay.website.yandexcloud.net/dobrolubov/)
 * [Голливуд против Маркса](https://yababay.website.yandexcloud.net/hollywood/)
-* [«Опа, опа, зеленая ограда», или Требую тишины](https://yababay.website.yandexcloud.net/tishina/)
 * [Индус, три, Али: за?](https://yababay.website.yandexcloud.net/indus/) 
 * [Томский в Туркестане (Из книги Чартерса Уинна «Умеренный большевик Михаил Томский»](https://yababay.website.yandexcloud.net/tomskiy-v-turkestane/)
 * [Карлсон и колесо сансары](https://yababay.website.yandexcloud.net/sansara/)
@@ -272,6 +270,7 @@ description: Лонгриды Михаила Белякова
 * [Богемно-пропагандистские шатания](https://yababay.website.yandexcloud.net/bogemniy-militarizm/)
 * [Верхотура Верхотурова](https://yababay.website.yandexcloud.net/verhoturov-art/)
 * [Дуэль Онегина с Бендером](https://yababay.website.yandexcloud.net/duel-onegina-s-benderom/)
+* [Жёлчный пролетариат](https://yababay.website.yandexcloud.net/proletariy-samoed/)
 
 <!--
 ## Диаграммы
@@ -294,3 +293,4 @@ description: Лонгриды Михаила Белякова
 * [История кота Зухеля](https://yababay.website.yandexcloud.net/zyxel-the-cat/)
 * [Как расстаться с комсомолом](https://yababay.website.yandexcloud.net/kak-rasstatsa-s-komsomolom/)
 * [«Эль Ниньо» над Ярославлем](https://yababay.website.yandexcloud.net/yar-myateg/)
+* [«Опа, опа, зеленая ограда», или Требую тишины](https://yababay.website.yandexcloud.net/tishina/)

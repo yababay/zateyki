@@ -11,8 +11,8 @@ git checkout article
 git checkout -b "$SLUG"
 git checkout main -- "$DIR"
 
-cat "$ZTC/+page.md" >> $PAGE
-cat "$ZTC/+page.ts" > $CODE
+#cat "$ZTC/+page.md" >> $PAGE
+#cat "$ZTC/+page.ts" > $CODE
 git rm -r "$ZTC"
 
 /usr/bin/gnome-text-editor $PAGE &>/dev/null &
