@@ -6,5 +6,5 @@ npx image-transmutation --run --sourceFolder "$DIR" --targetFolder "$DIR" --inpu
 
 find "$DIR" -name *.png -exec rm {} \;
 
-sed s/\/\/\ // -i "$DIR/+page.ts"
-sed s/{title}\ {description}/{title}\ {banner}\ {image}\ {description}/ -i "$DIR/+page.md"
+sed 's/\/\/\ //;s/\/\*//;s/\*\///' -i "$DIR/+page.ts"
+sed 's/{title}\ {description}/{title}\ {banner}\ {image}\ {description}/' -i "$DIR/+page.md"

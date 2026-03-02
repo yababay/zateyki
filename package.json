@@ -17,6 +17,7 @@
 		"git:return": "./scripts/git-return.sh",
 		"git:checkout": "./scripts/checkout.sh",
 		"git:page": "./scripts/cat-page.sh",
+		"git:template": "git show 'article:src/routes/(longread)/zyxel-the-cat/+page.md'",
 		"git": "npm run git:local && npm run git:remote",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
