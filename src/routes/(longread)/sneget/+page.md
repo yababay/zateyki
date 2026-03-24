@@ -6,21 +6,13 @@ description: Как я учился музыку любить.
 <script>
     import Helper from '$lib/components/Helper.svelte' 
     import Figure from '$lib/components/Figure.svelte' 
-    import src    from './sneget.webp'
-    import src01  from './lenta.webp'
     import src02  from './vega-108.webp'
     export let data
     const { title, description } = data
-    const caption   = 'Советский магнитофон «Снежеть-202»'
-    const caption01 = 'Магнитофонная лента «Школьная».'
     const caption02 = 'Проигрыватель грампластинок «Вега-108».'
 </script>
 
-<Helper {title} {description} />
-
-<Figure {caption}>
-    <img {src} alt={caption}>
-</Figure>
+<Helper {title} {banner} {image} {description} />
 
 Время действия — 1982 год, мне 14, главные увлечениями ребят моего
 круга — популярная музыка и радиоэлектроника. Две эти сферы
@@ -271,10 +263,6 @@ description: Как я учился музыку любить.
 сильнее изнашивала, и качество звука не так хорошо сохраняла, да и
 «обсыпалась» быстрее. Однако это не сильно нас, тогдашних меломанов,
 расстраивало.
-
-<Figure caption={caption01}>
-    <img src={src01} alt={caption01}>
-</Figure>
 
 К концу моего обучения в техникуме монопольное влияние магнитофона на
 мое музыкальное развитие потеснил проигрыватель «Вега-108», купленный
