@@ -5,14 +5,11 @@ description: Как в «самой читающей стране в мире» 
 
 <script>
     import Helper from '$lib/components/Helper.svelte' 
-    import Figure from '$lib/components/Figure.svelte' 
-    import src    from './stimul.webp'
     export let data
     const { title, description, banner, image } = data
-    const caption = 'Позднесоветский приемный пункт вторсырья, где можно было обменять макулатуру на литературу.'
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {banner} {image} {description} />
 
 Магазины «Стимул» — уникальный социально-культурный советский феномен
 середины 1980-х. Тогда наше правительство почему-то озаботилось
@@ -24,10 +21,6 @@ description: Как в «самой читающей стране в мире» 
 пункты сети «Стимул» домашнее вторсырье, прежде всего макулатуру, а 
 взамен получают дефицитные книги. 
 Старой бумаги надо было сдать немало, за одну книгу килограмм 50.
-
-<Figure {caption}>
-    <img {src} alt={caption}>
-</Figure>
 
 В свободной продаже нормальных книг не было
 почти никаких, поэтому народ воспринял идею на ура. Очереди у этих
