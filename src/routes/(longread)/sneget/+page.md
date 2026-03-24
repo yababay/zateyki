@@ -8,7 +8,7 @@ description: Как я учился музыку любить.
     import Figure from '$lib/components/Figure.svelte' 
     import src02  from './vega-108.webp'
     export let data
-    const { title, description } = data
+    const { title, description, image, banner } = data
     const caption02 = 'Проигрыватель грампластинок «Вега-108».'
 </script>
 
