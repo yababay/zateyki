@@ -18,16 +18,16 @@ description: Места, где я жил и учился в родном гор
     import src10 from './img329.webp'
     export let data
     const { title, description, banner, image } = data
-    caption01 = 'Больница им. Семашко'
-    caption02 = 'Дом на ул. Чайковского'
-    caption03 = 'Дом на Московском проспекте'
-    caption04 = 'Двор на Московском проспекте'
-    caption05 = 'Магазин на Московском проспекте'
-    caption06 = 'Дом на улице Рыбинской'
-    caption07 = 'Церковь на улице Рыбинской'
-    caption08 = 'Школа №1'
-    caption09 = 'Школа №33'
-    caption10 = 'Школа №49'
+    const caption01 = 'Больница им. Семашко'
+    const caption02 = 'Дом на ул. Чайковского'
+    const caption03 = 'Дом на Московском проспекте'
+    const caption04 = 'Двор на Московском проспекте'
+    const caption05 = 'Магазин на Московском проспекте'
+    const caption06 = 'Дом на улице Рыбинской'
+    const caption07 = 'Церковь на улице Рыбинской'
+    const caption08 = 'Школа №1'
+    const caption09 = 'Школа №33'
+    const caption10 = 'Школа №49'
 </script>
 
 <Helper {title} {description} />
