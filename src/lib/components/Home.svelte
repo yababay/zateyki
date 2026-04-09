@@ -1,10 +1,14 @@
 <script>
 
     export let right = false
+    export let icon = 'house'
+    export let href = '/'
+    export let title = 'На главную'
+    const iconClass = `bi bi-${icon}`
 
 </script>
 
-<a href="/" title="На главную" class="link-secondary" class:go-right={right} class:go-left={!right}><i class="bi bi-house"></i></a>
+<a {href} {title} class="link-secondary" class:go-right={right} class:go-left={!right}><i class={iconClass}></i></a>
 
 <style lang="scss">
 
