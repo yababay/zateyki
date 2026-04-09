@@ -1,0 +1,19 @@
+svg circle.phisical:hover {
+  stroke: darkgray;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+svg circle.philosophical:hover {
+  stroke: orange;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+article, #timeline, #timeline svg {
+  width: 100%;
+}
+
+svg .philosophical {
+  fill: rgb(175, 117, 9)
+}
