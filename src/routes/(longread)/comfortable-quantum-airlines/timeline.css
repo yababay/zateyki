@@ -10,7 +10,7 @@ svg circle.philosophical:hover {
   cursor: pointer;
 }
 
-article, #timeline, #timeline svg {
+article, .timeline, .timeline svg {
   width: 100%;
 }
 

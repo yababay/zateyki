@@ -6,6 +6,7 @@ export type HistoricalEvent = {
     type?: HistoricalEventType
     note?: string
     link?: string
+    optional?: boolean
 }
 
 export type HistoricalEvents = HistoricalEvent[]

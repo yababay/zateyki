@@ -1,4 +1,5 @@
 import type { HistoricalEvent, HistoricalEvents, HistoricalStages } from './types'
+import colors_as_text from './colors.txt?raw'
 
 const HEADER_HEIGHT = 36
 const LINE_HEIGHT = 24
@@ -6,7 +7,15 @@ const SEMI_HEADER_HEIGHT = HEADER_HEIGHT / 2
 const SEMI_LINE_HEIGHT = LINE_HEIGHT / 2
 const STAPE_GAP = 12
 
-export const margin = { "top": 50, "right": 50, "bottom": 50, "left": 50 }
+const colors = colors_as_text.trim().split('\n').sort(() => Math.random() > .5 ? 1 : -1)
+
+export const getColor = () => {
+    const color = colors.shift() || 'silver'
+    colors.push(color)
+    return color
+}
+
+export const margin = { "top": 10, "right": 50, "bottom": 10, "left": 50 }
 
 const yMap = new Map<string, number>()
 const parentByChild = new Map<string, string>()

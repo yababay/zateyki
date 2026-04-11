@@ -1,16 +1,23 @@
 import * as d3 from 'd3'
-import { fillY, getY, margin, getHeight, isPhilosophical } from './util'
+import { fillY, getY, margin, getHeight, isPhilosophical, getColor } from './util'
 import type { HistoricalStages } from './types'
 import raw from './quantum-history.json?raw'
 
-export default (div: HTMLDivElement) => {
+let width = 0
+
+export default (div: HTMLDivElement, showOptional = false) => {
 
     const data = JSON.parse(raw) as HistoricalStages
     const { stages } = data
 
+    stages.forEach(stage => {
+        const { events } = stage
+        stage.events = events.filter(({optional}) => !optional || showOptional)
+    })
+
     fillY(data)
 
-    const width = div.clientWidth
+    if(!width) width = div.clientWidth // у скрытой схемы нулевая ширина, поэтому ориентируемся по наибольшей.
     const height = getHeight()
 
     const svg = d3.select(div)
@@ -19,10 +26,10 @@ export default (div: HTMLDivElement) => {
         .attr("height", height);
 
     const r = 5
-    const dx = 10 // gap
-    const dy = r // gap
+    const dx = 10
+    const dy = r
     const xPhisicalC = margin.left
-    const xPhilosophicalC = width - margin.left - 150
+    const xPhilosophicalC = width - margin.left - 200
     const links = new Array<string[]>() 
     
     stages.forEach(({name, events}) => {
@@ -57,8 +64,6 @@ export default (div: HTMLDivElement) => {
                 .append("title").text(note || '')
 
             g.append("text")
-                //.attr("y", getY(name))
-                //.attr("x", isPhil ? xPhilosophicalT : xPhisicalT)
                 .attr("dx", dx)
                 .attr("dy", dy)
                 .attr("width", 300)
@@ -66,25 +71,31 @@ export default (div: HTMLDivElement) => {
                 .text(`${name} (${year})`)
                 .style("font-size", "12px")
                 .classed(isPhil ? "philosophical" : "phisical", true)
-                //.append("title").text(note || '')
         })
+        
         links.forEach(([from, to]) => {
             const x = xPhilosophicalC - 8
             const x1 = x
-            const y1 = getY(from)// - 3
+            let y1 = getY(from)// - 3
             const x2 = x
-            const y2 = getY(to)// - 3
+            let y2 = getY(to)// - 3
+            if(y1 > y2) {
+                const y3 = y1
+                y1 = y2
+                y2 = y3
+            }
             const dx = x2 - x1;
             const dy = y2 - y1;
-            const dr = (width / 2) - Math.sqrt(dx * dx + dy * dy);
+            let dr = width * .3 - Math.sqrt(dx * dx + dy * dy);
             svg.append("path")
                 .attr("d", `M${x2},${y2} A${dr},${dr} 0 0,1 ${x1},${y1}`)
                 .attr("fill", "none")
-                .attr("stroke", "orange")
+                .attr("stroke", getColor())
                 .attr("stroke-width", 1.5)
-                .attr("stroke-dasharray", "4,4") // Делаем линию пунктирной
+                .attr("stroke-dasharray", "4,4")
                 .attr("opacity", 0.6)
-                .style("pointer-events", "none"); // Чтобы не мешала кликам по узлам
+                .style("pointer-events", "none");
         })
     })
+    console.log(links)
 }
