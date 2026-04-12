@@ -19,21 +19,17 @@ description: Лонгриды Михаила Белякова
 * [](//)
 * [](//)
 * [](//)
+* [](//)
+* [](//)
+* [](//)
+* [](//)
+* [](//)
+* [](//)
 -->
 
 ## Альтернативная история, хронология
 
 * [Локомотив альтернатив](/locomotiv-alternativ/)
-
-### Исторический Prolog
-
-* [Исторический Prolog](/istoriceskij-prolog/)
-* [Пушкин и саранча](/pushkin-i-sarancha/)
-* [Две Екатерины](/dve-ekateriny/)
-* [Витрувий, Беросс и другие фальсификаты](/vitruvij-in-vitro/)
-
-### Источники-заточники
-
 * [Источники-заточники](/istocniki-zatocniki/)
 * [Историческая шрапнель](/istoriceskaa-srapnel/)
 * [Хронологические инъекции](/hronologiceskie-inekcii/)
@@ -57,6 +53,20 @@ description: Лонгриды Михаила Белякова
 * [Канцелярские принадлежности Цезаря](/ulij-cezar-i-kancelarskie-prinadleznosti/)
 * [Гай Юлий Кейнсарь](/gaj-ulij-kejnsar/)
 * [Древнеримский Мойдодыр](/esli-topnu-a-nogou-pozovu-svoih-soldat/)
+* [Хронологические пасхалки](/hronologicheskie-pashalki/)
+* [Созвездие Дурака](/sozvezdie-duraka/)
+* [Идёт Иштар рогатая…](/ishtar-rogataya/)
+
+## История науки
+
+* [Комфортабельное квантовое путешествие](/comfortable-quantum-airlines/)
+
+### Исторический Prolog
+
+* [Исторический Prolog](/istoriceskij-prolog/)
+* [Пушкин и саранча](/pushkin-i-sarancha/)
+* [Две Екатерины](/dve-ekateriny/)
+* [Витрувий, Беросс и другие фальсификаты](/vitruvij-in-vitro/)
 
 ### Домен Краснобородых
 
@@ -166,6 +176,7 @@ description: Лонгриды Михаила Белякова
 * [Неглубокие предания неглубокой старины](/neglubokie-predania-neglubokoj-stariny/)
 * [Двое из дворца](/dvoe-iz-dvortsa/)
 * [Обнаруживая Ольгу](/obnarujivaya-olgu/)
+* [Два Николая](/dva-nikolaya/)
 
 ## Эхо русских революций
 
@@ -270,6 +281,7 @@ description: Лонгриды Михаила Белякова
 * [Верхотура Верхотурова](/verhoturov-art/)
 * [Дуэль Онегина с Бендером](/duel-onegina-s-benderom/)
 * [Жёлчный пролетариат](/proletariy-samoed/)
+* [Поколен-борода и ясны соколы](/pokolen-boroda/)
 
 <!--
 ## Диаграммы
@@ -333,9 +345,10 @@ description: Лонгриды Михаила Белякова
 * [Пол Маккартни и Вандербильдиха](/mrs-vanderbilt/)
 * [Царь Давид, Джузеппе Верди и Boney M](/rivers-of-babylon/)
 * [«Космомольцы»-добровольцы](/queen-39/)
-* [Ну дела, ночь была, Кёльн и Гамбург разбомбили мы до тла](/coming-in-on-a-wing-and-a-prayer/)
+* [Циничные бомбардировщики](/coming-in-on-a-wing-and-a-prayer/)
 * [Величайший русский секс-механизм](/rasputin-song/)
 * [Искушение мисс Пигги](/temptation-of-mrs-piggy/)
+* [Вспышка в ночи](/flash-in-the-night/)
 
 ## Curriculum vitæ
 
