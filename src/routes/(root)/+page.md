@@ -71,7 +71,7 @@ description: Лонгриды Михаила Белякова
 * [Монета Moneta](/moneta-moneta/)
 * [Маркс и подкустовый выползень](/karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](/my-stroili-stroili-a-zacem/)
-* [Откуда дровишки? (Обезлесенье Англии)](/deforestation/)
+* [Откуда дровишки? (Обезлесенье в Англии)](/deforestation/)
 
 ## История науки
 
