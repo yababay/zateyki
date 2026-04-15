@@ -56,6 +56,22 @@ description: Лонгриды Михаила Белякова
 * [Хронологические пасхалки](/hronologicheskie-pashalki/)
 * [Созвездие Дурака](/sozvezdie-duraka/)
 * [Идёт Иштар рогатая…](/ishtar-rogataya/)
+* [Подношение святому Янусу](/podnoshenie-svyatomu-yanusu/)
+* [1492 год как начало новой эры](/1492-god-kak-nacalo-novoj-ery/)
+* [Астерикс, Обеликс и анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/)
+* [Час на вычес](/chas-ches/)
+* [Жоашен дю Белле — поэт-руинист](/zoasen-du-belle-poet-ruinist/)
+* [Занимательное ословедение](/zanimatelnoe-oslovedenie/)
+* [Его принес сюда ледник!](/ego-prines-suda-lednik-s/)
+* [Анамиты и московиты](/anamity-i-moskovity/)
+* [ДВЦ рабочих и крестьян](/dvc-rabocih-i-krestan/)
+* [Гвоздь Беросса](/beross-kak-gvozd-oficialnoj-hronologii/)
+* [Балкон как моветон](/balkon-kak-moveton/)
+* […дык ёлы-палы, здравствуй, сестра!](/dyk-ely-paly-zdravstvuj-sestra/) 
+* [Монета Moneta](/moneta-moneta/)
+* [Маркс и подкустовый выползень](/karl-marks-i-podkustovyj-vypolzen-cast-1/)
+* [Мы строили, строили… А зачем?](/my-stroili-stroili-a-zacem/)
+* [Откуда дровишки? (Обезлесенье Англии)](/deforestation/)
 
 ## История науки
 
@@ -91,24 +107,6 @@ description: Лонгриды Михаила Белякова
 
 * [Кто такой Копьетряс](/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
 * [(Ана)хроники Вильяма Шекспира](/anahroniki-vilama-sekspira/)
-
-### Новая хронология
-
-* [Подношение святому Янусу](/podnoshenie-svyatomu-yanusu/)
-* [1492 год как начало новой эры](/1492-god-kak-nacalo-novoj-ery/)
-* [Астерикс, Обеликс и анахроникс](/asteriks-obeliks-i-hroniceskij-anahroniks/)
-* [Час на вычес](/chas-ches/)
-* [Жоашен дю Белле — поэт-руинист](/zoasen-du-belle-poet-ruinist/)
-* [Занимательное ословедение](/zanimatelnoe-oslovedenie/)
-* [Его принес сюда ледник!](/ego-prines-suda-lednik-s/)
-* [Анамиты и московиты](/anamity-i-moskovity/)
-* [ДВЦ рабочих и крестьян](/dvc-rabocih-i-krestan/)
-* [Гвоздь Беросса](/beross-kak-gvozd-oficialnoj-hronologii/)
-* [Балкон как моветон](/balkon-kak-moveton/)
-* […дык ёлы-палы, здравствуй, сестра!](/dyk-ely-paly-zdravstvuj-sestra/) 
-* [Монета Moneta](/moneta-moneta/)
-* [Маркс и подкустовый выползень](/karl-marks-i-podkustovyj-vypolzen-cast-1/)
-* [Мы строили, строили… А зачем?](/my-stroili-stroili-a-zacem/)
 
 ### Славяне «свои» и «чужие»
 

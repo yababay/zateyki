@@ -20,21 +20,17 @@ description: Лонгриды Михаила Белякова
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
 * [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
+* [](https://yababay.website.yandexcloud.net//)
 -->
 
 ## Альтернативная история, хронология
 
 * [Локомотив альтернатив](https://yababay.website.yandexcloud.net/locomotiv-alternativ/)
-
-### Исторический Prolog
-
-* [Исторический Prolog](https://yababay.website.yandexcloud.net/istoriceskij-prolog/)
-* [Пушкин и саранча](https://yababay.website.yandexcloud.net/pushkin-i-sarancha/)
-* [Две Екатерины](https://yababay.website.yandexcloud.net/dve-ekateriny/)
-* [Витрувий, Беросс и другие фальсификаты](https://yababay.website.yandexcloud.net/vitruvij-in-vitro/)
-
-### Источники-заточники
-
 * [Источники-заточники](https://yababay.website.yandexcloud.net/istocniki-zatocniki/)
 * [Историческая шрапнель](https://yababay.website.yandexcloud.net/istoriceskaa-srapnel/)
 * [Хронологические инъекции](https://yababay.website.yandexcloud.net/hronologiceskie-inekcii/)
@@ -58,6 +54,36 @@ description: Лонгриды Михаила Белякова
 * [Канцелярские принадлежности Цезаря](https://yababay.website.yandexcloud.net/ulij-cezar-i-kancelarskie-prinadleznosti/)
 * [Гай Юлий Кейнсарь](https://yababay.website.yandexcloud.net/gaj-ulij-kejnsar/)
 * [Древнеримский Мойдодыр](https://yababay.website.yandexcloud.net/esli-topnu-a-nogou-pozovu-svoih-soldat/)
+* [Хронологические пасхалки](https://yababay.website.yandexcloud.net/hronologicheskie-pashalki/)
+* [Созвездие Дурака](https://yababay.website.yandexcloud.net/sozvezdie-duraka/)
+* [Идёт Иштар рогатая…](https://yababay.website.yandexcloud.net/ishtar-rogataya/)
+* [Подношение святому Янусу](https://yababay.website.yandexcloud.net/podnoshenie-svyatomu-yanusu/)
+* [1492 год как начало новой эры](https://yababay.website.yandexcloud.net/1492-god-kak-nacalo-novoj-ery/)
+* [Астерикс, Обеликс и анахроникс](https://yababay.website.yandexcloud.net/asteriks-obeliks-i-hroniceskij-anahroniks/)
+* [Час на вычес](https://yababay.website.yandexcloud.net/chas-ches/)
+* [Жоашен дю Белле — поэт-руинист](https://yababay.website.yandexcloud.net/zoasen-du-belle-poet-ruinist/)
+* [Занимательное ословедение](https://yababay.website.yandexcloud.net/zanimatelnoe-oslovedenie/)
+* [Его принес сюда ледник!](https://yababay.website.yandexcloud.net/ego-prines-suda-lednik-s/)
+* [Анамиты и московиты](https://yababay.website.yandexcloud.net/anamity-i-moskovity/)
+* [ДВЦ рабочих и крестьян](https://yababay.website.yandexcloud.net/dvc-rabocih-i-krestan/)
+* [Гвоздь Беросса](https://yababay.website.yandexcloud.net/beross-kak-gvozd-oficialnoj-hronologii/)
+* [Балкон как моветон](https://yababay.website.yandexcloud.net/balkon-kak-moveton/)
+* […дык ёлы-палы, здравствуй, сестра!](https://yababay.website.yandexcloud.net/dyk-ely-paly-zdravstvuj-sestra/) 
+* [Монета Moneta](https://yababay.website.yandexcloud.net/moneta-moneta/)
+* [Маркс и подкустовый выползень](https://yababay.website.yandexcloud.net/karl-marks-i-podkustovyj-vypolzen-cast-1/)
+* [Мы строили, строили… А зачем?](https://yababay.website.yandexcloud.net/my-stroili-stroili-a-zacem/)
+* [Откуда дровишки? (Обезлесенье Англии)](https://yababay.website.yandexcloud.net/deforestation/)
+
+## История науки
+
+* [Комфортабельное квантовое путешествие](https://yababay.website.yandexcloud.net/comfortable-quantum-airlines/)
+
+### Исторический Prolog
+
+* [Исторический Prolog](https://yababay.website.yandexcloud.net/istoriceskij-prolog/)
+* [Пушкин и саранча](https://yababay.website.yandexcloud.net/pushkin-i-sarancha/)
+* [Две Екатерины](https://yababay.website.yandexcloud.net/dve-ekateriny/)
+* [Витрувий, Беросс и другие фальсификаты](https://yababay.website.yandexcloud.net/vitruvij-in-vitro/)
 
 ### Домен Краснобородых
 
@@ -82,24 +108,6 @@ description: Лонгриды Михаила Белякова
 
 * [Кто такой Копьетряс](https://yababay.website.yandexcloud.net/iz-za-lesa-iz-za-gor-pokazal-muzik-kope/)
 * [(Ана)хроники Вильяма Шекспира](https://yababay.website.yandexcloud.net/anahroniki-vilama-sekspira/)
-
-### Новая хронология
-
-* [Подношение святому Янусу](https://yababay.website.yandexcloud.net/podnoshenie-svyatomu-yanusu/)
-* [1492 год как начало новой эры](https://yababay.website.yandexcloud.net/1492-god-kak-nacalo-novoj-ery/)
-* [Астерикс, Обеликс и анахроникс](https://yababay.website.yandexcloud.net/asteriks-obeliks-i-hroniceskij-anahroniks/)
-* [Час на вычес](https://yababay.website.yandexcloud.net/chas-ches/)
-* [Жоашен дю Белле — поэт-руинист](https://yababay.website.yandexcloud.net/zoasen-du-belle-poet-ruinist/)
-* [Занимательное ословедение](https://yababay.website.yandexcloud.net/zanimatelnoe-oslovedenie/)
-* [Его принес сюда ледник!](https://yababay.website.yandexcloud.net/ego-prines-suda-lednik-s/)
-* [Анамиты и московиты](https://yababay.website.yandexcloud.net/anamity-i-moskovity/)
-* [ДВЦ рабочих и крестьян](https://yababay.website.yandexcloud.net/dvc-rabocih-i-krestan/)
-* [Гвоздь Беросса](https://yababay.website.yandexcloud.net/beross-kak-gvozd-oficialnoj-hronologii/)
-* [Балкон как моветон](https://yababay.website.yandexcloud.net/balkon-kak-moveton/)
-* […дык ёлы-палы, здравствуй, сестра!](https://yababay.website.yandexcloud.net/dyk-ely-paly-zdravstvuj-sestra/) 
-* [Монета Moneta](https://yababay.website.yandexcloud.net/moneta-moneta/)
-* [Маркс и подкустовый выползень](https://yababay.website.yandexcloud.net/karl-marks-i-podkustovyj-vypolzen-cast-1/)
-* [Мы строили, строили… А зачем?](https://yababay.website.yandexcloud.net/my-stroili-stroili-a-zacem/)
 
 ### Славяне «свои» и «чужие»
 
@@ -167,6 +175,7 @@ description: Лонгриды Михаила Белякова
 * [Неглубокие предания неглубокой старины](https://yababay.website.yandexcloud.net/neglubokie-predania-neglubokoj-stariny/)
 * [Двое из дворца](https://yababay.website.yandexcloud.net/dvoe-iz-dvortsa/)
 * [Обнаруживая Ольгу](https://yababay.website.yandexcloud.net/obnarujivaya-olgu/)
+* [Два Николая](https://yababay.website.yandexcloud.net/dva-nikolaya/)
 
 ## Эхо русских революций
 
@@ -271,6 +280,7 @@ description: Лонгриды Михаила Белякова
 * [Верхотура Верхотурова](https://yababay.website.yandexcloud.net/verhoturov-art/)
 * [Дуэль Онегина с Бендером](https://yababay.website.yandexcloud.net/duel-onegina-s-benderom/)
 * [Жёлчный пролетариат](https://yababay.website.yandexcloud.net/proletariy-samoed/)
+* [Поколен-борода и ясны соколы](https://yababay.website.yandexcloud.net/pokolen-boroda/)
 
 <!--
 ## Диаграммы
@@ -288,9 +298,106 @@ description: Лонгриды Михаила Белякова
 * [Убийство Павла I](https://yababay.website.yandexcloud.net/diagram/ubiystvo-pavla-i)
 -->
 
+
+## ABBA, о чем ваши песни? (Angry ABBA)
+
+Скандинавия дала миру два великих нематериальных актива - шведскую
+музыкальную группу `ABBA` и финскую компьютерная игру `Angry Birds`.
+Объединение этих названий в `angry-abba` хорошо отражает тематику [сайта](https://yababay.website.yandexcloud.nethttps://yababay.github.io/angry-abba/),
+который я создал в 2023 г. Песни `ABBA` не всегда про любовь и
+радость. Этот факт долгое время оставался вне моего внимания, но
+случайный просмотр одного старого клипа стал толчком к тому, чтобы
+перевести с английского несколько их текстов и испытать сильное
+удивление. Оказалось, что некоторые песни `ABBA` представляют собой
+достаточно глубокие произведения с отсылками к философскому и
+историческому наследию. Есть в них и тревога за завтрашний день, и
+другие совсем неожиданные темы…
+
+В общем, получился небольшой цикл эссе:
+
+* [Слова не для всех (введение)](https://yababay.website.yandexcloud.net/angry-abba-intro/)
+* [Без умолку безумная девица…](https://yababay.website.yandexcloud.net/bez-umolku-bezumnaya-devica/)
+* [Иудушка и девчуля](https://yababay.website.yandexcloud.net/iudushka-i-chiksa/)
+* [Fernando, или бойцы вспоминают минувшие дни](https://yababay.website.yandexcloud.net/fernando-ili-bojcy-vspominayut-minuvshie-dni/)
+* [Happy New Дивный Новый Мир](https://yababay.website.yandexcloud.net/happy-new-year/)
+* [Песня Тигрули](https://yababay.website.yandexcloud.net/pesnya-tigruli/)
+* [Светят фонари в лицо недобро](https://yababay.website.yandexcloud.net/super-trouper/)
+* [Маня и money](https://yababay.website.yandexcloud.net/money-money/)
+* [Маленькая, но гордая птичка](https://yababay.website.yandexcloud.net/eagle/)
+* [Алёнка-разведёнка](https://yababay.website.yandexcloud.net/alenka-razvedenka/)
+* [Hominem quaero, или мысли о женишках](https://yababay.website.yandexcloud.net/gimme-gimme/)
+* [Заколдованные мальчики и девочки](https://yababay.website.yandexcloud.net/the-piper/)
+
+Бонус-треки: не только ABBA
+
+Парадоксальные тексты песен свойственны и произведениям других
+популярных исполнителей, мелодии которых звучат, если опираться на
+первое впечатление, как развлекательные. Думаю, не стоит заводить для
+каждого такого случая отдельный сайт, поэтому свои переводы таких песен
+буду публиковать здесь.
+
+* [Да разве это жизнь?](https://yababay.website.yandexcloud.net/elo-life-meant-to-be/)
+* [Заезжий зануда](https://yababay.website.yandexcloud.net/sting-englishman/)
+* [А мог и ножичком пырнуть](https://yababay.website.yandexcloud.net/mack-the-knife/)
+* [Кровожадная Ассоль](https://yababay.website.yandexcloud.net/assol/)
+* [На свадьбе у гопников](https://yababay.website.yandexcloud.net/mia-wallece/)
+* [Пол Маккартни и Вандербильдиха](https://yababay.website.yandexcloud.net/mrs-vanderbilt/)
+* [Царь Давид, Джузеппе Верди и Boney M](https://yababay.website.yandexcloud.net/rivers-of-babylon/)
+* [«Космомольцы»-добровольцы](https://yababay.website.yandexcloud.net/queen-39/)
+* [Циничные бомбардировщики](https://yababay.website.yandexcloud.net/coming-in-on-a-wing-and-a-prayer/)
+* [Величайший русский секс-механизм](https://yababay.website.yandexcloud.net/rasputin-song/)
+* [Искушение мисс Пигги](https://yababay.website.yandexcloud.net/temptation-of-mrs-piggy/)
+* [Вспышка в ночи](https://yababay.website.yandexcloud.net/flash-in-the-night/)
+
 ## Curriculum vitæ
 
+Американский актер Энтони Хопкинс в качестве обоев рабочего стола на своем персональном компьютере установил собственную детскую фотографию. «Мы справились, малыш», — говорит 82–летний мэтр, глядя на нее. Мне до такого еще далеко, но некоторые промежуточные итоги своей жизни хочется подвести уже сейчас. Этот путь не был блестящим, скорее наоборот, и все-таки вспомнить есть что. За несколько десятилетий, в которые мне довелось жить, с нашей страной случилось столько удивительного, поэтому вот, вашему вниманию несколько текстов, написанных в разное время.
+
+* [Автобиография](https://yababay.website.yandexcloud.net/autobiography/)
 * [История кота Зухеля](https://yababay.website.yandexcloud.net/zyxel-the-cat/)
+* [Nihil humanitatum](https://yababay.website.yandexcloud.net/humanitatum/)
+* [IT's my life](https://yababay.website.yandexcloud.net/it-is-my-life/)
+* [Мой персональный Ярославль](https://yababay.website.yandexcloud.net/personal-yaroslavl/)
+* [Розанов и кофточки](https://yababay.website.yandexcloud.net/rozanov-i-koftochki/)
+* [Моя «Снежеть»](https://yababay.website.yandexcloud.net/sneget/)
+* [Книжки — моё хобби. Я люблю их обе](https://yababay.website.yandexcloud.net/stimul/)
 * [Как расстаться с комсомолом](https://yababay.website.yandexcloud.net/kak-rasstatsa-s-komsomolom/)
+* [Гравюры Спартака Глушкова](https://yababay.website.yandexcloud.net/spartak-glushkow/)
+
+Не все события своей биографии можно изложить от первого лица. Для таких случаев придуман альтерэго Валера, живущий в вымышленном мире, очень похожем на наш. Все совпадения с реальными личностями и событиями случайны.
+
+* [В котельной](https://yababay.website.yandexcloud.net/steamshop/)
+* [Фазенда](https://yababay.website.yandexcloud.net/fazenda/)
+* [Инвесторы](https://yababay.website.yandexcloud.net/investors/)
+* [Справочник](https://yababay.website.yandexcloud.net/handbook/)
+
+<!-- * [С белой ручки не стряхнешь](https://yababay.website.yandexcloud.net/articles/marriage) -->
+
+<!--
+## Автобиографические записки
 * [«Эль Ниньо» над Ярославлем](https://yababay.website.yandexcloud.net/yar-myateg/)
 * [«Опа, опа, зеленая ограда», или Требую тишины](https://yababay.website.yandexcloud.net/tishina/)
+
+В этом разделе собраны тексты, написанные от первого лица.
+
+* [Автобиография](https://yababay.website.yandexcloud.net/articles/autobiography-short)
+* [Моя «Снежеть»](https://yababay.website.yandexcloud.net/articles/sneget)
+* [Nihil humanitatum](https://yababay.website.yandexcloud.net/articles/humanitatum)
+* [Книжки - мое хобби](https://yababay.website.yandexcloud.net/articles/stimul)
+* [Розанов и кофточки](https://yababay.website.yandexcloud.net/articles/rozanov)
+* [Мой персональный Ярославль](https://yababay.website.yandexcloud.net/articles/personal-yaroslavl)
+* [Гравюры Спартака Глушкова](https://yababay.website.yandexcloud.net/articles/spartak-glushkov)
+* [История кота Зухеля](https://yababay.website.yandexcloud.net/articles/zyxel)
+* [IT's my life](https://yababay.website.yandexcloud.net/articles/its-my-life)
+
+## Валериада
+
+Не все события своей биографии можно изложить от первого лица. Для таких случаев придуман альтерэго Валера, живущий в вымышленном мире, очень похожем на наш. Все совпадения с реальными личностями и событиями случайны.
+
+* [Инвесторы](https://yababay.website.yandexcloud.net/articles/investors)
+* [Справочник](https://yababay.website.yandexcloud.net/articles/handbook)
+* [С белой ручки не стряхнешь](https://yababay.website.yandexcloud.net/articles/marriage)
+* [Фазенда](https://yababay.website.yandexcloud.net/articles/fazenda)
+* [В котельной](https://yababay.website.yandexcloud.net/articles/steamshop)
+
+-->
