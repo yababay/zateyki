@@ -72,11 +72,13 @@ description: Лонгриды Михаила Белякова
 * [Монета Moneta](https://yababay.website.yandexcloud.net/moneta-moneta/)
 * [Маркс и подкустовый выползень](https://yababay.website.yandexcloud.net/karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](https://yababay.website.yandexcloud.net/my-stroili-stroili-a-zacem/)
-* [Откуда дровишки? (Обезлесенье Англии)](https://yababay.website.yandexcloud.net/deforestation/)
+* [Откуда дровишки? (Обезлесенье в Англии)](https://yababay.website.yandexcloud.net/deforestation/)
 
 ## История науки
 
 * [Комфортабельное квантовое путешествие](https://yababay.website.yandexcloud.net/comfortable-quantum-airlines/)
+* Краткая история логики:
+    [ГЛАВА 1](https://yababay.website.yandexcloud.net/holland-book-01/). Марксова термодинамика, или Банкротство диалектической логики<br>
 
 ### Исторический Prolog
 
