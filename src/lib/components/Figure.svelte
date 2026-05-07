@@ -12,7 +12,7 @@
 <figure class="text-center">
 	<slot />
 	{#if caption}
-		<figcaption class="w-100 mt-3 d-flex align-items-center justify-content-between gap-3" style="--figcaption-color: #777;">
+		<figcaption class="w-100 mt-3 d-flex align-items-center justify-content-between gap-3">
 			<p class="m-0 p-0 text-start">
 				<i class="bi bi-arrow-bar-up"></i>&nbsp;{caption}
 			</p>
@@ -52,11 +52,5 @@
 		position: fixed;
 		left: 0;
 		top: 0;
-	}
-
-	figcaption {
-        padding-inline: 5ch;
-        text-align: center;
-		color: var(--figcaption-color);
 	}
 </style>

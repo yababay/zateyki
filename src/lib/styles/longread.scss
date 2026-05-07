@@ -49,3 +49,15 @@ main {
         color: $blockquote-color;
     }
 }
+
+$figcaption-color: #777;
+
+figcaption {
+    padding-inline: 5ch;
+    text-align: center;
+    color: var(--figcaption-color);
+}
+
+article h1 {
+    display: none
+}

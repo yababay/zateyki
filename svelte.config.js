@@ -21,8 +21,8 @@ const config = {
 		}
 	},
 
-	preprocess: [mdsvex({ extensions: ['.md', '.svx'] })],
-	extensions: ['.svelte', '.svx', '.md']
+	extensions: ['.svelte', '.svx', '.mdx', '.md'],
+	preprocess: [mdsvex({ extensions: ['.md', '.svx', '.mdx'] })],
 };
 
 export default config;

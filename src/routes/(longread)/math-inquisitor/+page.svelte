@@ -1,9 +1,38 @@
----
-title: title
-description: description
----
+<script lang="ts">
+    import { onMount } from 'svelte'
+    import Helper from '$lib/components/Helper.svelte' 
+    import Story from './story.md'
+    
+    export let data: {sources: string[], title: string, description: string, banner: string, image: string}
 
-<script>
+    const { title, description, banner, image, sources } = data
+
+    onMount(() => {
+        const images = Array.from(document.querySelectorAll('img') as NodeListOf<HTMLImageElement>)
+        images
+        .filter(img => img.id !== 'banner')
+        .forEach((img, i) => {
+            const { alt } = img
+            const parent = img.parentElement
+            if(!parent) return
+            const figure = document.createElement('figure')
+            parent.insertBefore(figure, img)
+            const caption = document.createElement('figcaption')
+            const update = parent.removeChild(img)
+            update.src = sources[i]
+            caption.textContent = alt
+            figure.appendChild(update)
+            figure.appendChild(caption)
+        })
+    })
+</script>
+
+<Helper {title} {description} {banner} {image} />
+
+<Story />
+
+
+<!-- script>
     import Helper from '$lib/components/Helper.svelte' 
     // import Figure from '$lib/components/Figure.svelte' 
     // import Footnote from '$lib/components/Footnote.svelte' 
@@ -25,7 +54,7 @@ description: description
     //const caption05 = ''
 </script>
 
-<Helper {title} {description} />
+<Helper {title} {description} / -->
 
 <!--
 
@@ -58,3 +87,5 @@ description: description
 </Figure>
 
 -->
+
+

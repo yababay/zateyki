@@ -7,11 +7,11 @@
 <Head {title} {description} {canonical} {image} />
 
 <slot>
-    <img src={banner || _banner} alt="banner" class="d-none">
+    <img src={banner || _banner} alt="banner" class="d-none" id="banner">
 </slot>
 
 {#if image}
-    <img src={image} alt={title} >
+    <img src={image} alt={title} id="banner">
 {/if}
 
 {#if canonical}
