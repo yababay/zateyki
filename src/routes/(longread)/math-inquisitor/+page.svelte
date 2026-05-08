@@ -1,15 +1,17 @@
 <script lang="ts">
-    import { onMount } from 'svelte'
+    import { onMount, mount } from 'svelte'
+    import { render } from 'katex'
     import Helper from '$lib/components/Helper.svelte' 
+    import Katex from '$lib/components/Katex.svelte' 
     import Story from './story.md'
     
-    export let data: {sources: string[], title: string, description: string, banner: string, image: string}
+    export let data: {formulas: string[], sources: string[], title: string, description: string, banner: string, image: string}
 
-    const { title, description, banner, image, sources } = data
+    const { title, description, banner, image, sources, formulas } = data
 
     onMount(() => {
-        const images = Array.from(document.querySelectorAll('img') as NodeListOf<HTMLImageElement>)
-        images
+
+        Array.from(document.querySelectorAll('img') as NodeListOf<HTMLImageElement>)
         .filter(img => img.id !== 'banner')
         .forEach((img, i) => {
             const { alt } = img
@@ -23,6 +25,19 @@
             caption.textContent = alt
             figure.appendChild(update)
             figure.appendChild(caption)
+        })
+
+        Array.from(document.querySelectorAll('pre.language-latex') as NodeListOf<HTMLPreElement>)
+        .forEach((pre, i) => {
+            const parent = pre.parentElement
+            if(!parent) return
+            const div = document.createElement('div')
+            parent.replaceChild(div, pre)
+            div.classList.add('mt-3')
+            div.classList.add('mb-3')
+            div.classList.add('text-center')
+            render(formulas[i], div)
+            //mount(Katex, {target: div, props: {formula: formulas[i]}})
         })
     })
 </script>

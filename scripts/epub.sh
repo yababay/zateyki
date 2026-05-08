@@ -6,4 +6,6 @@ set_envs
 
 cd $CURRENT_DIR
 
-pandoc story.md -o ../../../../build/$CURRENT_BRANCH.epub
+cat story.md | awk -f ../../../../scripts/latex.awk > /tmp/story.md
+
+pandoc /tmp/story.md -o ~/Documents/$CURRENT_BRANCH.epub

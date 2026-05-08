@@ -7,5 +7,13 @@ import image from './image.webp'
 const sources = [ src01 ]
 
 export const load = () => {
-    return { ...extractMdxMeta(page), sources,  image, banner  }
+
+    const formulas = page.split('```latex')
+    .map(el => {
+        const [ _, f ] = /^\$\$([^\$]+)\$\$/mg.exec(el) || []
+        return (f || '').trim()
+    })
+    .filter(f => !!f)
+
+    return { ...extractMdxMeta(page), sources,  image, banner, formulas  }
 }
