@@ -1,13 +1,17 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
-//import remarkMath from 'remark-math';
-//import rehypeKatex from 'rehype-katex-svelte';
+import rehypeFigure from './rehype-figure.js';
+import remarkMath from 'remark-math';
+import rehypeKatexSvelte from 'rehype-katex-svelte';
 
 const mdsvexConfig = {
 	extensions: ['.md'],
-	//remarkPlugins: [remarkMath],
-	//rehypePlugins: [rehypeKatex]
-};
+	remarkPlugins: [remarkMath],
+	rehypePlugins: [
+		rehypeKatexSvelte,
+		rehypeFigure, 
+	]
+}; 
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

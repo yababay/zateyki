@@ -11,7 +11,12 @@ export const extractMdxMeta = (page: string) => {
         return line.replace(toFind, '').trim()
     }
 
-    const title = getMeta('title')
+    const titleReg = /^#\s+(.*)$/
+    const titleLine = page.split(/[\r\n]+/)
+    .find(line => /^#\s+/.test(line)) || '# hz title'
+    console.log('title is not found')
+
+    const title = (titleReg.exec(titleLine) || ['no title found'])[1]
     const description = getMeta('description') 
     const canonical = getMeta('canonical') 
     return { title, description, canonical }

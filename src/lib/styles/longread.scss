@@ -54,10 +54,16 @@ $figcaption-color: #777;
 
 figcaption {
     padding-inline: 5ch;
+    padding-block: 1rem;
     text-align: center;
-    color: var(--figcaption-color);
+    color: $figcaption-color;
+    font-size: smaller;
 }
 
-article h1 {
+figcaption::before {
+    content: '↑ ';
+}
+
+article h1, pre.language-latex-1 {
     display: none
 }
