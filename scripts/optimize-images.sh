@@ -1,10 +1,9 @@
 #!/bin/bash
 
-DIR=`find 'src/routes/(longread)' -type d | tail -n 1` 
+. scripts/functions.sh
 
-npx image-transmutation --run --sourceFolder "$DIR" --targetFolder "$DIR" --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'webp'
+set_envs
 
-# find "$DIR" -name *.png -exec rm {} \;
+mkdir -p "static/$CURRENT_BRANCH"
 
-sed 's/\/\/\ //;s/\/\*//;s/\*\///' -i "$DIR/+page.ts"
-sed 's/{title}\ {description}/{title}\ {banner}\ {image}\ {description}/' -i "$DIR/+page.md"
+npx image-transmutation --run --sourceFolder "$CURRENT_DIR" --targetFolder "static/$CURRENT_BRANCH" --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'webp'
