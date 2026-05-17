@@ -77,8 +77,12 @@ description: Лонгриды Михаила Белякова
 ## История науки
 
 * [Комфортабельное квантовое путешествие](https://yababay.website.yandexcloud.net/comfortable-quantum-airlines/)
+* [Ахиллес и черепаха-мозгоед](https://yababay.website.yandexcloud.net/tortoise-and-achilles/)
 * Краткая история логики:
-    [ГЛАВА 1](https://yababay.website.yandexcloud.net/holland-book-01/). Марксова термодинамика, или Банкротство диалектической логики<br>
+    [ГЛАВА I](https://yababay.website.yandexcloud.net/holland-book-01/).   Марксова термодинамика, или Банкротство диалектической логики<br>
+    [ГЛАВА II](https://yababay.website.yandexcloud.net/holland-book-02/).  Архитекторы Порядка, или 1 + 1 = 362<br>
+    [ГЛАВА III](https://yababay.website.yandexcloud.net/holland-book-03/). Эдипы XX века<br>
+    [ГЛАВА IV](https://yababay.website.yandexcloud.net/holland-book-04/).  Эрнст Мах наносит ответный удар<br>
 
 ### Исторический Prolog
 
