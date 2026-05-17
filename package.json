@@ -9,7 +9,7 @@
 		"build": "vite build",
 		"postbuild": "./scripts/aws-sync.sh",
 		"readme":  "./scripts/readme.sh",
-		"article:create": "git checkout temptate && npm run git:create",
+		"article:create": "git checkout template && npm run git:create",
 		"article:edit":    "./scripts/checkout.sh",
 		"git:local": "npm run readme && read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT",
 		"git:remote": "git push origin main",
