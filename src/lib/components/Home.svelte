@@ -12,7 +12,8 @@
         display: block;
         position: fixed;
         top: .7rem;
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        z-index: 20;
     }
     
     .go-left {
@@ -21,6 +22,12 @@
     
     .go-right {
         right: 1rem;
+    }
+
+    @media (max-width: 640px) {
+        a {
+            top: .5rem;
+        }
     }
     
 </style>

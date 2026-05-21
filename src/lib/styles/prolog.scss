@@ -1,6 +1,7 @@
 pre {
     border: 1px dashed silver;
     margin-top: 1rem;
+    overflow-x: auto;
 }
 
 .notebook em {
@@ -12,4 +13,18 @@ code.result {
     padding-block: .2rem;
     padding-inline: .2rem;
     margin-inline: .2rem;
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    pre {
+        font-size: 0.95rem;
+    }
+
+    code.result {
+        padding-inline: .15rem;
+        padding-block: .15rem;
+    }
 }
