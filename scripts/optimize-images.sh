@@ -4,6 +4,18 @@
 
 set_envs
 
-mkdir -p "static/$CURRENT_BRANCH"
+STAT_DIR="static/$CURRENT_BRANCH"
+BNR="$STAT_DIR/banner.webp"
+IMG="$STAT_DIR/image.webp"
 
-npx image-transmutation --run --sourceFolder "$CURRENT_DIR" --targetFolder "static/$CURRENT_BRANCH" --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'webp'
+mkdir -p $STAT_DIR
+
+npx image-transmutation --run --sourceFolder "$CURRENT_DIR" --targetFolder $STAT_DIR --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'webp'
+
+if [ -f "$BNR" ]; then
+    mv "$BNR" "$CURRENT_DIR"
+fi
+
+if [ -f "$IMG" ]; then
+    mv "$IMG" "$CURRENT_DIR"
+fi

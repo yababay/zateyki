@@ -6,16 +6,14 @@
 	"scripts": {
 		"bro": "BROWSER=firefox vite dev --open",
 		"dev": "vite dev",
-		"img": "./scripts/optimize-images.sh",
 		"build": "vite build",
-		"postbuild": "npm run sync",
-		"sync": "./scripts/aws-sync.sh",
-		"epub": "./scripts/epub.sh",
-		"git:create": "read -p 'Введите имя пути: ' SLUG && git checkout -b $SLUG && mv 'src/routes/(longread)/template' 'src/routes/(longread)'/$SLUG",
+		"postbuild": "./scripts/aws-sync.sh",
+		"article:img": "./scripts/optimize-images.sh",
+		"article:create": "read -p 'Введите имя пути: ' SLUG && git checkout -b $SLUG && mv 'src/routes/(longread)/template' 'src/routes/(longread)'/$SLUG",
+		"article:epub": "./scripts/epub.sh",
 		"git:local": "read -p 'Суть коммита: ' COMMIT; git add . ; git commit -am $COMMIT",
 		"git:remote": "git push origin template",
 		"git:return": "./scripts/git-return.sh",
-		"git:page": "./scripts/cat-page.sh",
 		"git": "npm run git:local && npm run git:remote"
 	},
 	"devDependencies": {
