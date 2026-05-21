@@ -52,6 +52,10 @@ main {
 
 $figcaption-color: #777;
 
+figure {
+    text-align: center;
+}
+
 figcaption {
     padding-inline: 5ch;
     padding-block: 1rem;
