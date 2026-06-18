@@ -4,8 +4,6 @@
 
 set_envs
 
-cd $CURRENT_DIR
+mkdir -p "$STATIC_DIR"
 
-cat story.md | awk -f ../../../../scripts/latex.awk > /tmp/story.md
-
-pandoc /tmp/story.md -o ~/Documents/$CURRENT_BRANCH.epub
+pandoc "$CURRENT_DIR/+page.md" -o "STATIC_DIR/book.epub"
