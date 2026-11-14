@@ -1,0 +1,11 @@
+{
+  "promptDelete": false,
+  "trashOption": "none",
+  "attachmentFolderPath": "./",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_drafts",
+  "userIgnoreFilters": [
+    "_templates/",
+    "koteg.jpg"
+  ]
+}

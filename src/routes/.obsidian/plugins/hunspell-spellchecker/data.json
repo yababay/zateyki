@@ -1,0 +1,16 @@
+{
+  "activeLanguage": "ru_RU",
+  "languages": [
+    {
+      "id": "ru_RU",
+      "name": "Russian (Russia)",
+      "affPath": "languages/ru_RU.aff",
+      "dicPath": "languages/ru_RU.dic"
+    }
+  ],
+  "enabled": true,
+  "checkCodeblocks": false,
+  "languageCache": {},
+  "languageCacheVersion": 0,
+  "lastFetch": 0
+}

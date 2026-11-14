@@ -1,15 +1,26 @@
 <script lang="ts">
 
     import { onMount } from "svelte"
+    import { headState } from "#lib/stores/head.svelte.ts";
+
+    let header = $state<HTMLElement | null>(null)
+    let title = $derived(headState.title) //$state<HTMLSpanElement | null>(null)
+    let hiddenShield = $state(false)
+    let hiddenTitle  = $state(false)
+    let hiddenHolder  = $state(false)
 
     onMount(async () => {
-        const img = document.querySelector('img')
+        /*const img = document.querySelector('#banner img') as HTMLImageElement
+        window.onload = function() { 
+        if(title) title.textContent = document.title
+        };
         if(!img) return
         const onImageLoaded = () => {
-            if(!(img && header)) return
-            header.style.backgroundImage = `url("${img.src}")`
-            hiddenShield = true
             setTimeout(() => {
+                if(!(img && header)) return
+                //console.log('img src = ', img.src)
+                header.style.backgroundImage = `url("${img.src}")`
+                hiddenShield = true
                 hiddenHolder = false
                 setTimeout(() => {
                     if(!title) return
@@ -25,27 +36,21 @@
             return
         }
         img.addEventListener('load', onImageLoaded)
+        */
     })
-
-    let header = $state<HTMLElement | null>(null)
-    let title = $state<HTMLSpanElement | null>(null)
-    let hiddenShield = $state(false)
-    let hiddenTitle  = $state(false)
-    let hiddenHolder  = $state(false)
-
 </script>
 
 <header bind:this={header}>
     <div class="w-100 h-100 d-flex justify-content-center align-items-center" class:d-none={hiddenHolder}>
         <p class:shown-title={!hiddenTitle} class:hidden-title={hiddenTitle}>
-            <i class="bi bi-align-end"></i><span bind:this={title}></span><i class="bi bi-align-start"></i>
+            <i class="bi bi-align-end"></i><span bind:textContent={title} contenteditable="false"></span><i class="bi bi-align-start"></i>
         </p>
     </div>
-    <div class="w-100 h-100 d-flex justify-content-center align-items-center" class:shown-shield={!hiddenShield} class:hidden-shield={hiddenShield} class:d-none={!hiddenHolder}>
+    <!--div class="w-100 h-100 d-flex justify-content-center align-items-center" class:shown-shield={!hiddenShield} class:hidden-shield={hiddenShield} class:d-none={!hiddenHolder}>
         <div  class="spinner-border text-secondary">
             <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
+    </div -->
 </header>
 
 <style lang="scss">

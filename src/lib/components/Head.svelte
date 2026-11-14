@@ -1,10 +1,30 @@
 <script lang="ts">
 	import favicon from '#lib/assets/favicon.svg';
-    import banner  from '#lib/assets/barny-banner.png'
-   	let { title = '', description = '', canonical = '', image = '', src = undefined } = $props()
-</script>
+    import src from '#lib/assets/barny-banner.png'
+    import { headState } from '#lib/stores/head.svelte.ts';
+    import { onMount } from 'svelte';
 
-<img src={src || banner} alt={title} class="d-none">
+   	let { title = '', description = '', canonical = '', image = '', banner } = $props()
+
+    let imageProvider = $state<HTMLElement | null>(null)
+
+    onMount(() => {
+        headState.title = title
+        if(!imageProvider) return
+        const header = document.querySelector('header') as HTMLImageElement
+        const img = imageProvider.querySelector('img')
+        if(!img) return
+        header.style.backgroundImage = `url("${img.src}")`
+    })
+</script>
+  
+<div class="d-none" bind:this={imageProvider}>
+    {#if banner}
+        {@render banner()}
+    {:else}
+        <img {src} alt="banner">
+    {/if}
+</div>
 
 <svelte:head>
     {#if canonical}
