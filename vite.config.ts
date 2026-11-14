@@ -17,7 +17,12 @@ export default defineConfig({
 			}),
 			paths: {
 				base: process.argv.includes('dev') ? '' : '/zateyki'
-			},			preprocess: [
+			},		
+			prerender: {
+				handleHttpError: 'ignore',
+				crawl: false
+			},	
+			preprocess: [
 				mdsvex({ extensions: ['.svx', '.md'] }),
 				vitePreprocess()
 			],
