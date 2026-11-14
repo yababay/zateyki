@@ -5,6 +5,7 @@
     import Home from '#lib/components/Home.svelte';
     import Telegram from '#lib/components/Telegram.svelte';
     import '#lib/styles/article.scss'
+	import favicon from '#lib/assets/favicon.svg';
 
 	let { children }: LayoutProps = $props();
 
@@ -21,3 +22,7 @@
 </section>
 
 <Footer />
+
+<svelte:head>
+    <link rel="icon" href={favicon} />
+</svelte:head>

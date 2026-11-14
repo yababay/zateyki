@@ -1,7 +1,6 @@
 <script lang="ts">
     import { isRoot, headState } from '#lib/stores/head.svelte.ts';
     import { ROOT_TITLE, ROOT_DESCRIPTION } from '$app/env/public'
-	import favicon from '#lib/assets/favicon.svg';
     import default_banner from '#lib/assets/barny-banner.png'
 
     let title = $derived(isRoot() && ROOT_TITLE || headState.title)
@@ -34,7 +33,6 @@
     {#if description}
     {/if}
     -->
-    <link rel="icon" href={favicon} />
     <meta name="description" content={description}>
     <meta name="og:description" content={description}>
     <meta name="og:title" content={title}>
