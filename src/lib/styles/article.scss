@@ -1,0 +1,38 @@
+$blockquote-color: #777;
+
+article {
+
+    width: 100%;
+    max-width: 80ch;
+    margin: auto;
+
+    ul {
+        min-height: 1rem;
+    }
+
+    blockquote {
+        border-left: 1rem solid silver;
+        color: $blockquote-color;
+        padding-left: 1rem;
+        margin-block: 1rem;
+        a {
+            color: $blockquote-color;
+        }
+    }
+
+    code {
+        color: $blockquote-color;
+    }
+}
+
+article > p:first-of-type {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.modal-body {
+    img, svg {
+        width: 50vw;
+        height: auto;
+    }
+}
