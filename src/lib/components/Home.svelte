@@ -1,10 +1,9 @@
 <script>
-
+    import { isRoot } from "#lib/stores/head.svelte.ts";
     let right = $state(false)
-
 </script>
 
-<a href="/" title="На главную" class="link-secondary" class:go-right={right} class:go-left={!right}><i class="bi bi-house"></i></a>
+<a href="/" title="На главную" class:d-none={ isRoot() } class="link-secondary" class:go-right={right} class:go-left={!right}><i class="bi bi-house"></i></a>
 
 <style lang="scss">
 

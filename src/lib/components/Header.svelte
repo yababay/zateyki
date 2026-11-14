@@ -1,61 +1,49 @@
 <script lang="ts">
+    import { isRoot, headState } from '#lib/stores/head.svelte.ts';
+    import { ROOT_TITLE, ROOT_DESCRIPTION } from '$app/env/public'
+	import favicon from '#lib/assets/favicon.svg';
+    import default_banner from '#lib/assets/barny-banner.png'
 
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte.ts";
+    let title = $derived(isRoot() && ROOT_TITLE || headState.title)
+    let description = $derived(isRoot() && ROOT_DESCRIPTION || headState.description)
+    let banner = $derived(isRoot() && default_banner || headState.banner)
 
-    let header = $state<HTMLElement | null>(null)
-    let title = $derived(headState.title) //$state<HTMLSpanElement | null>(null)
-    let hiddenShield = $state(false)
-    let hiddenTitle  = $state(false)
-    let hiddenHolder  = $state(false)
-
-    onMount(async () => {
-        /*const img = document.querySelector('#banner img') as HTMLImageElement
-        window.onload = function() { 
-        if(title) title.textContent = document.title
-        };
-        if(!img) return
-        const onImageLoaded = () => {
-            setTimeout(() => {
-                if(!(img && header)) return
-                //console.log('img src = ', img.src)
-                header.style.backgroundImage = `url("${img.src}")`
-                hiddenShield = true
-                hiddenHolder = false
-                setTimeout(() => {
-                    if(!title) return
-                    title.innerHTML = ''
-                    title.textContent = document.title
-                    hiddenTitle = false
-                    img.remove()
-                }, 100)
-            }, 2000)
-        }
-        if(img.complete) {
-            onImageLoaded()
-            return
-        }
-        img.addEventListener('load', onImageLoaded)
-        */
-    })
 </script>
 
-<header bind:this={header}>
-    <div class="w-100 h-100 d-flex justify-content-center align-items-center" class:d-none={hiddenHolder}>
-        <p class:shown-title={!hiddenTitle} class:hidden-title={hiddenTitle}>
+<header style:background-image={`url("${banner}")`} class="d-flex justify-content-center align-items-center flex-column">
+    <div class="w-100 h-75 d-flex justify-content-center align-items-center">
+        <p>
             <i class="bi bi-align-end"></i><span bind:textContent={title} contenteditable="false"></span><i class="bi bi-align-start"></i>
         </p>
     </div>
-    <!--div class="w-100 h-100 d-flex justify-content-center align-items-center" class:shown-shield={!hiddenShield} class:hidden-shield={hiddenShield} class:d-none={!hiddenHolder}>
-        <div  class="spinner-border text-secondary">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div -->
+    <p class="description">{description}</p>
 </header>
+
+<svelte:head>
+    <!--
+    {#if canonical}
+        <link rel="canonical" href={canonical}>
+    {/if}
+    {#if image}
+        <meta property="image" content={image} />
+        <meta property="twitter:image" content={image} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="840" />
+        <meta property="og:image" content={image} />
+    {/if}
+    {#if description}
+    {/if}
+    -->
+    <link rel="icon" href={favicon} />
+    <meta name="description" content={description}>
+    <meta name="og:description" content={description}>
+    <meta name="og:title" content={title}>
+    <title>{title}</title>
+</svelte:head>
 
 <style lang="scss">
 
-    $h1-color: rgb(151, 151, 151); //rgb(219, 219, 219) ;//rgb(236, 232, 193);
+    $h1-color: rgb(151, 151, 151);
 
     header {
         margin: 0;
@@ -87,28 +75,11 @@
                 background-color: #333;
             }
         }
-    }
-
-    .hidden-title {
-        visibility: hidden;
-        opacity: 0;  
-    }
-
-    .shown-title {
-        opacity: .85;
-        transition: all 1.5s ease-out;
-        visibility: visible;  
-    }
-
-    .hidden-shield {
-        visibility: hidden;
-        transition: all 1.9s ease-out;
-        opacity: 0;  
-    }
-
-    .shown-shield {
-        opacity: 1;
-        visibility: visible;  
-        background-color: black;
+        .description {
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-size: 1.2rem;
+        }
     }
 </style>

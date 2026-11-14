@@ -1,19 +1,18 @@
 <script lang="ts">
 	import type { LayoutProps } from './$types';
-	import Head    from '#lib/components/Head.svelte';
 	import Header  from '#lib/components/Header.svelte';
     import Footer  from '#lib/components/Footer.svelte';
-    import '#lib/styles/article.scss'
     import Home from '#lib/components/Home.svelte';
+    import Telegram from '#lib/components/Telegram.svelte';
+    import '#lib/styles/article.scss'
 
-    const title = "Бабайкина сарайка"
-    const description = "Лонгриды Михаила Белякова"
 	let { children }: LayoutProps = $props();
+
 </script>
 
 <Header />
 <Home />
-<Head {title} {description} banner={undefined}/>
+<Telegram />
 
 <section class="container">
 	<article>
