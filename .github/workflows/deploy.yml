@@ -36,6 +36,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
+      - name: Create .env
+        run: |
+          cat > .env <<'EOF'
+          ROOT_TITLE=Бабайкина сарайка
+          ROOT_DESCRIPTION=Лонгриды Михаила Белякова
+          EOF
+
       - name: build
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
