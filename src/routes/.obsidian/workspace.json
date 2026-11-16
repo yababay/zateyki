@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "de52a54e17d5d934",
+        "id": "c138866672246ff6",
         "type": "tabs",
         "children": [
           {
-            "id": "136e0fe1fcccab17",
+            "id": "aaf23feb77d603b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "locomotiv-alternativ/+page.md",
+                "file": "+page.md",
                 "mode": "source",
                 "source": false
               },
@@ -188,9 +188,18 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "136e0fe1fcccab17",
+  "active": "aaf23feb77d603b4",
   "lastOpenFiles": [
+    "oh-uz-eti-skazocki-oh-uz-eti-skazocniki/+page.md",
+    "oh-uz-eti-skazocki-oh-uz-eti-skazocniki/skaz_02.webp",
     "+page.md",
+    "plodotvornyj-mogilnicek/+page.md",
+    "hronologiceskie-inekcii/+page.md",
+    "istoriceskaa-srapnel/+page.md",
+    "_templates/+page.md~",
+    "_templates/+page.md",
+    "istoriceskaa-srapnel.md",
+    "locomotiv-alternativ/+page.md",
     "_templates/script.md",
     "_templates/head.md",
     "_templates/page.md",

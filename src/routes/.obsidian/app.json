@@ -5,7 +5,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "_drafts",
   "userIgnoreFilters": [
-    "_templates/",
-    "koteg.jpg"
+    "_templates/"
   ]
 }
