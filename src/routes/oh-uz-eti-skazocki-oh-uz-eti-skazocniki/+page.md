@@ -6,7 +6,6 @@ description: Парадоксы итальянских народных сказ
     import { onMount } from "svelte"
     import { headState } from "#lib/stores/head.svelte"
     import banner from './banner.webp'
-	import Figure from '#lib/components/Figure.svelte';
 	import Pinup from '#lib/components/Pinup.svelte';
     import pinup  from './pinup.webp'
 
