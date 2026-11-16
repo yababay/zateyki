@@ -6,7 +6,6 @@
     let title = $derived(isRoot() && ROOT_TITLE || headState.title)
     let description = $derived(isRoot() && ROOT_DESCRIPTION || headState.description)
     let banner = $derived(isRoot() && default_banner || headState.banner)
-
 </script>
 
 <header style:background-image={`url("${banner}")`} class="d-flex justify-content-center align-items-center flex-column">
@@ -17,21 +16,6 @@
     </div>
     <p class="description">{description}</p>
 </header>
-
-<svelte:head>
-    <link rel="canonical" href="https://yababay.github.io/zateyki/">
-    {#if headState.pinup}
-        <meta property="image" content={headState.pinup} />
-        <meta property="twitter:image" content={headState.pinup} />
-        <meta property="og:image:width" content="1600" />
-        <meta property="og:image:height" content="840" />
-        <meta property="og:image" content={headState.pinup} />
-    {/if}
-    <meta name="description" content={description}>
-    <meta name="og:description" content={description}>
-    <meta name="og:title" content={title}>
-    <title>{title}</title>
-</svelte:head>
 
 <style lang="scss">
 

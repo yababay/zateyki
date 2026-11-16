@@ -1,10 +1,25 @@
 <script lang="ts">
-    import { headState } from "#lib/stores/head.svelte.ts";
+    let { title, description, pinup } = $props()
 </script>
 
-{#if headState.pinup}
-    <img src={headState.pinup} alt={headState.title}>
+{#if pinup}
+    <img src={pinup} alt={title}>
 {/if}
+
+<svelte:head>
+    <link rel="canonical" href="https://yababay.github.io/zateyki/">
+    {#if pinup}
+        <meta property="image" content={pinup} />
+        <meta property="twitter:image" content={pinup} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="840" />
+        <meta property="og:image" content={pinup} />
+    {/if}
+    <meta name="description" content={description}>
+    <meta name="og:description" content={description}>
+    <meta name="og:title" content={title}>
+    <title>{title}</title>
+</svelte:head>
 
 <style lang="scss">
     img {

@@ -5,6 +5,7 @@ description: Как историки делают свою науку недос
 <script lang="ts">
     import { onMount } from "svelte"
     import { headState } from "#lib/stores/head.svelte"
+   	import Pinup from '#lib/components/Pinup.svelte';
     import banner from '#lib/assets/barny-banner.png' // './banner.webp'
 
     onMount(() => {
@@ -14,6 +15,8 @@ description: Как историки делают свою науку недос
         headState.pinup = false // pinup
     })
 </script>
+
+<Pinup {title} {description} />
 
 Шрапнель — множество мелких травмирующих предметов (гвоздей, шариков, металлических обломков), хаотично разлетающихся
 от взрыва и наносящих раны живой силе противника. Каждое из таких

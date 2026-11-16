@@ -19,7 +19,7 @@ description: Зенон и Жорж изучают теорию потенциа
     })
 </script>
 
-<Pinup />
+<Pinup {title} {description} {pinup} />
 
 ## Межгалактический троллейбус
 

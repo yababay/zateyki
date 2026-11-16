@@ -2,6 +2,7 @@
 title: Эксгумация Цицерона
 description: Происхождение средневековых рукописей
 ---
+
 <script lang="ts">
     import { onMount } from "svelte"
     import { headState } from "#lib/stores/head.svelte"
@@ -17,8 +18,7 @@ description: Происхождение средневековых рукопи�
     })
 </script>
 
-<Pinup />
-
+<Pinup {title} {description} {pinup} />
 
 «…Но есть у меня один могильничек…» Эта фраза комического
 персонажа — археолога Сергея Ивановича Копая в исполнении Вадима
