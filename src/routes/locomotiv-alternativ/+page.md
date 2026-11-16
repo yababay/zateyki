@@ -13,6 +13,7 @@ description: Отличие официальной версии истории �
         headState.title = title
         headState.description = description
         headState.banner = banner
+        headState.pinup = ''
     })
 </script>
 

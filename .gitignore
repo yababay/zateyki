@@ -24,3 +24,17 @@ vite.config.ts.timestamp-*
 Затейки
 src/routes/.obsidian/plugins/hunspell-spellchecker/languages
 src/routes/.obsidian/plugins/hunspell-spellchecker/logs
+
+# Все каталоги страниц пока вне репозитория
+/src/routes/*/
+
+# Готовые — добавляем по мере завершения ревизии
+!/src/routes/locomotiv-alternativ/
+!/src/routes/istocniki-zatocniki/
+!/src/routes/tortoise-and-achilles/
+!/src/routes/otvetochka-zenona/
+!/src/routes/math-inquisitor/
+!/src/routes/leontij-intuitivist/
+!/src/routes/george-and-integrals/
+!/src/routes/zenon-igraet-na-garmoshke/
+!/src/routes/gaussian-canon-and-zenon/

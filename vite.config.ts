@@ -5,18 +5,21 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, type MdsvexOptions } from 'mdsvex';
 import remarkMath from 'remark-math';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
-import rehypeFigure from './rehype-figure.js';
+import { rehypeFigureComponent, figureImports } from './mdsvex-figure.js';
 
 const mdsvexConfig: MdsvexOptions = {
 	extensions: ['.md', '.svx'],
 	remarkPlugins: [remarkMath],
-	rehypePlugins: [rehypeKatexSvelte, rehypeFigure]
+	rehypePlugins: [
+		rehypeKatexSvelte,
+		// webp: true сохраняет вашу прежнюю подмену .png -> .webp; уберите, если не нужна
+		[rehypeFigureComponent, { webp: true }]
+	] as unknown as MdsvexOptions['rehypePlugins']
 };
 
 export default defineConfig({
 	plugins: [
 		sveltekit({
-			// Бывшие опции kit.* — теперь на верхнем уровне:
 			adapter: adapter({ fallback: '404.html' }),
 			paths: {
 				base: process.argv.includes('dev') ? '' : '/zateyki'
@@ -25,11 +28,9 @@ export default defineConfig({
 				handleHttpError: 'ignore',
 				crawl: false
 			},
-			// Эти опции Kit пробросит в vite-plugin-svelte:
 			extensions: ['.svelte', '.svx', '.md'],
-			preprocess: [mdsvex(mdsvexConfig), vitePreprocess()],
+			preprocess: [mdsvex(mdsvexConfig), figureImports(), vitePreprocess()],
 			compilerOptions: {
-				// Принудительный runes-режим для проекта, кроме библиотек.
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			}

@@ -4,6 +4,7 @@ export const headState = $state({
     title: '',
     description: '',
     banner: '',
+    pinup: '',
 })
 
 const ROOT_PATHS = [ '/', '', '/zateyki', '/zateyki/']

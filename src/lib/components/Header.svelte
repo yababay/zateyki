@@ -19,20 +19,14 @@
 </header>
 
 <svelte:head>
-    <!--
-    {#if canonical}
-        <link rel="canonical" href={canonical}>
-    {/if}
-    {#if image}
-        <meta property="image" content={image} />
-        <meta property="twitter:image" content={image} />
+    <link rel="canonical" href="https://yababay.github.io/zateyki/">
+    {#if headState.pinup}
+        <meta property="image" content={headState.pinup} />
+        <meta property="twitter:image" content={headState.pinup} />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="840" />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={headState.pinup} />
     {/if}
-    {#if description}
-    {/if}
-    -->
     <meta name="description" content={description}>
     <meta name="og:description" content={description}>
     <meta name="og:title" content={title}>
