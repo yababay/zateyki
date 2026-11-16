@@ -5,6 +5,7 @@ description: Происхождение средневековых рукопи�
 <script lang="ts">
     import { onMount } from "svelte"
     import { headState } from "#lib/stores/head.svelte"
+    import Pinup from '#lib/components/Pinup.svelte';
     import banner from './banner.webp'
     import pinup  from './pinup.webp'
 
