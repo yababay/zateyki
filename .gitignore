@@ -27,3 +27,20 @@ src/routes/.obsidian/plugins/hunspell-spellchecker/logs
 
 # Черновики
 drafts/
+/src/routes/*/
+
+# Вычитанные
+
+!/src/routes/locomotiv-alternativ/
+!/src/routes/istocniki-zatocniki/
+!/src/routes/istoriceskaa-srapnel/
+!/src/routes/hronologiceskie-inekcii/
+!/src/routes/plodotvornyj-mogilnicek/
+!/src/routes/oh-uz-eti-skazocki-oh-uz-eti-skazocniki/
+!/src/routes/cudesa-cudesa-nebyvalsina/
+!/src/routes/a-osadocek-ostalsa/
+!/src/routes/a-osadocek-ostalsa-2/
+!/src/routes/abyrvalg-noverlendskij/
+!/src/routes/gorat-sumat-badaevskie-sklady/
+!/src/routes/drevnegreceskaa-smokovnica/
+!/src/routes/dada-gera-panc-i-baron-vrangel/

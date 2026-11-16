@@ -22,7 +22,7 @@
     figure {
         margin-block: $figure-padding;
         box-sizing: border-box;
-        border: 1px #777 solid;
+        border: 1px #ddd solid;
         max-width: $figure-max-width;
     }
 

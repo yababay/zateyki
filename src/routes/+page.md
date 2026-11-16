@@ -9,8 +9,6 @@
 * [Хронологические инъекции](hronologiceskie-inekcii/)
 * [Эксгумация Цицерона](plodotvornyj-mogilnicek/)
 * [Ох, уж эти сказочки!](oh-uz-eti-skazocki-oh-uz-eti-skazocniki/)
-
-<!--
 * [Чудеса, чудеса, небывальщина](cudesa-cudesa-nebyvalsina/)
 * […а осадочек остался](a-osadocek-ostalsa/)
 * [Чем накормить слугъ](a-osadocek-ostalsa-2/)
@@ -18,6 +16,8 @@
 * [Горят-шумят Бадаевские склады](gorat-sumat-badaevskie-sklady/)
 * [Древнегреческая смоковница](drevnegreceskaa-smokovnica/)
 * [Дядя Гера, Панч и барон Врангель](dada-gera-panc-i-baron-vrangel/)
+
+<!--
 * [Жертва из божественного семейства](jertva-iz-bogestvennogo-semeystva/) 
 * [Железобетонная корона лангобардов](zelezobetonnaa-korona-langobardov/)
 * [Бароны императора Нерона](u-imperatora-nerona-v-gostinoj-zili-dva-barona/)
