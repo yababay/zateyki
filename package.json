@@ -10,6 +10,7 @@
 	"scripts": {
 		"bro": "BROWSER=firefox vite dev --open",
 		"dev": "vite dev",
+		"img": "./scripts/optimize-images.sh",
 		"build": "vite build",
 		"readme": "./scripts/sync-readme.sh",
 		"git": "npm run readme && git add . && git commit -a && git push origin main",

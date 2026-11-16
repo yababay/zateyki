@@ -4,7 +4,7 @@ description: О недоступности исторических источн
 ---
 
 <script lang="ts">
-   	import Pinup from '#lib/components/Pinup.svelte';
+    import Pinup from '#lib/components/Pinup.svelte';
     import { headState } from "#lib/stores/head.svelte"
     import { onMount } from "svelte"
     import banner from './banner.webp'
