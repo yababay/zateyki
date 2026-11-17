@@ -13,7 +13,8 @@
 		"img": "./scripts/optimize-images.sh",
 		"build": "vite build",
 		"readme": "./scripts/sync-readme.sh",
-		"git": "npm run readme && git add . && git commit -a && git push origin main",
+		"git:local": "npm run readme && git add . && git commit -a",
+		"git": "npm run git:local && git push origin main",
 		"deploy": "GIT_USER=yababay gh-pages -d build --nojekyll -u 'Михаил Беляков <bigbelk@live.ru>'",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
 	},

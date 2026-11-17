@@ -16,27 +16,21 @@
 * [Горят-шумят Бадаевские склады](gorat-sumat-badaevskie-sklady/)
 * [Древнегреческая смоковница](drevnegreceskaa-smokovnica/)
 * [Дядя Гера, Панч и барон Врангель](dada-gera-panc-i-baron-vrangel/)
-
-<!--
 * [Жертва из божественного семейства](jertva-iz-bogestvennogo-semeystva/) 
 * [Железобетонная корона лангобардов](zelezobetonnaa-korona-langobardov/)
 * [Бароны императора Нерона](u-imperatora-nerona-v-gostinoj-zili-dva-barona/)
 * [Лукан и лукавство](lukan-i-lukavstvo/)
 * [Манипулирование манипулами и мануфактурами](manipulirovanie-manipulami-i-manufakturami/)
-* [Жертва из божественного семейства](jertva-iz-bogestvennogo-semeystva/)
 * [Лихорадка античного вечера](lihoradka-anticnogo-vecera/)
-* [Если топну я ногою, позову своих солдат…](esli-topnu-a-nogou-pozovu-svoih-soldat/) 
 * [Канцелярские принадлежности Цезаря](ulij-cezar-i-kancelarskie-prinadleznosti/)
 * [Гай Юлий Кейнсарь](gaj-ulij-kejnsar/)
 * [Древнеримский Мойдодыр](esli-topnu-a-nogou-pozovu-svoih-soldat/)
-* [Хронологические пасхалки](hronologicheskie-pashalki/)
-* [Созвездие Дурака](sozvezdie-duraka/)
-* [Идёт Иштар рогатая…](ishtar-rogataya/)
-* [Подношение святому Янусу](podnoshenie-svyatomu-yanusu/)
 * [1492 год как начало новой эры](1492-god-kak-nacalo-novoj-ery/)
 * [Астерикс, Обеликс и анахроникс](asteriks-obeliks-i-hroniceskij-anahroniks/)
 * [Час на вычес](chas-ches/)
 * [Жоашен дю Белле — поэт-руинист](zoasen-du-belle-poet-ruinist/)
+
+<!--
 * [Занимательное ословедение](zanimatelnoe-oslovedenie/)
 * [Его принес сюда ледник!](ego-prines-suda-lednik-s/)
 * [Анамиты и московиты](anamity-i-moskovity/)
@@ -53,6 +47,13 @@
 
 * [Комфортабельное квантовое путешествие](comfortable-quantum-airlines/)
 -->
+
+### В защиту Царицы небесной
+
+* [Хронологические пасхалки](hronologicheskie-pashalki/)
+* [Созвездие Дурака](sozvezdie-duraka/)
+* [Идёт Иштар рогатая…](ishtar-rogataya/)
+* [Подношение святому Янусу](podnoshenie-svyatomu-yanusu/)
 
 ### Путешествия Зенона на колеснице времени
 
