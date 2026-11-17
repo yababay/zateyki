@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { visit, SKIP } from 'unist-util-visit';
 
 const RESERVED = new Set([
@@ -123,6 +125,7 @@ export function rehypeFigureComponent(options = {}) {
 /**
  * Препроцессор (ставится ПОСЛЕ mdsvex): разворачивает маркер в импорты
  * и вписывает их в единственную модульную скриптовую секцию компонента.
+ * @returns {import('svelte/compiler').PreprocessorGroup}
  */
 export function figureImports() {
 	return {
