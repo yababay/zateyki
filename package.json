@@ -14,8 +14,8 @@
 		"build": "vite build",
 		"readme": "./scripts/sync-readme.sh",
 		"git:local": "npm run readme && git add . && git commit -a",
-		"git": "npm run git:local && git push origin main",
-		"deploy": "GIT_USER=yababay gh-pages -d build --nojekyll -u 'Михаил Беляков <bigbelk@live.ru>'",
+		"git:remote": "git push origin main",
+		"git": "npm run git:local && npm run git:remote",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
 	},
 	"devDependencies": {

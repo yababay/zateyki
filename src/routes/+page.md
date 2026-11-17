@@ -29,14 +29,14 @@
 * [Астерикс, Обеликс и анахроникс](asteriks-obeliks-i-hroniceskij-anahroniks/)
 * [Час на вычес](chas-ches/)
 * [Жоашен дю Белле — поэт-руинист](zoasen-du-belle-poet-ruinist/)
-
-<!--
 * [Занимательное ословедение](zanimatelnoe-oslovedenie/)
 * [Его принес сюда ледник!](ego-prines-suda-lednik-s/)
 * [Анамиты и московиты](anamity-i-moskovity/)
 * [ДВЦ рабочих и крестьян](dvc-rabocih-i-krestan/)
 * [Гвоздь Беросса](beross-kak-gvozd-oficialnoj-hronologii/)
 * [Балкон как моветон](balkon-kak-moveton/)
+
+<!--
 * […дык ёлы-палы, здравствуй, сестра!](dyk-ely-paly-zdravstvuj-sestra/) 
 * [Монета Moneta](moneta-moneta/)
 * [Маркс и подкустовый выползень](karl-marks-i-podkustovyj-vypolzen-cast-1/)

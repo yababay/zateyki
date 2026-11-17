@@ -40,6 +40,10 @@ const modernModuleScript: PreprocessorGroup = {
 };
 
 export default defineConfig({
+	server: {
+		port: 5174,
+		strictPort: true
+	},
 	plugins: [
 		sveltekit({
 			adapter: adapter({ fallback: '404.html' }),
