@@ -5,23 +5,14 @@ description: Беллини, Тициан, Тинторетто, Джорджо�
 
 <script lang="ts">
 	import Figure from '#lib/components/Figure.svelte';
+	import Pinup from '#lib/components/Pinup.svelte';
 	import Zoom from '#lib/components/Zoom.svelte';
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	import Pinup  from '#lib/components/Pinup.svelte';
-    import banner from  '#lib/assets/barny-banner.png'
+    import Mermaid from '#lib/components/Mermaid.svelte';
+    import timeline from './timeline.mmd?raw';
 	import venice_painters from './venice-painters.svg?raw';
-    const pinup = false
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} />
 
 _&lang;Обработанный текст из [видео](https://www.youtube.com/watch?v=p7MZg6J52i4) с «Канала Ненашева» с [приложениями](#appendix)&rang;_
 
@@ -171,4 +162,10 @@ _&lang;Обработанный текст из [видео](https://www.youtube
 
 <Figure caption="Венецианские художники и их окружение">
 	<Zoom>{@html venice_painters}</Zoom>
+</Figure>
+
+### Хронология событий
+
+<Figure caption="Даты жизни на ленте времени">
+    <Zoom><Mermaid src={timeline} /></Zoom>
 </Figure>

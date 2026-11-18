@@ -4,21 +4,12 @@ description: Фантастические факты в книгах Свето�
 ---
 
 <script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	import Pinup from  '#lib/components/Pinup.svelte';
-    import banner from './banner.webp'
-    import pinup  from './pinup.webp'
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+    import Pinup  from '#lib/components/Pinup.svelte';
+    import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
+    import pinup  from  './pinup.webp' // const pinup = false
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Читая «античные» источники — книги Светония, Аппиана, Тацита — иногда
 трудно избавиться от впечатления, что всё это действительно написано по

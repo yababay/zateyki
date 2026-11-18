@@ -2,19 +2,10 @@
 title: Древнеримский Мойдодыр
 description: Кто топал ногою, чтобы позвать своих солдат?
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	  import Pinup  from '#lib/components/Pinup.svelte';
-    import banner from  '#lib/assets/barny-banner.png'
-    import pinup  from  './pinup.webp' // const pinup = false
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+<script lang="ts">
+   	import Pinup from  '#lib/components/Pinup.svelte';
+    import pinup  from './pinup.webp'
 </script>
 
 <Pinup {title} {description} {pinup} />

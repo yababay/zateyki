@@ -10,7 +10,7 @@ done
 
 if   [[ $a -nt $b ]]; then 
     cp -p -- "$a" "$b"; 
-    sed -i -E "s/\]\(https\:\/\/yababay.github.io\/zateyki\//](/" $b
+    sed -i -E "s/\]\(https\:\/\/yababay.github.io\/zateyki\//](/g" $b
     echo "$a → $b"
 elif [[ $b -nt $a ]]; then 
     cp -p -- "$b" "$a"; 

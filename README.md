@@ -35,13 +35,13 @@
 * [ДВЦ рабочих и крестьян](https://yababay.github.io/zateyki/dvc-rabocih-i-krestan/)
 * [Гвоздь Беросса](https://yababay.github.io/zateyki/beross-kak-gvozd-oficialnoj-hronologii/)
 * [Балкон как моветон](https://yababay.github.io/zateyki/balkon-kak-moveton/)
-
-<!--
 * […дык ёлы-палы, здравствуй, сестра!](https://yababay.github.io/zateyki/dyk-ely-paly-zdravstvuj-sestra/) 
 * [Монета Moneta](https://yababay.github.io/zateyki/moneta-moneta/)
 * [Маркс и подкустовый выползень](https://yababay.github.io/zateyki/karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](https://yababay.github.io/zateyki/my-stroili-stroili-a-zacem/)
 * [Откуда дровишки? (Обезлесенье в Англии)](https://yababay.github.io/zateyki/deforestation/)
+
+<!--
 
 ## История науки
 

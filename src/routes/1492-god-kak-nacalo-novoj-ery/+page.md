@@ -2,22 +2,16 @@
 title: 1492 год как начало новой эры
 description: Не только дата открытия Америки.
 ---
+
 <script lang="ts">
     import { onMount } from "svelte"
     import { headState } from "#lib/stores/head.svelte"
    	import Pinup  from '#lib/components/Pinup.svelte';
     import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
     import pinup  from  './pinup.webp' // const pinup = false
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Недавно я усвоил простую формулу для преобразования некоторых дат от
 «сотворения мира» в христианское летосчисление. Нужно убрать семерку

@@ -4,21 +4,12 @@ description: Происхождение средневековых рукопи�
 ---
 
 <script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-    import Pinup from '#lib/components/Pinup.svelte';
+   	import Pinup from  '#lib/components/Pinup.svelte';
     import banner from './banner.webp'
     import pinup  from './pinup.webp'
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = false // pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 «…Но есть у меня один могильничек…» Эта фраза комического
 персонажа — археолога Сергея Ивановича Копая в исполнении Вадима

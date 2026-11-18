@@ -1,11 +1,7 @@
-<script lang="ts">
-    	let { children } = $props();
-</script>
-
 <p class="mt-2 mb-3">
     <small><sup>*</sup>
         &nbsp;
-		{@render children()}
+        <slot />
     </small>
 </p>
 

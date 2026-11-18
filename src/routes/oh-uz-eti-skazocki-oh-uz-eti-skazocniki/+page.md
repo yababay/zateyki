@@ -2,22 +2,14 @@
 title: Ох, уж эти сказочки!
 description: Парадоксы итальянских народных сказок
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-    import banner from './banner.webp'
-	import Pinup from '#lib/components/Pinup.svelte';
-    import pinup  from './pinup.webp'
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+<script lang="ts">
+   	import Pinup from  '#lib/components/Pinup.svelte';
+    import banner from './banner.webp'
+    import pinup  from './pinup.webp'
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Прочитав сборник «Итальянские сказки», подготовленный фольклористом
 Итало Кальвино, я в очередной раз проникся состраданием к

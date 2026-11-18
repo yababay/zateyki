@@ -2,18 +2,9 @@
 title: Историческая шрапнель
 description: Как историки делают свою науку недоступной
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	import Pinup from '#lib/components/Pinup.svelte';
-    import banner from '#lib/assets/barny-banner.png' // './banner.webp'
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = false // pinup
-    })
+<script lang="ts">
+   	import Pinup from  '#lib/components/Pinup.svelte';
 </script>
 
 <Pinup {title} {description} />

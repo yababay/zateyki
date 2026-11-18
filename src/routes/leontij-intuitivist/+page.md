@@ -2,25 +2,15 @@
 title: На просторах Интуиции
 description: Как Леонтий полюбил методичность, а Пуанкаре разочаровался в экзальтации
 ---
+
 <script lang="ts">
-   	import Figure from '#lib/components/Figure.svelte';
-   	import Pinup from '#lib/components/Pinup.svelte';
-    import { headState } from "#lib/stores/head.svelte"
-    import { onMount } from "svelte"
+   	import Pinup from  '#lib/components/Pinup.svelte';
     import banner from './banner.webp'
     import pinup  from './pinup.webp'
-    import mosty  from './mosty.png'
     import 'katex/dist/katex.min.css'
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 ## Битва Ахиллеса с гомофобами
 

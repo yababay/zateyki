@@ -2,22 +2,14 @@
 title: Лукан и лукавство
 description: Участие русского царя в польских королевских выборах
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	  import Pinup  from '#lib/components/Pinup.svelte';
-    import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
-    import pinup  from  './pinup.webp' // const pinup = false
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+<script lang="ts">
+   	import Pinup from  '#lib/components/Pinup.svelte';
+    import banner from './banner.webp'
+    import pinup  from './pinup.webp'
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Где-то я писал, что работы по фальсификации истории выполняли, видимо,
 завзятые троечники. Иной раз в «официальной» концепции прошлого факты

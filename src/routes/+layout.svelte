@@ -5,12 +5,14 @@
     import Footer  from '#lib/components/Footer.svelte';
     import Home from '#lib/components/Home.svelte';
     import Telegram from '#lib/components/Telegram.svelte';
+    import Pinup from '#lib/components/Pinup.svelte';
     import '#lib/styles/article.scss'
 
 	let { children }: LayoutProps = $props();
 
 </script>
 
+<Pinup />
 <Header />
 <Home />
 <Telegram />

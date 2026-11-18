@@ -8,7 +8,7 @@ if [ -z "$PATTERN" ]; then
 	exit 1
 fi
 
-cat README.md | egrep '^\*' | grep "$PATTERN" -B 10000 | sed -E 's/^\*[^\(]+\(//;s/\/\)//'| while read l; do
+cat README.md | egrep '^\*' | grep "$PATTERN" -B 10000 | sed -E 's/^\*[^\(]+\(//;s/\/\)//;s/https\:\/\/yababay.github.io\/zateyki\///'| while read l; do
 	DRAFT="drafts/$l"
 	if [ -d "$DRAFT" ]; then
 		mv "$DRAFT" "$ROUTES"

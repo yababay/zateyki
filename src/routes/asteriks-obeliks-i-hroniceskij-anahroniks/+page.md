@@ -2,22 +2,14 @@
 title: Астерикс, Обеликс и анахроникс
 description: Были ли у героев французской комедии реальные прототипы?
 ---
+
 <script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
    	import Pinup  from '#lib/components/Pinup.svelte';
     import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
     import pinup  from  './pinup.webp' // const pinup = false
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Пересматривая на днях в семейном кругу комедию «Астерикс и Обеликс на
 Олимпийских играх», я обратил внимание на то, что среди персонажей с

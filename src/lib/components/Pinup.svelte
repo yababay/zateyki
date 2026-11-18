@@ -1,5 +1,17 @@
 <script lang="ts">
-    let { title, description, pinup } = $props()
+    import { onMount } from "svelte"
+    import { headState } from "#lib/stores/head.svelte.ts"
+    import default_banner from  '#lib/assets/barny-banner.png'
+    import { ROOT_TITLE, ROOT_DESCRIPTION } from '$app/env/public'
+
+    let { title = ROOT_TITLE, description = ROOT_DESCRIPTION, pinup = "", banner = default_banner } = $props()
+
+    onMount(() => {
+        headState.title = title
+        headState.description = description
+        headState.banner = banner
+        headState.pinup = pinup
+    })    
 </script>
 
 {#if pinup}

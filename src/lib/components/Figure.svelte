@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
+	import { setContext, type Snippet } from 'svelte';
 
 	interface Props {
 		/** Растровая картинка — используется, когда children не переданы. */
@@ -13,6 +13,9 @@
 	}
 
 	let { src, caption = '', alt, children }: Props = $props();
+
+	// svelte-ignore state_referenced_locally
+	setContext('zateyki:figcaption', caption)
 </script>
 
 <figure class="rehype-figure">

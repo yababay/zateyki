@@ -10,10 +10,11 @@
 		initial?: 'fit' | number;
 	}
 
-	let { children, label, initial = 'fit' }: Props = $props();
+	let { children, label = 'Схема', initial = 'fit' }: Props = $props();
 
 	const uid = $props.id();
-	const caption = label ?? getContext<string>('zateyki:figure-caption') ?? 'Схема';
+	// svelte-ignore state_referenced_locally
+	const caption = getContext<string>('zateyki:figcaption');
 
 	const MIN = 0.1;
 	const MAX = 8;
@@ -507,6 +508,7 @@
 					</button>
 				</div>
 
+				<!-- svelte-ignore a11y_no_static_element_interactions -->
 				<div
 					bind:this={stage}
 					class="modal-body zoom-stage p-0 position-relative overflow-hidden"

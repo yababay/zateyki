@@ -2,22 +2,14 @@
 title: Хронологические пасхалки
 description: К вопросу о вычислении даты Пасхи
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	  import Pinup  from '#lib/components/Pinup.svelte';
-    import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
-    import pinup  from  './pinup.webp' // const pinup = false
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+<script lang="ts">
+   	import Pinup from  '#lib/components/Pinup.svelte';
+    import banner from './banner.webp'
+    import pinup  from './pinup.webp'
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Несколько недель назад в рекомендациях Youtube я обнаружил довольно свежее (август 2025 г.) [интервью](https://www.youtube.com/watch?v=Vu5IF9j8JW4&pp=0gcJCcUKAYcqIYzv) с Г. В. Носовским, одним из авторов Новой хронологии. Создатели этой теории во главе с академиком А. Т. Фоменко еще в позднесоветские времена усомнились в достоверности так называемой «официальной истории», стремились показать, что многие свидетельства о прошлом могут быть сфальсифицированы, пытались воссоздать картину событий в соответствии с собственными представлениями.
 

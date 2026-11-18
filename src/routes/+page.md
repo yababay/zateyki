@@ -35,13 +35,13 @@
 * [ДВЦ рабочих и крестьян](dvc-rabocih-i-krestan/)
 * [Гвоздь Беросса](beross-kak-gvozd-oficialnoj-hronologii/)
 * [Балкон как моветон](balkon-kak-moveton/)
-
-<!--
 * […дык ёлы-палы, здравствуй, сестра!](dyk-ely-paly-zdravstvuj-sestra/) 
 * [Монета Moneta](moneta-moneta/)
 * [Маркс и подкустовый выползень](karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](my-stroili-stroili-a-zacem/)
 * [Откуда дровишки? (Обезлесенье в Англии)](deforestation/)
+
+<!--
 
 ## История науки
 

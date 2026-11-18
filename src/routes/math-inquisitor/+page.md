@@ -4,22 +4,13 @@ description: Цифровой стакан великого инквизитор
 ---
 
 <script lang="ts">
-   	import Pinup from '#lib/components/Pinup.svelte';
-    import { headState } from "#lib/stores/head.svelte"
-    import { onMount }   from "svelte"
+   	import Pinup from  '#lib/components/Pinup.svelte';
     import banner from './banner.webp'
     import pinup  from './pinup.webp'
     import 'katex/dist/katex.min.css'
-    
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 > Как-то раз на дне стакана<br>
   Карлик встретил великана<br>

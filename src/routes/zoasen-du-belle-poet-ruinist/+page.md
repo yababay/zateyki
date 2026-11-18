@@ -2,22 +2,14 @@
 title: Жоашен дю Белле — поэт-руинист
 description: Отражение посткатастрофного мира в французской поэзии XVI в.
 ---
-<script lang="ts">
-    import { onMount } from "svelte"
-    import { headState } from "#lib/stores/head.svelte"
-   	import Pinup  from '#lib/components/Pinup.svelte';
-    import banner from  './banner.webp' // '#lib/assets/barny-banner.png'
-    import pinup  from  './pinup.webp' // const pinup = false
 
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+<script lang="ts">
+    import Pinup from  '#lib/components/Pinup.svelte';
+    import banner from './banner.webp'
+    import pinup  from './pinup.webp'
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 (На заставке — останки из собора Парижской Богоматери приписали поэту Жоашену дю Белле. [via](https://mamul.am/ru/news/310334)).
 

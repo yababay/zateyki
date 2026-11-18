@@ -4,21 +4,12 @@ description: О недоступности исторических источн
 ---
 
 <script lang="ts">
-    import Pinup from '#lib/components/Pinup.svelte';
-    import { headState } from "#lib/stores/head.svelte"
-    import { onMount } from "svelte"
+   	import Pinup from  '#lib/components/Pinup.svelte';
     import banner from './banner.webp'
-    import pinup from './pinup.webp'
-
-    onMount(() => {
-        headState.title = title
-        headState.description = description
-        headState.banner = banner
-        headState.pinup = pinup
-    })
+    import pinup  from './pinup.webp'
 </script>
 
-<Pinup {title} {description} {pinup} />
+<Pinup {title} {description} {pinup} {banner} />
 
 Слово «заточник», в отличие от заточки, означает не холодное оружие, и
 даже не точильщика инструментов, хотя такое значение тоже есть.
