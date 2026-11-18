@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 25.04.2 (Applications 25.04.2) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="Модель UML">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uyK7b7uMVJ5D7" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ubRom0jva1B08" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uWji24ADUkDk3" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMqYLkUXvK1xz" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="urJRIJfY5pbyu" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMRmBH94HjLFY" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="um82ZBw3C0RWT" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uj1qfAFXgGQ5m" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ue61u7HOdUm5n" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uq2YNEzm7lrJI" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ucMufjMcpIy81" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uQVEjh4ATPIa4" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uOZfyTidSJG1F" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="unEwwCK0QGfeE" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uNowkfSD3lB0R" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZvk2jWYMsw4w" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uYcX9EIyRovW3" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u4mYSgSTtdttD" name="wchar_t" stereotype="dataType"/>
+      </uml:Package>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uCQwJxBqf8rh2" name="диаграмма классов" type="1" documentation="" backgroundcolor="#ffffff" usebackgroundcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets/>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder">
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA1" name="Якопо_Беллини" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA2" name="Джованни_Беллини" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA5" name="Джорджоне" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA6" name="Тициан" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA7" name="Тинторетто" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA3" name="Джентиле_Беллини" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA9" name="Пальма_Младший" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA8" name="Веронезе" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP1" name="Венецианская_республика" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP2" name="Арте_деи_Пентори" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP3" name="Католическая_церковь" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP4" name="Религиозные_братства" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP5" name="Инквизиция" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP6" name="Карл_V" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP7" name="Филипп_II" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP8" name="Федерико_Гонзага" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP9" name="Эрколе_Гонзага" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCP10" name="Павел_III" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC1" name="Флоренция" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC2" name="Флорентийская_школа" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC3" name="Леонардо_да_Винчи" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCA4" name="Антонелло_да_Мессина" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC4" name="Венеция" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC5" name="Верона" executable="0"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="uCC6" name="Мантуя" executable="0"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD0" name="мастерская_отца" client="uCA1" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD1" name="учитель_и_ученик" client="uCA2" supplier="uCA5"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD2" name="учитель_и_ученик" client="uCA2" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD3" name="друзья_соавторы" client="uCA5" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD4" name="10_дней_ученичества" client="uCA6" supplier="uCA7"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD5" name="влияние_награда" client="uCA6" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD6" name="масляные_краски_1476" client="uCA4" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD7" name="сфумато_1500" client="uCC3" supplier="uCA5"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD8" name="перспектива_по_гравюрам" client="uCC2" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD9" name="Рим_1545" client="uCC2" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD10" name="завершил_Пьету" client="uCA6" supplier="uCA9"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD11" name="завершил_Проповедь_св.Марка" client="uCA3" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD12" name="гос.художник_1483" client="uCP1" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD13" name="гос.художник_1516" client="uCP1" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD14" name="ведущий_художник_1576" client="uCP1" supplier="uCA7"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD15" name="звание_мастера" client="uCP2" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD16" name="звание_мастера" client="uCP2" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD17" name="заказы" client="uCP3" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD18" name="заказы" client="uCP3" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD19" name="главные_заказчики" client="uCP4" supplier="uCA7"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD20" name="суд_1573" client="uCP5" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD21" name="покровительство_1533" client="uCP6" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD22" name="заказы" client="uCP7" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD23" name="покровительство" client="uCP8" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD24" name="заказ_1552" client="uCP9" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD25" name="портрет_1545" client="uCP10" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD26" name="работал" client="uCC4" supplier="uCA2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD27" name="работал" client="uCC4" supplier="uCA6"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD28" name="работал" client="uCC4" supplier="uCA7"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD29" name="переехал_1553" client="uCC4" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD30" name="родился" client="uCC5" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD31" name="герцогство" client="uCC6" supplier="uCP8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD32" name="заказ_для_собора" client="uCC6" supplier="uCA8"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uD33" name="центр_Возрождения" client="uCC1" supplier="uCC2"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uUz2poYkGXLRB" name="заказы" client="uCP7" supplier="uCA6"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uk29ZwMMxLEAg" name="венецианцы" type="7" documentation="" backgroundcolor="#ffffff" usebackgroundcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="860" canvaswidth="1420" isopen="1">
+            <widgets>
+              <componentwidget xmi.id="uCA3" localid="uLA3" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="8" y="482" width="192" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA5" localid="uLA5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="411" y="482" width="135" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA6" localid="uLA6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="570" y="378" width="107" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA7" localid="uLA7" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1240" y="378" width="149" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA2" localid="uLA2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="184" y="378" width="189" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA9" localid="uLA9" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="750" y="482" width="178" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA8" localid="uLA8" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1028" y="482" width="121" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP4" localid="uLP4" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#99c1f1" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1166" y="121" width="223" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP9" localid="uLP9" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#f5c211" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="841" y="305" width="165" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC4" localid="uLC4" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="695" y="782" width="116" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC5" localid="uLC5" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="963" y="782" width="108" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP3" localid="uLP3" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#99c1f1" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="251" y="5" width="215" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP7" localid="uLP7" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#f5c211" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1039" y="203" width="124" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC2" localid="uLC2" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="282" y="649" width="214" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP2" localid="uLP2" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#99c1f1" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="8" y="123" width="193" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP1" localid="uLP1" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#99c1f1" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="454" y="121" width="235" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP5" localid="uLP5" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#99c1f1" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1251" y="597" width="138" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP6" localid="uLP6" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#f5c211" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="903" y="121" width="107" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA1" localid="uLA1" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="8" y="254" width="164" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC3" localid="uLC3" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="534" y="602" width="194" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCA4" localid="uLA4" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="8" y="649" width="221" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP10" localid="uLP10" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#f5c211" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="734" y="58" width="118" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC1" localid="uLC1" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="322" y="782" width="133" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCC6" localid="uLC6" textcolor="#000000" linecolor="#2e7d32" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#d5f5d5" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1202" y="782" width="112" height="60" isinstance="0" showstereotype="2"/>
+              <componentwidget xmi.id="uCP8" localid="uLP8" textcolor="#000000" linecolor="#1a5fb4" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#f5c211" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="829" y="611" width="181" height="60" isinstance="0" showstereotype="2"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="uD6" localid="uLe6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA4" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW6" localid="uLt6" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="104" y="603" width="152" height="19" isinstance="0" showstereotype="2" text="масляные_краски_1476" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="136.212" starty="649"/>
+                  <endpoint endx="260.788" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD4" localid="uLe4" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA6" widgetbid="uCA7" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW4" localid="uLt4" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1053" y="384" width="141" height="19" isinstance="0" showstereotype="2" text="10_дней_ученичества" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="677" starty="408"/>
+                  <endpoint endx="1240" endy="408"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD5" localid="uLe5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA6" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW5" localid="uLt5" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="759" y="430" width="114" height="19" isinstance="0" showstereotype="2" text="влияние_награда" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="677" starty="419.966"/>
+                  <endpoint endx="1028" endy="498.469"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD3" localid="uLe3" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA5" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW3" localid="uLt3" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="451" y="454" width="113" height="19" isinstance="0" showstereotype="2" text="друзья_соавторы" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="520.327" starty="482"/>
+                  <endpoint endx="581.673" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD1" localid="uLe1" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA2" widgetbid="uCA5" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW1" localid="uLt1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="336" y="439" width="118" height="19" isinstance="0" showstereotype="2" text="учитель_и_ученик" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="336.192" starty="438"/>
+                  <endpoint endx="420.808" endy="482"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD2" localid="uLe2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA2" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW2" localid="uLt2" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="410" y="384" width="118" height="19" isinstance="0" showstereotype="2" text="учитель_и_ученик" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="373" starty="408"/>
+                  <endpoint endx="570" endy="408"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uUz2poYkGXLRB" localid="u7HpDc5mso8m8" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP7" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="u5l76zrADh4nI" localid="u3bzlZs7a3RF1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="957.75" y="266" width="50" height="19" isinstance="0" showstereotype="2" text="заказы" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1039" starty="255.723"/>
+                  <endpoint endx="677" endy="388.393"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD0" localid="uLe0" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA1" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW0" localid="uLt0" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="98" y="326" width="112" height="19" isinstance="0" showstereotype="2" text="мастерская_отца" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="135.605" starty="314"/>
+                  <endpoint endx="232.895" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD7" localid="uLe7" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC3" widgetbid="uCA5" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW7" localid="uLt7" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="533" y="568" width="96" height="19" isinstance="0" showstereotype="2" text="сфумато_1500" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="592.875" starty="602"/>
+                  <endpoint endx="516.625" endy="542"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD8" localid="uLe8" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC2" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW8" localid="uLt8" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="229" y="530" width="171" height="19" isinstance="0" showstereotype="2" text="перспектива_по_гравюрам" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="376.768" starty="649"/>
+                  <endpoint endx="290.732" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD9" localid="uLe9" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC2" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW9" localid="uLt9" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="395" y="610" width="69" height="19" isinstance="0" showstereotype="2" text="Рим_1545" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="414.959" starty="649"/>
+                  <endpoint endx="597.541" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD10" localid="uLe10" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA6" widgetbid="uCA9" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW10" localid="uLt10" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="771" y="461" width="110" height="19" isinstance="0" showstereotype="2" text="завершил_Пьету" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="677" starty="433.819"/>
+                  <endpoint endx="776.837" endy="482"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD11" localid="uLe11" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCA3" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW11" localid="uLt11" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="-1" y="447" width="204" height="19" isinstance="0" showstereotype="2" text="завершил_Проповедь_св.Марка" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="154.337" starty="482"/>
+                  <endpoint endx="228.163" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD12" localid="uLe12" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP1" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW12" localid="uLt12" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="436" y="212" width="122" height="19" isinstance="0" showstereotype="2" text="гос.художник_1483" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="537.298" starty="181"/>
+                  <endpoint endx="312.702" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD13" localid="uLe13" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP1" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW13" localid="uLt13" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="548" y="259" width="122" height="19" isinstance="0" showstereotype="2" text="гос.художник_1516" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="577.57" starty="181"/>
+                  <endpoint endx="617.43" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD14" localid="uLe14" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP1" widgetbid="uCA7" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW14" localid="uLt14" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1088" y="330" width="160" height="19" isinstance="0" showstereotype="2" text="ведущий_художник_1576" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="658.232" starty="181"/>
+                  <endpoint endx="1240" endy="382.231"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD15" localid="uLe15" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP2" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW15" localid="uLt15" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="89" y="216" width="107" height="19" isinstance="0" showstereotype="2" text="звание_мастера" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="124.971" starty="183"/>
+                  <endpoint endx="258.029" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD16" localid="uLe16" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP2" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW16" localid="uLt16" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="216" y="200" width="107" height="19" isinstance="0" showstereotype="2" text="звание_мастера" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="186.728" starty="183"/>
+                  <endpoint endx="1028" endy="489.927"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD17" localid="uLe17" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP3" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW17" localid="uLt17" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="320" y="80" width="50" height="19" isinstance="0" showstereotype="2" text="заказы" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="352.066" starty="65"/>
+                  <endpoint endx="284.934" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD18" localid="uLe18" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP3" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW18" localid="uLt18" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="424" y="81" width="50" height="19" isinstance="0" showstereotype="2" text="заказы" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="404.412" starty="65"/>
+                  <endpoint endx="1042.59" endy="482"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD19" localid="uLe19" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP4" widgetbid="uCA7" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW19" localid="uLt19" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1238" y="276" width="124" height="19" isinstance="0" showstereotype="2" text="главные_заказчики" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1281.82" starty="181"/>
+                  <endpoint endx="1310.18" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD20" localid="uLe20" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP5" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW20" localid="uLt20" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1201" y="557" width="64" height="19" isinstance="0" showstereotype="2" text="суд_1573" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1259.61" starty="597"/>
+                  <endpoint endx="1148.89" endy="542"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD21" localid="uLe21" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP6" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW21" localid="uLt21" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="799.5" y="196.5" width="146" height="19" isinstance="0" showstereotype="2" text="покровительство_1533" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="917.628" starty="181"/>
+                  <endpoint endx="662.372" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD23" localid="uLe23" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP8" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW23" localid="uLt23" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="758.5" y="569.5" width="110" height="19" isinstance="0" showstereotype="2" text="покровительство" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="661.612" starty="438"/>
+                  <endpoint endx="881.388" endy="611"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD24" localid="uLe24" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP9" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW24" localid="uLt24" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1022" y="442" width="76" height="19" isinstance="0" showstereotype="2" text="заказ_1552" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="951.466" starty="365"/>
+                  <endpoint endx="1060.53" endy="482"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD25" localid="uLe25" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCP10" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW25" localid="uLt25" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="727.25" y="128.5" width="91" height="19" isinstance="0" showstereotype="2" text="портрет_1545" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="777.109" starty="118"/>
+                  <endpoint endx="639.391" endy="378"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD26" localid="uLe26" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC4" widgetbid="uCA2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW26" localid="uLt26" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="649" y="739" width="57" height="19" isinstance="0" showstereotype="2" text="работал" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="717.765" starty="782"/>
+                  <endpoint endx="313.735" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD27" localid="uLe27" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC4" widgetbid="uCA6" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW27" localid="uLt27" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="692" y="721" width="57" height="19" isinstance="0" showstereotype="2" text="работал" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="743.384" starty="782"/>
+                  <endpoint endx="633.116" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD28" localid="uLe28" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC4" widgetbid="uCA7" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW28" localid="uLt28" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="830" y="743" width="57" height="19" isinstance="0" showstereotype="2" text="работал" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="794.696" starty="782"/>
+                  <endpoint endx="1272.8" endy="438"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD29" localid="uLe29" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC4" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW29" localid="uLt29" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="802" y="695" width="101" height="19" isinstance="0" showstereotype="2" text="переехал_1553" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="786.55" starty="782"/>
+                  <endpoint endx="1054.95" endy="542"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD30" localid="uLe30" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC5" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW30" localid="uLt30" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1002" y="755" width="58" height="19" isinstance="0" showstereotype="2" text="родился" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1024.15" starty="782"/>
+                  <endpoint endx="1081.35" endy="542"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD31" localid="uLe31" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC6" widgetbid="uCP8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW31" localid="uLt31" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1127" y="760" width="72" height="19" isinstance="0" showstereotype="2" text="герцогство" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1202" starty="783.71"/>
+                  <endpoint endx="978.886" endy="671"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD32" localid="uLe32" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC6" widgetbid="uCA8" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW32" localid="uLt32" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="1137" y="699" width="120" height="19" isinstance="0" showstereotype="2" text="заказ_для_собора" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="1241.05" starty="782"/>
+                  <endpoint endx="1105.45" endy="542"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uD33" localid="uLe33" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="502" widgetaid="uCC1" widgetbid="uCC2" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <floatingtext xmi.id="uW33" localid="uLt33" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Liberation Sans,10,-1,5,50,0,0,0,0,0" autoresize="1" x="315" y="741" width="131" height="19" isinstance="0" showstereotype="2" text="центр_Возрождения" pretext="" posttext="" role="703"/>
+                <linepath layout="Direct">
+                  <startpoint startx="388.613" starty="782"/>
+                  <endpoint endx="388.887" endy="709"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uk29ZwMMxLEAg" documentation="" uniqueid="u3bzlZs7a3RF1"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Use_Case_View" type="802" open="1"/>
+        <listitem id="Component_View" type="821" open="1">
+          <listitem id="uCA4" type="822" open="1"/>
+          <listitem id="uCP2" type="822" open="1"/>
+          <listitem id="uCP1" type="822" open="1"/>
+          <listitem id="uk29ZwMMxLEAg" type="819" label="венецианцы" open="0"/>
+          <listitem id="uCC4" type="822" open="1"/>
+          <listitem id="uCC5" type="822" open="1"/>
+          <listitem id="uCA8" type="822" open="1"/>
+          <listitem id="uCA3" type="822" open="1"/>
+          <listitem id="uCA2" type="822" open="1"/>
+          <listitem id="uCA5" type="822" open="1"/>
+          <listitem id="uCP5" type="822" open="1"/>
+          <listitem id="uCP6" type="822" open="1"/>
+          <listitem id="uCP3" type="822" open="1"/>
+          <listitem id="uCC3" type="822" open="1"/>
+          <listitem id="uCC6" type="822" open="1"/>
+          <listitem id="uCP10" type="822" open="1"/>
+          <listitem id="uCA9" type="822" open="1"/>
+          <listitem id="uCP4" type="822" open="1"/>
+          <listitem id="uCA7" type="822" open="1"/>
+          <listitem id="uCA6" type="822" open="1"/>
+          <listitem id="uCP8" type="822" open="1"/>
+          <listitem id="uCP7" type="822" open="1"/>
+          <listitem id="uCC2" type="822" open="1"/>
+          <listitem id="uCC1" type="822" open="1"/>
+          <listitem id="uCP9" type="822" open="1"/>
+          <listitem id="uCA1" type="822" open="1"/>
+        </listitem>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uCQwJxBqf8rh2" type="807" label="диаграмма классов" open="0"/>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="urJRIJfY5pbyu" type="829" open="0"/>
+            <listitem id="uyK7b7uMVJ5D7" type="829" open="0"/>
+            <listitem id="uMqYLkUXvK1xz" type="829" open="0"/>
+            <listitem id="uWji24ADUkDk3" type="829" open="0"/>
+            <listitem id="ubRom0jva1B08" type="829" open="0"/>
+            <listitem id="uYcX9EIyRovW3" type="829" open="0"/>
+            <listitem id="unEwwCK0QGfeE" type="829" open="0"/>
+            <listitem id="ucMufjMcpIy81" type="829" open="0"/>
+            <listitem id="uj1qfAFXgGQ5m" type="829" open="0"/>
+            <listitem id="uq2YNEzm7lrJI" type="829" open="0"/>
+            <listitem id="uNowkfSD3lB0R" type="829" open="0"/>
+            <listitem id="uOZfyTidSJG1F" type="829" open="0"/>
+            <listitem id="uMRmBH94HjLFY" type="829" open="0"/>
+            <listitem id="um82ZBw3C0RWT" type="829" open="0"/>
+            <listitem id="ue61u7HOdUm5n" type="829" open="0"/>
+            <listitem id="uZvk2jWYMsw4w" type="829" open="0"/>
+            <listitem id="uQVEjh4ATPIa4" type="829" open="0"/>
+            <listitem id="u4mYSgSTtdttD" type="829" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
