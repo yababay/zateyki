@@ -1,42 +1,28 @@
-<script>
-	let { src, caption = '' } = $props();
+<script lang="ts">
+	import type { Snippet } from 'svelte';
+
+	interface Props {
+		/** Растровая картинка — используется, когда children не переданы. */
+		src?: string;
+		/** Подпись под figure; она же alt для картинки по умолчанию. */
+		caption?: string;
+		/** Явный alt, если он должен отличаться от подписи. */
+		alt?: string;
+		/** Произвольное содержимое: SVG, видео, iframe, таблица и т. д. */
+		children?: Snippet;
+	}
+
+	let { src, caption = '', alt, children }: Props = $props();
 </script>
 
 <figure class="rehype-figure">
-	<img {src} alt={caption} loading="lazy" decoding="async" />
+	{#if children}
+		{@render children()}
+	{:else if src}
+		<img {src} alt={alt ?? caption} loading="lazy" decoding="async" />
+	{/if}
+
 	{#if caption}
 		<figcaption>{caption}</figcaption>
 	{/if}
 </figure>
-
-<style lang="scss">
-
-    $figure-padding: .5rem;
-    $figure-max-width: 78ch;
-
-    figure,  img {
-        margin: 0;
-        display: block;
-    }
-    
-    figure {
-        margin-block: $figure-padding;
-        box-sizing: border-box;
-        border: 1px #ddd solid;
-        max-width: $figure-max-width;
-    }
-
-    img {
-        margin: $figure-padding;
-        width: 100%;
-        max-width: calc($figure-max-width - 2 * $figure-padding);
-        height: auto;
-    }
-
-    figcaption {
-        padding: 0;
-        margin: 0 0 $figure-padding $figure-padding;
-        color: #222;
-        font-size: small;
-    }    
-</style>

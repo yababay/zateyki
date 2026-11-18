@@ -65,6 +65,10 @@
 * [Зенон играет на «гармошке»](https://yababay.github.io/zateyki/zenon-igraet-na-garmoshke/)
 * [Пушка Гаусса против Горбатого](https://yababay.github.io/zateyki/gaussian-canon-and-zenon/)
 
+### Тексты других авторов
+
+* [Художники венецианского Возрождения](https://yababay.github.io/zateyki/venice-renaissance/)
+
 <!--
 ### Краткая история логики:
 
