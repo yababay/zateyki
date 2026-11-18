@@ -41,12 +41,16 @@
 * [Мы строили, строили… А зачем?](https://yababay.github.io/zateyki/my-stroili-stroili-a-zacem/)
 * [Откуда дровишки? (Обезлесенье в Англии)](https://yababay.github.io/zateyki/deforestation/)
 
-<!--
-
 ## История науки
 
 * [Комфортабельное квантовое путешествие](https://yababay.github.io/zateyki/comfortable-quantum-airlines/)
--->
+
+### Краткая история логики:
+
+* [ГЛАВА I. Марксова термодинамика](https://yababay.github.io/zateyki/holland-book-01/)
+* [ГЛАВА II. Архитекторы Порядка](https://yababay.github.io/zateyki/holland-book-02/)
+* [ГЛАВА III. Эдипы XX века](https://yababay.github.io/zateyki/holland-book-03/)
+* [ГЛАВА IV. Эрнст Мах наносит ответный удар](https://yababay.github.io/zateyki/holland-book-04/)
 
 ### В защиту Царицы небесной
 
@@ -65,17 +69,7 @@
 * [Зенон играет на «гармошке»](https://yababay.github.io/zateyki/zenon-igraet-na-garmoshke/)
 * [Пушка Гаусса против Горбатого](https://yababay.github.io/zateyki/gaussian-canon-and-zenon/)
 
-### Тексты других авторов
-
-* [Художники венецианского Возрождения](https://yababay.github.io/zateyki/venice-renaissance/)
-
 <!--
-### Краткая история логики:
-
-*    [ГЛАВА I](https://yababay.github.io/zateyki/holland-book-01/).   Марксова термодинамика
-*    [ГЛАВА II](https://yababay.github.io/zateyki/holland-book-02/).  Архитекторы Порядка
-*    [ГЛАВА III](https://yababay.github.io/zateyki/holland-book-03/). Эдипы XX века
-*    [ГЛАВА IV](https://yababay.github.io/zateyki/holland-book-04/).  Эрнст Мах наносит ответный удар
 
 ### Исторический Prolog
 
@@ -400,3 +394,7 @@
 * [В котельной](https://yababay.github.io/zateyki/articles/steamshop)
 
 -->
+
+### Тексты других авторов
+
+* [Художники венецианского Возрождения](https://yababay.github.io/zateyki/venice-renaissance/)
