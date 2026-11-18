@@ -1,0 +1,47 @@
+<div class="collapse" id="prolog-100" style=""><pre><code class="language-prolog hljs" data-highlighted="yes">
+<span class="hljs-comment">% Факты:</span>
+
+эпоха(<span class="hljs-string">"Первобытность"</span>).
+эпоха(<span class="hljs-string">"Древний мир"</span>).
+эпоха(<span class="hljs-string">"Античность"</span>).
+эпоха(<span class="hljs-string">"Тёмные века"</span>).
+эпоха(<span class="hljs-string">"Средневековье"</span>).
+эпоха(<span class="hljs-string">"Возрождение"</span> ).
+эпоха(<span class="hljs-string">"Новое время"</span>).
+эпоха(<span class="hljs-string">"Новейшее время"</span>).
+
+пересекаются([<span class="hljs-string">"Первобытность"</span>, <span class="hljs-string">"Древний мир"</span>]).
+пересекаются([<span class="hljs-string">"Первобытность"</span>, <span class="hljs-string">"Античность"</span>]).
+пересекаются([<span class="hljs-string">"Древний мир"</span>, <span class="hljs-string">"Античность"</span> ]).
+пересекаются([<span class="hljs-string">"Древний мир"</span>, <span class="hljs-string">"Средневековье"</span> ]).
+пересекаются([<span class="hljs-string">"Древний мир"</span>, <span class="hljs-string">"Тёмные века"</span>]).
+пересекаются([<span class="hljs-string">"Античность"</span>, <span class="hljs-string">"Тёмные века"</span>]).
+пересекаются([<span class="hljs-string">"Тёмные века"</span>, <span class="hljs-string">"Средневековье"</span> ]).
+пересекаются([<span class="hljs-string">"Античность"</span>, <span class="hljs-string">"Средневековье"</span> ]).
+пересекаются([<span class="hljs-string">"Средневековье"</span>, <span class="hljs-string">"Возрождение"</span> ]).
+пересекаются([<span class="hljs-string">"Средневековье"</span>, <span class="hljs-string">"Новое время"</span>]).
+пересекаются([<span class="hljs-string">"Возрождение"</span>, <span class="hljs-string">"Новое время"</span>]).
+пересекаются([<span class="hljs-string">"Новое время"</span>, <span class="hljs-string">"Новейшее время"</span>]).
+
+<span class="hljs-comment">% Правила:</span>
+
+не<span class="hljs-symbol">_</span>пересекаются(<span class="hljs-symbol">E1</span>, <span class="hljs-symbol">E2</span>):-
+    эпоха(<span class="hljs-symbol">E1</span>),
+    эпоха(<span class="hljs-symbol">E2</span>),
+    <span class="hljs-symbol">E1</span> \= <span class="hljs-symbol">E2</span>,
+    not(пересекаются([<span class="hljs-symbol">E1</span>, <span class="hljs-symbol">E2</span>])),
+    not(пересекаются([<span class="hljs-symbol">E2</span>, <span class="hljs-symbol">E1</span>])).
+
+<span class="hljs-comment">% Немного магии для работы со списками:</span>
+
+найти<span class="hljs-symbol">_</span>все(<span class="hljs-symbol">B</span>, <span class="hljs-symbol">L</span>):-
+    не<span class="hljs-symbol">_</span>пересекаются(<span class="hljs-symbol">E1</span>, <span class="hljs-symbol">E2</span>),
+    format(atom(<span class="hljs-symbol">A</span>), <span class="hljs-string">'Не пересекаются эпохи "~w" и "~w".'</span>, [<span class="hljs-symbol">E1</span>, <span class="hljs-symbol">E2</span>]),
+    not(member(<span class="hljs-symbol">A</span>, <span class="hljs-symbol">B</span>)),
+    write(<span class="hljs-symbol">A</span>), nl,
+    найти<span class="hljs-symbol">_</span>все([<span class="hljs-symbol">A</span>|<span class="hljs-symbol">B</span>], <span class="hljs-symbol">L</span>),!.
+
+найти<span class="hljs-symbol">_</span>все(<span class="hljs-symbol">B</span>, <span class="hljs-symbol">L</span>):-
+	<span class="hljs-symbol">L</span> = <span class="hljs-symbol">B</span>,!.
+
+</code></pre></div>

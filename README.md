@@ -69,14 +69,15 @@
 * [Зенон играет на «гармошке»](https://yababay.github.io/zateyki/zenon-igraet-na-garmoshke/)
 * [Пушка Гаусса против Горбатого](https://yababay.github.io/zateyki/gaussian-canon-and-zenon/)
 
-<!--
-
-### Исторический Prolog
+## Исторический Prolog
 
 * [Исторический Prolog](https://yababay.github.io/zateyki/istoriceskij-prolog/)
 * [Пушкин и саранча](https://yababay.github.io/zateyki/pushkin-i-sarancha/)
 * [Две Екатерины](https://yababay.github.io/zateyki/dve-ekateriny/)
 * [Витрувий, Беросс и другие фальсификаты](https://yababay.github.io/zateyki/vitruvij-in-vitro/)
+
+<!--
+
 
 ### Домен Краснобородых
 

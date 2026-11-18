@@ -69,14 +69,15 @@
 * [Зенон играет на «гармошке»](zenon-igraet-na-garmoshke/)
 * [Пушка Гаусса против Горбатого](gaussian-canon-and-zenon/)
 
-<!--
-
-### Исторический Prolog
+## Исторический Prolog
 
 * [Исторический Prolog](istoriceskij-prolog/)
 * [Пушкин и саранча](pushkin-i-sarancha/)
 * [Две Екатерины](dve-ekateriny/)
 * [Витрувий, Беросс и другие фальсификаты](vitruvij-in-vitro/)
+
+<!--
+
 
 ### Домен Краснобородых
 
