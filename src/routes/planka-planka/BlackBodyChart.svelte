@@ -2,12 +2,18 @@
 	interface Props {
 		temperature?: number;
 		showCatastrophe?: boolean;
+		showWien?: boolean;
 	}
 
-	let { temperature = $bindable(5800), showCatastrophe = $bindable(true) }: Props = $props();
+	let {
+		temperature = $bindable(5800),
+		showCatastrophe = $bindable(true),
+		showWien = $bindable(true)
+	}: Props = $props();
 
 	const initialTemp = temperature;
 	const initialCatastrophe = showCatastrophe;
+	const initialWien = showWien;
 
 	// Физические константы (СИ)
 	const h = 6.62607015e-34;
@@ -24,11 +30,11 @@
 	const PLOT_W = W - PAD_L - PAD_R;
 	const PLOT_H = H - PAD_T - PAD_B;
 
-	// Диапазон частот: 0 .. 1600 ТГц (1.6e15 Гц)
+	// Диапазон частот: 0 .. 1600 ТГц
 	const MAX_FREQ_THZ = 1600;
-	const MAX_Y = 4.2e-8; // Фиксированный масштаб по вертикали, чтобы был виден рост горба при нагреве
+	const MAX_Y = 4.2e-8;
 
-	// Спектральная плотность по формуле Планка B(nu, T)
+	// 1. Формула Планка B(nu, T)
 	function planck(freqThz: number, T: number): number {
 		if (freqThz <= 0) return 0;
 		const nu = freqThz * 1e12;
@@ -37,17 +43,26 @@
 		return ((2 * h * Math.pow(nu, 3)) / (c * c)) * (1 / (Math.exp(x) - 1));
 	}
 
-	// Классический закон Рэлея — Джинса
+	// 2. Классический закон Рэлея — Джинса (работает слева, взрывается справа)
 	function rayleighJeans(freqThz: number, T: number): number {
 		if (freqThz <= 0) return 0;
 		const nu = freqThz * 1e12;
-		return ((2 * Math.pow(nu, 2) * k * T) / (c * c));
+		return (2 * Math.pow(nu, 2) * k * T) / (c * c);
+	}
+
+	// 3. Приближение Вина (работает справа, занижает слева и на пике)
+	function wien(freqThz: number, T: number): number {
+		if (freqThz <= 0) return 0;
+		const nu = freqThz * 1e12;
+		const x = (h * nu) / (k * T);
+		if (x > 500) return 0;
+		return ((2 * h * Math.pow(nu, 3)) / (c * c)) * Math.exp(-x);
 	}
 
 	const freqToX = (f: number) => PAD_L + (f / MAX_FREQ_THZ) * PLOT_W;
 	const valToY = (v: number) => PAD_T + PLOT_H - (Math.min(v, MAX_Y * 1.15) / MAX_Y) * PLOT_H;
 
-	// Построение SVG path для кривой Планка
+	// Кривая Планка
 	const planckPath = $derived.by(() => {
 		const steps = 160;
 		const parts = new Array<string>();
@@ -60,12 +75,11 @@
 		return parts.join(' ');
 	});
 
-	// Заливка под кривой Планка
 	const planckAreaPath = $derived(
 		`${planckPath} L${freqToX(MAX_FREQ_THZ).toFixed(1)},${(PAD_T + PLOT_H).toFixed(1)} L${PAD_L},${(PAD_T + PLOT_H).toFixed(1)} Z`
 	);
 
-	// Построение SVG path для кривой Рэлея — Джинса
+	// Кривая Рэлея — Джинса
 	const rjPath = $derived.by(() => {
 		const steps = 120;
 		const parts = new Array<string>();
@@ -80,11 +94,22 @@
 		return parts.join(' ');
 	});
 
-	// Пик Вина по частоте: nu_max ≈ 58.79 ГГц/К * T
+	// Кривая Вина
+	const wienPath = $derived.by(() => {
+		const steps = 160;
+		const parts = new Array<string>();
+		for (let i = 0; i <= steps; i++) {
+			const f = (i / steps) * MAX_FREQ_THZ;
+			const x = freqToX(f).toFixed(1);
+			const y = valToY(wien(f, temperature)).toFixed(1);
+			parts.push(`${i === 0 ? 'M' : 'L'}${x},${y}`);
+		}
+		return parts.join(' ');
+	});
+
 	const peakFreqThz = $derived((58.789e9 * temperature) / 1e12);
 	const peakVal = $derived(planck(peakFreqThz, temperature));
 
-	// Интерактивный визир при наведении
 	let hoverFreq: number | null = $state(null);
 	let svgEl: SVGSVGElement | undefined = $state();
 
@@ -103,6 +128,7 @@
 	function resetState() {
 		temperature = initialTemp;
 		showCatastrophe = initialCatastrophe;
+		showWien = initialWien;
 		hoverFreq = null;
 	}
 
@@ -138,10 +164,17 @@
 			<button type="button" onclick={() => (temperature = 6800)}>Горячая звезда (6800 K)</button>
 		</div>
 
-		<label class="bb-checkbox">
-			<input type="checkbox" bind:checked={showCatastrophe} />
-			<span>Показать УФ-катастрофу (Рэлей — Джинс)</span>
-		</label>
+		<div class="bb-toggles">
+			<label class="bb-checkbox wien">
+				<input type="checkbox" bind:checked={showWien} />
+				<span>Закон Вина (занижает слева)</span>
+			</label>
+
+			<label class="bb-checkbox rj">
+				<input type="checkbox" bind:checked={showCatastrophe} />
+				<span>Рэлей — Джинс (взрывается справа)</span>
+			</label>
+		</div>
 	</div>
 
 	<svg
@@ -155,7 +188,6 @@
 		onpointerleave={() => (hoverFreq = null)}
 	>
 		<defs>
-			<!-- Радуга видимого диапазона (400..790 ТГц) -->
 			<linearGradient id="visibleSpectrum" x1="0" y1="0" x2="1" y2="0">
 				<stop offset="0%" stop-color="#ef4444" stop-opacity="0.32" />
 				<stop offset="22%" stop-color="#f97316" stop-opacity="0.32" />
@@ -175,10 +207,8 @@
 			</clipPath>
 		</defs>
 
-		<!-- Фон области графика -->
 		<rect x={PAD_L} y={PAD_T} width={PLOT_W} height={PLOT_H} fill="#181613" rx="4" />
 
-		<!-- Полоса видимого света (400..790 ТГц) -->
 		<rect
 			x={freqToX(400)}
 			y={PAD_T}
@@ -190,7 +220,6 @@
 		<text x={freqToX(200)} y={PAD_T + 18} class="band-sub">ИК-область</text>
 		<text x={freqToX(1180)} y={PAD_T + 18} class="band-sub">Ультрафиолет</text>
 
-		<!-- Сетка по Y -->
 		{#each yTicks as yt}
 			{@const y = valToY(yt)}
 			<line x1={PAD_L} y1={y} x2={PAD_L + PLOT_W} y2={y} class="grid-line" />
@@ -199,30 +228,31 @@
 			</text>
 		{/each}
 
-		<!-- Сетка по X -->
 		{#each xTicks as xt}
 			{@const x = freqToX(xt)}
 			<line x1={x} y1={PAD_T} x2={x} y2={PAD_T + PLOT_H} class="grid-line" />
 			<text {x} y={PAD_T + PLOT_H + 18} class="axis-label x-label">{xt}</text>
 		{/each}
 
-		<!-- Кривые внутри области обрезки -->
 		<g clip-path="url(#plotClip)">
-			<!-- Заливка и кривая Планка -->
+			<!-- Кривая Планка -->
 			<path d={planckAreaPath} fill="url(#planckFill)" />
 			<path d={planckPath} fill="none" stroke="#f59e0b" stroke-width="3" />
 
-			<!-- Кривая Рэлея — Джинса (УФ-катастрофа) -->
+			<!-- Кривая Вина -->
+			{#if showWien}
+				<path d={wienPath} fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="5 4" />
+			{/if}
+
+			<!-- Кривая Рэлея — Джинса -->
 			{#if showCatastrophe}
 				<path d={rjPath} fill="none" stroke="#ef4444" stroke-width="2.2" stroke-dasharray="7 5" />
 			{/if}
 
-			<!-- Точка максимума (пик Вина) -->
 			{#if peakFreqThz <= MAX_FREQ_THZ && peakVal <= MAX_Y * 1.1}
 				<circle cx={freqToX(peakFreqThz)} cy={valToY(peakVal)} r="4.5" fill="#fbbf24" stroke="#181613" stroke-width="1.5" />
 			{/if}
 
-			<!-- Интерактивный визир при наведении -->
 			{#if hoverFreq !== null}
 				{@const hx = freqToX(hoverFreq)}
 				{@const hVal = planck(hoverFreq, temperature)}
@@ -233,7 +263,6 @@
 			{/if}
 		</g>
 
-		<!-- Рамка и подписи осей -->
 		<rect x={PAD_L} y={PAD_T} width={PLOT_W} height={PLOT_H} fill="none" stroke="#5c5343" stroke-width="1.2" />
 		<text x={PAD_L + PLOT_W / 2} y={H - 10} class="axis-title">Частота излучения ν, ТГц (10¹² Гц)</text>
 		<text
@@ -248,10 +277,14 @@
 
 	<figcaption class="bb-footer">
 		{#if hoverFreq !== null && hoverFreq > 0}
-			<span><b>ν:</b> {hoverFreq.toFixed(0)} ТГц</span>
-			<span><b>λ:</b> {(299792 / hoverFreq).toFixed(0)} нм</span>
-			<span><b>Диапазон:</b> {getBandLabel(hoverFreq)}</span>
+			<span><b>ν:</b> {hoverFreq.toFixed(0)} ТГц ({getBandLabel(hoverFreq)})</span>
 			<span><b>Планк:</b> {planck(hoverFreq, temperature).toExponential(2)}</span>
+			{#if showWien}
+				<span style="color:#7dd3fc"><b>Вин:</b> {wien(hoverFreq, temperature).toExponential(2)}</span>
+			{/if}
+			{#if showCatastrophe}
+				<span style="color:#fca5a5"><b>Рэлей:</b> {rayleighJeans(hoverFreq, temperature).toExponential(2)}</span>
+			{/if}
 		{:else}
 			<span>Пик «горба» при <b>{temperature} K</b>: <b>{peakFreqThz.toFixed(0)} ТГц</b> ({getBandLabel(peakFreqThz)}). Наведите на график или дважды щёлкните для сброса.</span>
 		{/if}
@@ -320,16 +353,31 @@
 		}
 	}
 
+	.bb-toggles {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+
 	.bb-checkbox {
 		display: flex;
 		align-items: center;
-		gap: 0.4rem;
-		color: #fca5a5;
+		gap: 0.35rem;
 		font-size: 0.8rem;
 		cursor: pointer;
 
-		input {
-			accent-color: #ef4444;
+		&.wien {
+			color: #7dd3fc;
+			input {
+				accent-color: #38bdf8;
+			}
+		}
+
+		&.rj {
+			color: #fca5a5;
+			input {
+				accent-color: #ef4444;
+			}
 		}
 	}
 
