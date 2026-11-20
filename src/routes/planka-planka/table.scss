@@ -1,0 +1,8 @@
+table.planck {
+    margin-bottom: 2rem;
+    td:nth-child(1) { width: 65px; }
+    td:nth-child(2) { width: 90px; }
+    * {
+        font-size: small;
+    }
+}
