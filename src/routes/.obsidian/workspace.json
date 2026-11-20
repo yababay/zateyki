@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "06e9f2bd8e4c3ed3",
+        "id": "cd75eee24bccf626",
         "type": "tabs",
         "children": [
           {
-            "id": "5eb5dcc690462b47",
+            "id": "b5d5f1d49e099c86",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -184,8 +184,11 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "5eb5dcc690462b47",
+  "active": "b5d5f1d49e099c86",
   "lastOpenFiles": [
+    "comfortable-quantum-airlines/+page.md",
+    "planka-planka/+page.md",
+    "comfortable-quantum-airlines.md",
     "podnoshenie-svyatomu-yanusu/+page.md",
     "1492-god-kak-nacalo-novoj-ery/+page.md",
     "zoasen-du-belle-poet-ruinist/+page.md",
@@ -228,8 +231,6 @@
     "plodotvornyj-mogilnicek/+page.md",
     "hronologiceskie-inekcii/+page.md",
     "istoriceskaa-srapnel/+page.md",
-    "_templates/+page.md",
-    "istoriceskaa-srapnel.md",
-    "locomotiv-alternativ/+page.md"
+    "_templates/+page.md"
   ]
 }

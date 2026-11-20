@@ -39,11 +39,12 @@
 * [Монета Moneta](moneta-moneta/)
 * [Маркс и подкустовый выползень](karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](my-stroili-stroili-a-zacem/)
-* [Откуда дровишки? (Обезлесенье в Англии)](deforestation/)
+* [Откуда дровишки, или? Обезлесенье в Англии](deforestation/)
 
 ## История науки
 
 * [Комфортабельное квантовое путешествие](comfortable-quantum-airlines/)
+* [Планка Планка](planka-planka/)
 
 ### Краткая история логики:
 
@@ -76,6 +77,17 @@
 * [Две Екатерины](dve-ekateriny/)
 * [Витрувий, Беросс и другие фальсификаты](vitruvij-in-vitro/)
 
+## Зерновой триллер
+
+* [Египетский центнер с гектара](centnery-gektary-i-aleksandria-egipetskaa/)
+* [«Неправильные пчелы» древней Индии](aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
+* [Колоссы и колосья](kolossy-kolosa-i-barbariki/)
+* [Берега крутые и пологие](za-krutymi-tanutsa-berega-pologie/)
+* [Китеж как экологическая катастрофа](grad-kitez-kak-ekologiceskaa-katastrofa/)
+* [По следам Рислинга](po-sledam-rislinga/)
+* [Крица и корица](krica-i-korica/)
+* [Зерновой триллер](zernovoj-triller-dlinoj-v-1000-let/)
+
 <!--
 
 
@@ -86,17 +98,6 @@
 * [Между первой и второй](mezdu-pervoj-i-vtoroj-pereryvcik-nebolsoj/)
 * [Италия не резиновая](italia-ne-rezinovaa/)
 * [Немцы и Немезида](nemcy-i-nemezida/)
-
-### Зерновой триллер
-
-* [Египетский центнер с гектара](centnery-gektary-i-aleksandria-egipetskaa/)
-* [«Неправильные пчелы» древней Индии](aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
-* [Колоссы и колосья](kolossy-kolosa-i-barbariki/)
-* [Берега крутые и пологие](za-krutymi-tanutsa-berega-pologie/)
-* [Китеж как экологическая катастрофа](grad-kitez-kak-ekologiceskaa-katastrofa/)
-* [Зерновой триллер](zernovoj-triller-dlinoj-v-1000-let/)
-* [По следам Рислинга](po-sledam-rislinga/)
-* [Крица и корица](krica-i-korica/)
 
 ### Творческое наследие Копьетряса
 

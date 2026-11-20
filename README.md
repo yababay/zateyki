@@ -39,11 +39,12 @@
 * [Монета Moneta](https://yababay.github.io/zateyki/moneta-moneta/)
 * [Маркс и подкустовый выползень](https://yababay.github.io/zateyki/karl-marks-i-podkustovyj-vypolzen-cast-1/)
 * [Мы строили, строили… А зачем?](https://yababay.github.io/zateyki/my-stroili-stroili-a-zacem/)
-* [Откуда дровишки? (Обезлесенье в Англии)](https://yababay.github.io/zateyki/deforestation/)
+* [Откуда дровишки, или? Обезлесенье в Англии](https://yababay.github.io/zateyki/deforestation/)
 
 ## История науки
 
 * [Комфортабельное квантовое путешествие](https://yababay.github.io/zateyki/comfortable-quantum-airlines/)
+* [Планка Планка](https://yababay.github.io/zateyki/planka-planka/)
 
 ### Краткая история логики:
 
@@ -76,6 +77,17 @@
 * [Две Екатерины](https://yababay.github.io/zateyki/dve-ekateriny/)
 * [Витрувий, Беросс и другие фальсификаты](https://yababay.github.io/zateyki/vitruvij-in-vitro/)
 
+## Зерновой триллер
+
+* [Египетский центнер с гектара](https://yababay.github.io/zateyki/centnery-gektary-i-aleksandria-egipetskaa/)
+* [«Неправильные пчелы» древней Индии](https://yababay.github.io/zateyki/aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
+* [Колоссы и колосья](https://yababay.github.io/zateyki/kolossy-kolosa-i-barbariki/)
+* [Берега крутые и пологие](https://yababay.github.io/zateyki/za-krutymi-tanutsa-berega-pologie/)
+* [Китеж как экологическая катастрофа](https://yababay.github.io/zateyki/grad-kitez-kak-ekologiceskaa-katastrofa/)
+* [По следам Рислинга](https://yababay.github.io/zateyki/po-sledam-rislinga/)
+* [Крица и корица](https://yababay.github.io/zateyki/krica-i-korica/)
+* [Зерновой триллер](https://yababay.github.io/zateyki/zernovoj-triller-dlinoj-v-1000-let/)
+
 <!--
 
 
@@ -86,17 +98,6 @@
 * [Между первой и второй](https://yababay.github.io/zateyki/mezdu-pervoj-i-vtoroj-pereryvcik-nebolsoj/)
 * [Италия не резиновая](https://yababay.github.io/zateyki/italia-ne-rezinovaa/)
 * [Немцы и Немезида](https://yababay.github.io/zateyki/nemcy-i-nemezida/)
-
-### Зерновой триллер
-
-* [Египетский центнер с гектара](https://yababay.github.io/zateyki/centnery-gektary-i-aleksandria-egipetskaa/)
-* [«Неправильные пчелы» древней Индии](https://yababay.github.io/zateyki/aleksandr-makedonskij-robinzon-kruzo-i-nepravilnye-pcely/)
-* [Колоссы и колосья](https://yababay.github.io/zateyki/kolossy-kolosa-i-barbariki/)
-* [Берега крутые и пологие](https://yababay.github.io/zateyki/za-krutymi-tanutsa-berega-pologie/)
-* [Китеж как экологическая катастрофа](https://yababay.github.io/zateyki/grad-kitez-kak-ekologiceskaa-katastrofa/)
-* [Зерновой триллер](https://yababay.github.io/zateyki/zernovoj-triller-dlinoj-v-1000-let/)
-* [По следам Рислинга](https://yababay.github.io/zateyki/po-sledam-rislinga/)
-* [Крица и корица](https://yababay.github.io/zateyki/krica-i-korica/)
 
 ### Творческое наследие Копьетряса
 
