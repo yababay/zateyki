@@ -8,6 +8,7 @@ description: Квантовая теория не так удивительна,
    	import Footnote from '#lib/components/Footnote.svelte';
     //import banner from './banner.webp'
     //import pinup  from './pinup.webp'
+    import 'katex/dist/katex.min.css'
 </script>
 
 <!-- Pinup {title} {description} {pinup} {banner} / -->
