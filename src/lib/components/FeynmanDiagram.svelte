@@ -499,4 +499,10 @@
 			margin-bottom: 0;
 		}
 	}
-</style>
+	.feynman-caption {
+		:global(.katex svg) {
+			width: auto;
+			height: inherit;
+			display: inline;
+	}
+}</style>
