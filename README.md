@@ -46,6 +46,8 @@
 * [Комфортабельное квантовое путешествие](https://yababay.github.io/zateyki/comfortable-quantum-airlines/)
 * [Планка Планка](https://yababay.github.io/zateyki/planka-planka/)
 * [Бытовые проблемы элементарных частиц](https://yababay.github.io/zateyki/feynman-diagrams/)
+* [От сувенира к сувениру](https://yababay.github.io/zateyki/naina/)
+* [Электронно-позитронный тройничок](https://yababay.github.io/zateyki/troynichok/)
 
 ### Краткая история логики:
 
