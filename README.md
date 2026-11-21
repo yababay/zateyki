@@ -45,6 +45,7 @@
 
 * [Комфортабельное квантовое путешествие](https://yababay.github.io/zateyki/comfortable-quantum-airlines/)
 * [Планка Планка](https://yababay.github.io/zateyki/planka-planka/)
+* [Бытовые проблемы элементарных частиц](https://yababay.github.io/zateyki/feynman-diagrams/)
 
 ### Краткая история логики:
 
