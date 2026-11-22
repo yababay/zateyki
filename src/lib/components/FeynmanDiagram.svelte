@@ -2,15 +2,12 @@
 	import type { Snippet } from 'svelte';
 
 	type DiagramType = 'vertex' | 'scattering' | 'annihilation' | 'box' | 'loop' | 'triplet';
+	type ParticleRole = 'electron' | 'positron' | 'photon';
 
 	interface Props {
-		/** Встроенный пресет (теперь тоже рендерится через сетку иконок) */
 		type?: DiagramType;
-		/** Пользовательская псевдографика */
 		ascii?: string;
-		/** Заголовок карточки */
 		title?: string;
-		/** Бейдж с «налогом» */
 		tax?: string;
 		caption?: Snippet;
 		children?: Snippet;
@@ -20,12 +17,12 @@
 
 	const hasCaption = $derived(Boolean(caption || children));
 
-	// Встроенные пресеты в формате той же псевдографики для 100% единого стиля
+	// Встроенные пресеты на новой бесшовной сетке
 	const PRESETS: Record<DiagramType, string> = {
 		vertex: [
-			'e-     g ',
-			' \\    ~  ',
-			'  ↖  ~   ',
+			'e-    g ',
+			' \\   z  ',
+			'  ↖ z   ',
 			'   *     ',
 			'  ↗      ',
 			' /       ',
@@ -60,13 +57,13 @@
 
 		box: [
 			'g           g',
-			' ~         ~ ',
-			'  *-- > --*  ',
+			' x         z ',
+			'  *---<---*  ',
 			'  |       |  ',
 			'  ^       v  ',
 			'  |       |  ',
-			'  *-- < --*  ',
-			' ~         ~ ',
+			'  *--->---*  ',
+			' z         x ',
 			'g           g'
 		].join('\n'),
 
@@ -75,11 +72,11 @@
 			'  |       ',
 			'  ^       ',
 			'  |       ',
-			'  * ~ ~   ',
-			'  |    :  ',
-			'  ^  g :  ',
-			'  |    :  ',
-			'  * ~ ~   ',
+			'  *~~~    ',
+			'  |   :   ',
+			'  ^ g :   ',
+			'  |   :   ',
+			'  *~~~     ',
 			'  |       ',
 			'  ^       ',
 			'  |       ',
@@ -88,7 +85,7 @@
 
 		triplet: [
 			'g     g     g',
-			' ~    :    ~ ',
+			' x    :    z ',
 			'  *---*---*  ',
 			'   \\     /   ',
 			'    ↗   ↘    ',
@@ -97,12 +94,38 @@
 		].join('\n')
 	};
 
+	// Ориентация отрезка в клетке: 'v' (|), 'h' (-), 'd1' (/), 'd2' (\)
+	type Orient = 'v' | 'h' | 'd1' | 'd2';
+
+	interface Stub {
+		dx: number;
+		dy: number;
+		isPhoton: boolean;
+		role: ParticleRole;
+	}
+
 	interface GridCell {
-		kind: 'empty' | 'icon' | 'label';
-		iconClass?: string;
-		rotate?: number;
-		colorClass?: string;
+		r: number;
+		c: number;
+		kind: 'empty' | 'fermion' | 'photon' | 'vertex' | 'label';
+		orient?: Orient;
+		arrowAngle?: number; // угол стрелки в градусах (0 = вправо, -90 = вверх, 90 = вниз)
+		role: ParticleRole;
 		text?: string;
+		stubs?: Array<Stub>;
+	}
+
+	// Проверяем, стыкуется ли клетка с направлением (dx, dy)
+	function connectsTo(cell: GridCell | undefined, dx: number, dy: number): boolean {
+		if (!cell) return false;
+		if (cell.kind === 'vertex' || cell.kind === 'label') return true;
+		if (cell.kind === 'fermion' || cell.kind === 'photon') {
+			if (cell.orient === 'v') return dx === 0 && dy !== 0;
+			if (cell.orient === 'h') return dy === 0 && dx !== 0;
+			if (cell.orient === 'd1') return (dx === 1 && dy === -1) || (dx === -1 && dy === 1); // '/'
+			if (cell.orient === 'd2') return (dx === -1 && dy === -1) || (dx === 1 && dy === 1); // '\'
+		}
+		return false;
 	}
 
 	const gridData = $derived.by(() => {
@@ -111,68 +134,153 @@
 		const rows = rawLines.length;
 		const cols = Math.max(...rawLines.map((l) => l.length), 1);
 
-		const cells = new Array<GridCell>();
+		const matrix = new Array<Array<GridCell>>();
 
 		for (let r = 0; r < rows; r++) {
-			const line = rawLines[r];
-			for (let c = 0; c < cols; c++) {
-				const ch = line[c] ?? ' ';
-				const next = line[c + 1] ?? '';
+			const rowArr = new Array<GridCell>();
+			const line = rawLines.at(r) ?? '';
 
-				// Двухсимвольные обозначения частиц: e-, e+, m-, m+
+			for (let c = 0; c < cols; c++) {
+				const ch = line.at(c) ?? ' ';
+				const next = line.at(c + 1) ?? '';
+
+				// Двухсимвольные метки частиц: e-, e+, m-, m+
 				if ((ch === 'e' || ch === 'm') && (next === '-' || next === '+')) {
 					const isPos = next === '+';
 					const base = ch === 'm' ? 'μ' : 'e';
-					cells.push({
+					rowArr.push({
+						r,
+						c,
 						kind: 'label',
-						text: `${base}${isPos ? '⁺' : '⁻'}`,
-						colorClass: isPos ? 'c-positron' : 'c-electron'
+						role: isPos ? 'positron' : 'electron',
+						text: `${base}${isPos ? '⁺' : '⁻'}`
 					});
-					// Следующую ячейку занимаем пустышкой, чтобы сохранить сетку
-					cells.push({ kind: 'empty' });
+					rowArr.push({ r, c: c + 1, kind: 'empty', role: 'electron' });
 					c++;
 					continue;
 				}
 
 				if (ch === 'g' || ch === 'γ') {
-					cells.push({ kind: 'label', text: 'γ', colorClass: 'c-photon' });
-				} else if (ch === '|') {
-					cells.push({ kind: 'icon', iconClass: 'bi-dash-lg', rotate: 90, colorClass: 'c-electron' });
-				} else if (ch === '-') {
-					cells.push({ kind: 'icon', iconClass: 'bi-dash-lg', rotate: 0, colorClass: 'c-electron' });
-				} else if (ch === '/') {
-					cells.push({ kind: 'icon', iconClass: 'bi-dash-lg', rotate: -45, colorClass: 'c-electron' });
-				} else if (ch === '\\') {
-					cells.push({ kind: 'icon', iconClass: 'bi-dash-lg', rotate: 45, colorClass: 'c-electron' });
-				} else if (ch === '~') {
-					cells.push({ kind: 'icon', iconClass: 'bi-soundwave', rotate: 0, colorClass: 'c-photon' });
-				} else if (ch === ':') {
-					cells.push({ kind: 'icon', iconClass: 'bi-soundwave', rotate: 90, colorClass: 'c-photon' });
+					rowArr.push({ r, c, kind: 'label', role: 'photon', text: 'γ' });
 				} else if (ch === '*') {
-					cells.push({ kind: 'icon', iconClass: 'bi-circle-fill', rotate: 0, colorClass: 'c-vertex' });
+					rowArr.push({ r, c, kind: 'vertex', role: 'electron', stubs: new Array<Stub>() });
+				} else if (ch === '|') {
+					rowArr.push({ r, c, kind: 'fermion', orient: 'v', role: 'electron' });
+				} else if (ch === '-') {
+					rowArr.push({ r, c, kind: 'fermion', orient: 'h', role: 'electron' });
+				} else if (ch === '/') {
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd1', role: 'electron' });
+				} else if (ch === '\\') {
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd2', role: 'electron' });
 				} else if (ch === '^') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-up', rotate: 0, colorClass: 'c-electron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'v', arrowAngle: -90, role: 'electron' });
 				} else if (ch === 'v') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-down', rotate: 0, colorClass: 'c-positron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'v', arrowAngle: 90, role: 'positron' });
 				} else if (ch === '>') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-right', rotate: 0, colorClass: 'c-electron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'h', arrowAngle: 0, role: 'electron' });
 				} else if (ch === '<') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-left', rotate: 0, colorClass: 'c-positron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'h', arrowAngle: 180, role: 'positron' });
 				} else if (ch === '↗' || ch === '1') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-up-right', rotate: 0, colorClass: 'c-electron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd1', arrowAngle: -45, role: 'electron' });
 				} else if (ch === '↖' || ch === '2') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-up-left', rotate: 0, colorClass: 'c-electron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd2', arrowAngle: -135, role: 'electron' });
 				} else if (ch === '↘' || ch === '3') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-down-right', rotate: 0, colorClass: 'c-positron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd2', arrowAngle: 45, role: 'positron' });
 				} else if (ch === '↙' || ch === '4') {
-					cells.push({ kind: 'icon', iconClass: 'bi-arrow-down-left', rotate: 0, colorClass: 'c-positron' });
+					rowArr.push({ r, c, kind: 'fermion', orient: 'd1', arrowAngle: 135, role: 'positron' });
+				} else if (ch === '~') {
+					rowArr.push({ r, c, kind: 'photon', orient: 'h', role: 'photon' });
+				} else if (ch === ':') {
+					rowArr.push({ r, c, kind: 'photon', orient: 'v', role: 'photon' });
+				} else if (ch === 'z') {
+					rowArr.push({ r, c, kind: 'photon', orient: 'd1', role: 'photon' });
+				} else if (ch === 'x') {
+					rowArr.push({ r, c, kind: 'photon', orient: 'd2', role: 'photon' });
 				} else {
-					cells.push({ kind: 'empty' });
+					rowArr.push({ r, c, kind: 'empty', role: 'electron' });
+				}
+			}
+			matrix.push(rowArr);
+		}
+
+		// Шаг 2: Распространяем голубой цвет позитрона по связанным отрезкам до ближайшего узла '*'
+		let changed = true;
+		while (changed) {
+			changed = false;
+			for (let r = 0; r < rows; r++) {
+				for (let c = 0; c < cols; c++) {
+					const cell = matrix.at(r)?.at(c);
+					if (!cell || cell.kind !== 'fermion' || cell.role === 'positron') continue;
+
+					// Проверяем оба конца этого отрезка
+					const dirs =
+						cell.orient === 'v'
+							? Array.of(Array.of(0, -1), Array.of(0, 1))
+							: cell.orient === 'h'
+								? Array.of(Array.of(-1, 0), Array.of(1, 0))
+								: cell.orient === 'd1'
+									? Array.of(Array.of(1, -1), Array.of(-1, 1))
+									: Array.of(Array.of(-1, -1), Array.of(1, 1));
+
+					for (const d of dirs) {
+						const dx = d.at(0) ?? 0;
+						const dy = d.at(1) ?? 0;
+						const nb = matrix.at(r + dy)?.at(c + dx);
+						if (nb && nb.role === 'positron' && (nb.kind === 'fermion' || nb.kind === 'label')) {
+							if (connectsTo(nb, -dx, -dy)) {
+								cell.role = 'positron';
+								changed = true;
+								break;
+							}
+						}
+					}
 				}
 			}
 		}
 
-		return { rows, cols, cells };
+		// Шаг 3: Достраиваем соединительные лучи от красных узлов '*' к соседним линиям
+		const allDirs = Array.of(
+			Array.of(-1, -1),
+			Array.of(0, -1),
+			Array.of(1, -1),
+			Array.of(-1, 0),
+			Array.of(1, 0),
+			Array.of(-1, 1),
+			Array.of(0, 1),
+			Array.of(1, 1)
+		);
+
+		for (let r = 0; r < rows; r++) {
+			for (let c = 0; c < cols; c++) {
+				const cell = matrix.at(r)?.at(c);
+				if (!cell || cell.kind !== 'vertex' || !cell.stubs) continue;
+
+				for (const d of allDirs) {
+					const dx = d.at(0) ?? 0;
+					const dy = d.at(1) ?? 0;
+					const nb = matrix.at(r + dy)?.at(c + dx);
+					if (nb && (nb.kind === 'fermion' || nb.kind === 'photon' || nb.kind === 'vertex')) {
+						if (connectsTo(nb, -dx, -dy)) {
+							cell.stubs.push({
+								dx,
+								dy,
+								isPhoton: nb.kind === 'photon',
+								role: nb.role
+							});
+						}
+					}
+				}
+			}
+		}
+
+		const flatCells = new Array<GridCell>();
+		for (const rowArr of matrix) {
+			for (const cell of rowArr) {
+				flatCells.push(cell);
+			}
+		}
+
+		return { rows, cols, cells: flatCells };
 	});
 </script>
 
@@ -200,30 +308,77 @@
 			>
 				{#each gridData.cells as cell}
 					<div class="fd-tile">
-						{#if cell.kind === 'icon'}
-							<i
-								class="bi {cell.iconClass} {cell.colorClass}"
-								style={cell.rotate ? `transform: rotate(${cell.rotate}deg);` : undefined}
-							></i>
+						{#if cell.kind === 'fermion'}
+							<svg viewBox="0 0 100 100" class="tile-svg {cell.role}">
+								{#if cell.orient === 'v'}
+									<line x1="50" y1="0" x2="50" y2="100" class="seg" />
+								{:else if cell.orient === 'h'}
+									<line x1="0" y1="50" x2="100" y2="50" class="seg" />
+								{:else if cell.orient === 'd1'}
+									<line x1="0" y1="100" x2="100" y2="0" class="seg" />
+								{:else if cell.orient === 'd2'}
+									<line x1="0" y1="0" x2="100" y2="100" class="seg" />
+								{/if}
+
+								{#if cell.arrowAngle !== undefined}
+									<polygon
+										points="68,50 36,33 44,50 36,67"
+										class="arrow-head"
+										transform="rotate({cell.arrowAngle}, 50, 50)"
+									/>
+								{/if}
+							</svg>
+						{:else if cell.kind === 'photon'}
+							{@const rot =
+								cell.orient === 'v' ? 90 : cell.orient === 'd1' ? -45 : cell.orient === 'd2' ? 45 : 0}
+							<svg viewBox="0 0 100 100" class="tile-svg photon">
+								<path
+									d={cell.orient === 'd1' || cell.orient === 'd2'
+										? 'M -21 50 Q -3 26, 15 50 T 50 50 T 85 50 T 121 50'
+										: 'M 0 50 Q 12.5 26, 25 50 T 50 50 T 75 50 T 100 50'}
+									class="wave"
+									transform={rot ? `rotate(${rot}, 50, 50)` : undefined}
+								/>
+							</svg>
+						{:else if cell.kind === 'vertex'}
+							<svg viewBox="0 0 100 100" class="tile-svg">
+								{#if cell.stubs}
+									{#each cell.stubs as st}
+										{@const tx = 50 + st.dx * 50}
+										{@const ty = 50 + st.dy * 50}
+										{#if st.isPhoton}
+											{@const ang = (Math.atan2(st.dy, st.dx) * 180) / Math.PI}
+											{@const dist = Math.hypot(st.dx, st.dy) * 50}
+											<path
+												d="M 50 50 Q {50 + dist * 0.25} 30, {50 + dist * 0.5} 50 T {50 + dist} 50"
+												class="wave photon"
+												transform="rotate({ang}, 50, 50)"
+											/>
+										{:else}
+											<line x1="50" y1="50" x2={tx} y2={ty} class="seg {st.role}" />
+										{/if}
+									{/each}
+								{/if}
+								<circle cx="50" cy="50" r="15" class="vertex-dot" />
+							</svg>
 						{:else if cell.kind === 'label'}
-							<span class="fd-lbl {cell.colorClass}">{cell.text}</span>
+							<span class="fd-lbl {cell.role}">{cell.text}</span>
 						{/if}
 					</div>
 				{/each}
 			</div>
 		</div>
-
 	</div>
 
-	{#if hasCaption}
-		<figcaption class="feynman-caption">
-			{#if caption}
-				{@render caption()}
-			{:else if children}
-				{@render children()}
-			{/if}
-		</figcaption>
-	{/if}
+		{#if hasCaption}
+			<figcaption class="feynman-caption">
+				{#if caption}
+					{@render caption()}
+				{:else if children}
+					{@render children()}
+				{/if}
+			</figcaption>
+		{/if}
 </figure>
 
 <style lang="scss">
@@ -278,7 +433,7 @@
 		background: #181613;
 		border-radius: 8px;
 		border: 1px solid #2e2a24;
-		padding: 1.1rem 0.75rem;
+		padding: 1.2rem 0.75rem;
 		box-sizing: border-box;
 		overflow-x: auto;
 	}
@@ -301,46 +456,81 @@
 	}
 
 	.fd-tile {
-		width: 1.75rem;
-		height: 1.75rem;
+		width: 1.85rem;
+		height: 1.85rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 1.45rem;
-		line-height: 1;
 
 		@media (max-width: 520px) {
-			width: 1.35rem;
-			height: 1.35rem;
-			font-size: 1.15rem;
+			width: 1.4rem;
+			height: 1.4rem;
 		}
+	}
 
-		i {
-			display: inline-block;
-		}
+	.tile-svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		padding: 0;
+	}
+
+	.seg {
+		stroke-width: 8;
+		stroke-linecap: round;
+		fill: none;
+	}
+
+	.electron .seg,
+	.seg.electron {
+		stroke: #f59e0b;
+	}
+
+	.positron .seg,
+	.seg.positron {
+		stroke: #38bdf8;
+	}
+
+	.electron .arrow-head {
+		fill: #f59e0b;
+	}
+
+	.positron .arrow-head {
+		fill: #38bdf8;
+	}
+
+	.wave {
+		stroke: #e2d8c3;
+		stroke-width: 7.5;
+		stroke-linecap: round;
+		fill: none;
+	}
+
+	.vertex-dot {
+		fill: #ef4444;
+		stroke: #181613;
+		stroke-width: 5;
 	}
 
 	.fd-lbl {
 		font-family: 'JetBrains Mono', monospace;
 		font-size: 0.95rem;
 		font-weight: 700;
-	}
 
-	.c-electron {
-		color: #f59e0b;
-	}
+		&.electron {
+			color: #f59e0b;
+		}
 
-	.c-positron {
-		color: #38bdf8;
-	}
+		&.positron {
+			color: #38bdf8;
+		}
 
-	.c-photon {
-		color: #e2d8c3;
-	}
-
-	.c-vertex {
-		color: #ef4444;
-		font-size: 0.78rem;
+		&.photon {
+			color: #e2d8c3;
+			font-style: italic;
+		}
 	}
 
 	.feynman-caption {
