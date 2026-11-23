@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '#lib/styles/widget.scss';
+
 	interface Props {
 		slide?: number;
 		cursor?: number;
@@ -183,6 +185,30 @@
 		dragging = null;
 	}
 
+	function onSliderKeyDown(target: 'slide' | 'cursor', e: KeyboardEvent) {
+		const current = target === 'slide' ? slideOffset : cursorPos;
+		const min = target === 'slide' ? -0.95 : 0;
+		const max = target === 'slide' ? 0.95 : 1;
+		const step = e.shiftKey ? 0.1 : 0.01;
+		let next = current;
+
+		if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') next -= step;
+		else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') next += step;
+		else if (e.key === 'Home') next = min;
+		else if (e.key === 'End') next = max;
+		else return;
+
+		e.preventDefault();
+		next = Math.max(min, Math.min(max, next));
+		if (target === 'slide') {
+			slideOffset = next;
+			slide = Number(Math.pow(10, next).toFixed(3));
+		} else {
+			cursorPos = next;
+			cursor = Number(posToValD(next).toFixed(3));
+		}
+	}
+
 	const readD = $derived(posToValD(cursorPos));
 	const readK = $derived(Math.pow(10, cursorPos * 3));
 	const readA = $derived(Math.pow(10, cursorPos * 2));
@@ -200,21 +226,21 @@
 		cursor = c;
 	}
 </script>
-<figure class="sr-wrapper" aria-label="Интерактивная логарифмическая линейка">
-	<div class="sr-toolbar">
+<figure class="z-widget sr-wrapper" aria-label="Интерактивная логарифмическая линейка">
+	<div class="z-widget-toolbar sr-toolbar">
 		<span class="sr-hint">Тяните <b>движок</b> или стеклянный <b>визир</b> мышкой / пальцем</span>
-		<div class="sr-presets">
-			<button type="button" onclick={() => applyPreset(1, 3.4)}>Пик Планка (3.4³)</button>
-			<button type="button" onclick={() => applyPreset(1.474, 3.4)}>1.474 × 3.4</button>
-			<button type="button" onclick={() => applyPreset(1, 2.81)}>e^2.81 ≈ 16.6</button>
-			<button type="button" onclick={() => applyPreset(1, 4.55)}>e^4.55 ≈ 94.6</button>
+		<div class="z-widget-group sr-presets">
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(1, 3.4)}>Пик Планка (3.4³)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(1.474, 3.4)}>1.474 × 3.4</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(1, 2.81)}>e^2.81 ≈ 16.6</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(1, 4.55)}>e^4.55 ≈ 94.6</button>
 		</div>
 	</div>
 
 	<svg
 		bind:this={svgEl}
 		viewBox="0 0 {W} {H}"
-		class="sr-svg"
+		class="z-widget-svg sr-svg"
 		role="application"
 		aria-label="Шкалы логарифмической линейки. Двойной щелчок сбрасывает положение."
 		ondblclick={resetState}
@@ -266,7 +292,15 @@
 		<g
 			transform="translate({slideOffset * SCALE_W}, 0)"
 			class="draggable"
+			role="slider"
+			tabindex="0"
+			aria-label="Сдвиг подвижных шкал B и C"
+			aria-valuemin="-0.95"
+			aria-valuemax="0.95"
+			aria-valuenow={slideOffset}
+			aria-valuetext={`Сдвиг ${slide.toFixed(3)}`}
 			onpointerdown={(e) => onPointerDown('slide', e)}
+			onkeydown={(e) => onSliderKeyDown('slide', e)}
 		>
 			<rect x="10" y="102" width={W - 20} height="86" rx="3" fill="url(#slideGrad)" stroke="#9e9278" stroke-width="1.5" />
 
@@ -320,7 +354,15 @@
 		<g
 			transform="translate({PAD_X + cursorPos * SCALE_W}, 0)"
 			class="draggable cursor-group"
+			role="slider"
+			tabindex="0"
+			aria-label="Положение стеклянного визира"
+			aria-valuemin="1"
+			aria-valuemax="10"
+			aria-valuenow={cursor}
+			aria-valuetext={cursor.toFixed(3)}
 			onpointerdown={(e) => onPointerDown('cursor', e)}
+			onkeydown={(e) => onSliderKeyDown('cursor', e)}
 		>
 			<rect x="-44" y="6" width="88" height="12" rx="3" fill="#4a5568" filter="url(#shadow)" />
 			<rect x="-44" y={H - 18} width="88" height="12" rx="3" fill="#4a5568" filter="url(#shadow)" />
@@ -338,7 +380,7 @@
 	</svg>
 
 	{#if showReadout}
-		<figcaption class="sr-readout">
+		<figcaption class="z-widget-footer mono sr-readout">
 			<span>Под визиром:</span>
 			<span><b>D (x):</b> {readD.toFixed(3)}</span>
 			<span><b>C:</b> {readC !== null ? readC.toFixed(3) : '—'}</span>
@@ -350,54 +392,25 @@
 
 <style lang="scss">
 	.sr-wrapper {
-		margin: 1.75rem 0;
 		padding: 0.75rem;
-		border-radius: 10px;
-		background: #23211d;
-		color: #f3efe6;
-		user-select: none;
 		touch-action: pan-y;
 	}
 
 	.sr-toolbar {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
 		gap: 0.5rem;
 		margin-bottom: 0.6rem;
 		font-size: 0.85rem;
 	}
 
 	.sr-hint {
-		color: #cbbba0;
+		color: var(--w-text-muted);
 	}
 
 	.sr-presets {
-		display: flex;
-		flex-wrap: wrap;
 		gap: 0.35rem;
-
-		button {
-			padding: 0.25rem 0.55rem;
-			border: 1px solid #5c5343;
-			border-radius: 5px;
-			background: #332f28;
-			color: #f3efe6;
-			font-size: 0.78rem;
-			cursor: pointer;
-			transition: background 0.15s;
-
-			&:hover {
-				background: #4b4439;
-			}
-		}
 	}
 
 	.sr-svg {
-		display: block;
-		width: 100%;
-		height: auto;
 		overflow: hidden;
 		border-radius: 6px;
 	}
@@ -446,19 +459,8 @@
 	}
 
 	.sr-readout {
-		display: flex;
-		flex-wrap: wrap;
 		gap: 1rem;
-		margin-top: 0.6rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid #3a352d;
-		font-family: 'JetBrains Mono', 'Fira Code', monospace;
 		font-size: 0.82rem;
-		color: #e2d8c3;
-
-		b {
-			color: #f59e0b;
-		}
 	}
 </style>
 

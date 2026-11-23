@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '#lib/styles/widget.scss';
+
 	interface Props {
 		temperature?: number;
 		showCatastrophe?: boolean;
@@ -147,9 +149,9 @@
 	const yTicks = Array.of(0, 1e-8, 2e-8, 3e-8, 4e-8);
 </script>
 
-<figure class="bb-wrapper" aria-label="Интерактивный график излучения абсолютно чёрного тела">
-	<div class="bb-controls">
-		<div class="bb-slider-group">
+<figure class="z-widget" aria-label="Интерактивный график излучения абсолютно чёрного тела">
+	<div class="z-widget-toolbar bb-controls">
+		<div class="z-widget-group bb-slider-group">
 			<label for="bb-temp">
 				Температура печи: <b>{temperature} K</b>
 				<span class="bb-celsius">({temperature - 273} °C)</span>
@@ -157,20 +159,20 @@
 			<input id="bb-temp" type="range" min="2500" max="7000" step="50" bind:value={temperature} />
 		</div>
 
-		<div class="bb-presets">
-			<button type="button" onclick={() => (temperature = 2800)}>Лампа (2800 K)</button>
-			<button type="button" onclick={() => (temperature = 4500)}>Печь (4500 K)</button>
-			<button type="button" onclick={() => (temperature = 5800)}>Солнце (5800 K)</button>
-			<button type="button" onclick={() => (temperature = 6800)}>Горячая звезда (6800 K)</button>
+		<div class="z-widget-group bb-presets">
+			<button type="button" class="z-widget-btn" onclick={() => (temperature = 2800)}>Лампа (2800 K)</button>
+			<button type="button" class="z-widget-btn" onclick={() => (temperature = 4500)}>Печь (4500 K)</button>
+			<button type="button" class="z-widget-btn" onclick={() => (temperature = 5800)}>Солнце (5800 K)</button>
+			<button type="button" class="z-widget-btn" onclick={() => (temperature = 6800)}>Горячая звезда (6800 K)</button>
 		</div>
 
-		<div class="bb-toggles">
-			<label class="bb-checkbox wien">
+		<div class="z-widget-group bb-toggles">
+			<label class="z-widget-check cold">
 				<input type="checkbox" bind:checked={showWien} />
 				<span>Закон Вина (занижает слева)</span>
 			</label>
 
-			<label class="bb-checkbox rj">
+			<label class="z-widget-check err">
 				<input type="checkbox" bind:checked={showCatastrophe} />
 				<span>Рэлей — Джинс (взрывается справа)</span>
 			</label>
@@ -180,7 +182,7 @@
 	<svg
 		bind:this={svgEl}
 		viewBox="0 0 {W} {H}"
-		class="bb-svg"
+		class="z-widget-svg bb-svg"
 		role="application"
 		aria-label="Спектр абсолютно чёрного тела. Двойной щелчок сбрасывает параметры."
 		ondblclick={resetState}
@@ -275,7 +277,7 @@
 		</text>
 	</svg>
 
-	<figcaption class="bb-footer">
+	<figcaption class="z-widget-footer mono bb-footer">
 		{#if hoverFreq !== null && hoverFreq > 0}
 			<span><b>ν:</b> {hoverFreq.toFixed(0)} ТГц ({getBandLabel(hoverFreq)})</span>
 			<span><b>Планк:</b> {planck(hoverFreq, temperature).toExponential(2)}</span>
@@ -292,111 +294,52 @@
 </figure>
 
 <style lang="scss">
-	.bb-wrapper {
-		margin: 1.75rem 0;
-		padding: 0.85rem;
-		border-radius: 10px;
-		background: #23211d;
-		color: #f3efe6;
-		user-select: none;
-	}
-
 	.bb-controls {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
 		gap: 0.75rem;
-		margin-bottom: 0.75rem;
 		font-size: 0.85rem;
 	}
 
 	.bb-slider-group {
-		display: flex;
 		flex-direction: column;
 		gap: 0.25rem;
 		min-width: 210px;
 
 		b {
-			color: #f59e0b;
+			color: var(--w-accent);
 		}
 
 		.bb-celsius {
-			color: #a89f8d;
+			color: var(--w-text-dim);
 			font-size: 0.8rem;
 		}
 
 		input[type='range'] {
-			accent-color: #f59e0b;
+			accent-color: var(--w-accent);
 			cursor: pointer;
 		}
 	}
 
 	.bb-presets {
-		display: flex;
-		flex-wrap: wrap;
 		gap: 0.35rem;
-
-		button {
-			padding: 0.28rem 0.55rem;
-			border: 1px solid #5c5343;
-			border-radius: 5px;
-			background: #332f28;
-			color: #f3efe6;
-			font-size: 0.78rem;
-			cursor: pointer;
-			transition: background 0.15s;
-
-			&:hover {
-				background: #4b4439;
-			}
-		}
 	}
 
 	.bb-toggles {
-		display: flex;
-		flex-wrap: wrap;
 		gap: 0.75rem;
 	}
 
-	.bb-checkbox {
-		display: flex;
-		align-items: center;
-		gap: 0.35rem;
-		font-size: 0.8rem;
-		cursor: pointer;
-
-		&.wien {
-			color: #7dd3fc;
-			input {
-				accent-color: #38bdf8;
-			}
-		}
-
-		&.rj {
-			color: #fca5a5;
-			input {
-				accent-color: #ef4444;
-			}
-		}
-	}
-
 	.bb-svg {
-		display: block;
-		width: 100%;
-		height: auto;
 		border-radius: 6px;
 		cursor: crosshair;
 	}
 
 	.grid-line {
-		stroke: #2e2a24;
+		stroke: var(--w-border-subtle);
 		stroke-width: 1;
 	}
 
 	.axis-label {
-		fill: #a89f8d;
-		font-family: 'JetBrains Mono', monospace;
+		fill: var(--w-text-dim);
+		font-family: var(--w-font-mono);
 		font-size: 11px;
 	}
 
@@ -409,14 +352,14 @@
 	}
 
 	.axis-title {
-		fill: #cbbba0;
+		fill: var(--w-text-muted);
 		font-family: sans-serif;
 		font-size: 12px;
 		text-anchor: middle;
 	}
 
 	.band-title {
-		fill: #f3efe6;
+		fill: var(--w-text-main);
 		font-family: sans-serif;
 		font-size: 11px;
 		font-weight: 600;
@@ -424,25 +367,13 @@
 	}
 
 	.band-sub {
-		fill: #8c8270;
+		fill: var(--w-text-dim);
 		font-family: sans-serif;
 		font-size: 11px;
 		text-anchor: middle;
 	}
 
 	.bb-footer {
-		display: flex;
-		flex-wrap: wrap;
 		gap: 1rem;
-		margin-top: 0.6rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid #3a352d;
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 0.8rem;
-		color: #e2d8c3;
-
-		b {
-			color: #f59e0b;
-		}
 	}
 </style>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import '#lib/styles/widget.scss';
 
 	type DiagramType = 'vertex' | 'scattering' | 'annihilation' | 'box' | 'loop' | 'triplet';
 	type ParticleRole = 'electron' | 'positron' | 'photon';
@@ -284,7 +285,7 @@
 	});
 </script>
 
-<figure class="fd-card">
+<figure class="z-widget fd-card">
 	{#if title || tax}
 		<header class="fd-header">
 			{#if title}
@@ -297,7 +298,7 @@
 	{/if}
 
 	<div class="fd-body">
-		<div class="fd-visual">
+		<div class="z-widget-stage fd-visual">
 			<span class="fd-time">Время t ↑</span>
 
 			<div
@@ -311,13 +312,13 @@
 						{#if cell.kind === 'fermion'}
 							<svg viewBox="0 0 100 100" class="tile-svg {cell.role}">
 								{#if cell.orient === 'v'}
-									<line x1="50" y1="0" x2="50" y2="100" class="seg" />
+									<line x1="50" y1="-4" x2="50" y2="104" class="seg" />
 								{:else if cell.orient === 'h'}
-									<line x1="0" y1="50" x2="100" y2="50" class="seg" />
+									<line x1="-4" y1="50" x2="104" y2="50" class="seg" />
 								{:else if cell.orient === 'd1'}
-									<line x1="0" y1="100" x2="100" y2="0" class="seg" />
+									<line x1="-4" y1="104" x2="104" y2="-4" class="seg" />
 								{:else if cell.orient === 'd2'}
-									<line x1="0" y1="0" x2="100" y2="100" class="seg" />
+									<line x1="-4" y1="-4" x2="104" y2="104" class="seg" />
 								{/if}
 
 								{#if cell.arrowAngle !== undefined}
@@ -371,7 +372,7 @@
 	</div>
 
 		{#if hasCaption}
-			<figcaption class="feynman-caption">
+			<figcaption class="z-widget-footer feynman-caption">
 				{#if caption}
 					{@render caption()}
 				{:else if children}
@@ -383,12 +384,7 @@
 
 <style lang="scss">
 	.fd-card {
-		margin: 1.75rem 0;
 		padding: 1rem 1.15rem;
-		border-radius: 10px;
-		background: #23211d;
-		border: 1px solid #3a352d;
-		color: #f3efe6;
 	}
 
 	.fd-header {
@@ -399,23 +395,23 @@
 		gap: 0.5rem;
 		margin-bottom: 0.85rem;
 		padding-bottom: 0.55rem;
-		border-bottom: 1px solid #3a352d;
+		border-bottom: 1px solid var(--w-border);
 	}
 
 	.fd-title {
 		font-weight: 700;
 		font-size: 0.98rem;
-		color: #f59e0b;
+		color: var(--w-accent);
 	}
 
 	.fd-tax {
 		padding: 0.18rem 0.55rem;
 		border-radius: 4px;
-		background: #332f28;
-		border: 1px solid #5c5343;
-		font-family: 'JetBrains Mono', monospace;
+		background: var(--w-bg-btn);
+		border: 1px solid var(--w-border-control);
+		font-family: var(--w-font-mono);
 		font-size: 0.78rem;
-		color: #cbbba0;
+		color: var(--w-text-muted);
 	}
 
 	.fd-body {
@@ -430,20 +426,17 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		background: #181613;
-		border-radius: 8px;
-		border: 1px solid #2e2a24;
 		padding: 1.2rem 0.75rem;
-		box-sizing: border-box;
 		overflow-x: auto;
+		overflow-y: hidden;
 	}
 
 	.fd-time {
 		position: absolute;
 		top: 0.5rem;
 		left: 0.75rem;
-		color: #786e5c;
-		font-family: 'JetBrains Mono', monospace;
+		color: var(--w-text-dim);
+		font-family: var(--w-font-mono);
 		font-size: 0.75rem;
 		pointer-events: none;
 	}
@@ -479,56 +472,56 @@
 
 	.seg {
 		stroke-width: 8;
-		stroke-linecap: round;
+		stroke-linecap: butt;
 		fill: none;
 	}
 
 	.electron .seg,
 	.seg.electron {
-		stroke: #f59e0b;
+		stroke: var(--w-accent);
 	}
 
 	.positron .seg,
 	.seg.positron {
-		stroke: #38bdf8;
+		stroke: var(--w-accent-cold);
 	}
 
 	.electron .arrow-head {
-		fill: #f59e0b;
+		fill: var(--w-accent);
 	}
 
 	.positron .arrow-head {
-		fill: #38bdf8;
+		fill: var(--w-accent-cold);
 	}
 
 	.wave {
-		stroke: #e2d8c3;
+		stroke: var(--w-text-body);
 		stroke-width: 7.5;
 		stroke-linecap: round;
 		fill: none;
 	}
 
 	.vertex-dot {
-		fill: #ef4444;
+		fill: var(--w-accent-err);
 		stroke: #181613;
 		stroke-width: 5;
 	}
 
 	.fd-lbl {
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--w-font-mono);
 		font-size: 0.95rem;
 		font-weight: 700;
 
 		&.electron {
-			color: #f59e0b;
+			color: var(--w-accent);
 		}
 
 		&.positron {
-			color: #38bdf8;
+			color: var(--w-accent-cold);
 		}
 
 		&.photon {
-			color: #e2d8c3;
+			color: var(--w-text-body);
 			font-style: italic;
 		}
 	}
@@ -536,7 +529,6 @@
 	.feynman-caption {
 		font-size: 0.96rem;
 		line-height: 1.6;
-		color: #e2d8c3;
 
 		:global(p:first-child) {
 			margin-top: 0;

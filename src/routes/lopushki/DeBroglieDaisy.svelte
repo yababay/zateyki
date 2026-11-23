@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '#lib/styles/widget.scss'
+	
 	interface Props {
 		/** Целое число длин волн для «правильной» орбиты (слева) */
 		validN?: number;
@@ -17,8 +19,12 @@
 	const initValid = validN;
 	const initInvalid = invalidN;
 
-	let isPlaying = $state(autoplay);
+	let isPlaying = $state(false);
 	let phase = $state(0);
+
+	$effect(() => {
+		isPlaying = autoplay;
+	});
 
 	$effect(() => {
 		if (!isPlaying) return;
@@ -91,36 +97,37 @@
 	}
 </script>
 
-<figure class="db-wrapper" aria-label="Сравнение замкнутой и разомкнутой волн де Бройля">
-	<div class="db-toolbar">
-		<div class="db-group">
-			<span class="db-lbl">Ромашка (целое n):</span>
+
+<figure class="z-widget" aria-label="Сравнение замкнутой и разомкнутой волн де Бройля">
+	<div class="z-widget-toolbar">
+		<div class="z-widget-group">
+			<span class="z-widget-label">Ромашка (целое n):</span>
 			{#each validOptions as n}
-				<button type="button" class:active={validN === n} onclick={() => (validN = n)}>
+				<button type="button" class="z-widget-btn" class:active={validN === n} onclick={() => (validN = n)}>
 					{n}λ
 				</button>
 			{/each}
 		</div>
 
-		<div class="db-group">
-			<span class="db-lbl">Недоромашка:</span>
+		<div class="z-widget-group">
+			<span class="z-widget-label">Недоромашка:</span>
 			{#each invalidOptions as n}
-				<button type="button" class:active-err={invalidN === n} onclick={() => (invalidN = n)}>
+				<button type="button" class="z-widget-btn" class:active-err={invalidN === n} onclick={() => (invalidN = n)}>
 					{n}λ
 				</button>
 			{/each}
 		</div>
 
-		<button type="button" class="db-play" onclick={() => (isPlaying = !isPlaying)}>
+		<button type="button" class="z-widget-btn play-btn" onclick={() => (isPlaying = !isPlaying)}>
 			{isPlaying ? 'Пауза' : 'Пуск'}
 		</button>
 	</div>
 
-	<div class="db-stage" role="application" ondblclick={resetState}>
+	<div class="z-widget-stage split-2 db-stage" role="application" ondblclick={resetState}>
 		<!-- Левая карточка: Разрешённая орбита -->
-		<div class="db-pane">
+		<div class="z-widget-stage db-pane">
 			<div class="db-pane-title ok">2πR = {validN}λ (стоячая волна)</div>
-			<svg viewBox="-165 -165 330 330" class="db-svg">
+			<svg viewBox="-165 -165 330 330" class="z-widget-svg db-svg">
 				<!-- Базовая окружность орбиты -->
 				<circle cx="0" cy="0" r={R0} class="orbit-guide" />
 				<!-- Замкнутая волна де Бройля -->
@@ -134,9 +141,9 @@
 		</div>
 
 		<!-- Правая карточка: Запрещённая орбита -->
-		<div class="db-pane">
+		<div class="z-widget-stage db-pane">
 			<div class="db-pane-title err">2πR = {invalidN}λ (разрыв фазы)</div>
-			<svg viewBox="-165 -165 330 330" class="db-svg">
+			<svg viewBox="-165 -165 330 330" class="z-widget-svg db-svg">
 				<circle cx="0" cy="0" r={R0} class="orbit-guide" />
 				<!-- Несовпадающая волна -->
 				<path d={buildOpenWave(invalidN, phase)} class="wave-err" />
@@ -155,116 +162,33 @@
 		</div>
 	</div>
 
-	<figcaption class="db-footer">
+	<figcaption class="z-widget-footer db-footer">
 		Слева длина окружности вмещает ровно <b>{validN}</b> {validN < 5 ? 'волны' : 'волн'} — гребень попадает на гребень, энергия не теряется. Справа при <b>{invalidN}λ</b> волна после полного оборота не попадает в своё начало и гасит сама себя (двойной щелчок сбрасывает настройки).
 	</figcaption>
 </figure>
 
 <style lang="scss">
-	.db-wrapper {
-		margin: 1.75rem 0;
-		padding: 0.9rem;
-		border-radius: 10px;
-		background: #23211d;
-		border: 1px solid #3a352d;
-		color: #f3efe6;
-		user-select: none;
-	}
-
-	.db-toolbar {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		gap: 0.6rem;
-		margin-bottom: 0.75rem;
-		font-size: 0.8rem;
-	}
-
-	.db-group {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.3rem;
-
-		.db-lbl {
-			color: #cbbba0;
-			margin-right: 0.2rem;
-		}
-
-		button {
-			padding: 0.22rem 0.48rem;
-			border: 1px solid #5c5343;
-			border-radius: 5px;
-			background: #332f28;
-			color: #f3efe6;
-			font-family: 'JetBrains Mono', monospace;
-			font-size: 0.75rem;
-			cursor: pointer;
-			transition: background 0.15s;
-
-			&:hover {
-				background: #4b4439;
-			}
-
-			&.active {
-				background: #f59e0b;
-				border-color: #f59e0b;
-				color: #181613;
-				font-weight: 700;
-			}
-
-			&.active-err {
-				background: #ef4444;
-				border-color: #ef4444;
-				color: #fff;
-				font-weight: 700;
-			}
-		}
-	}
-
-	.db-play {
-		padding: 0.25rem 0.65rem;
-		border: 1px solid #6b614e;
-		border-radius: 5px;
-		background: #2b2721;
-		color: #e2d8c3;
-		font-size: 0.78rem;
-		cursor: pointer;
-
-		&:hover {
-			background: #3f3930;
-		}
-	}
-
 	.db-stage {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.75rem;
-
-		@media (max-width: 600px) {
-			grid-template-columns: 1fr;
-		}
+		background: transparent;
+		border: 0;
+		padding: 0;
+		overflow: visible;
 	}
 
 	.db-pane {
-		background: #181613;
-		border-radius: 8px;
-		border: 1px solid #2e2a24;
-		padding: 0.65rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	.db-pane-title {
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--w-font-mono);
 		font-size: 0.8rem;
 		font-weight: 700;
 		margin-bottom: 0.25rem;
 
 		&.ok {
-			color: #f59e0b;
+			color: var(--w-accent);
 		}
 
 		&.err {
@@ -273,11 +197,7 @@
 	}
 
 	.db-svg {
-		width: 100%;
 		max-width: 270px;
-		height: auto;
-		margin: 0;
-		display: block;
 	}
 
 	.orbit-guide {
@@ -289,27 +209,27 @@
 
 	.wave-ok {
 		fill: rgba(245, 158, 11, 0.08);
-		stroke: #f59e0b;
+		stroke: var(--w-accent);
 		stroke-width: 3;
 		stroke-linejoin: round;
 	}
 
 	.wave-err {
 		fill: none;
-		stroke: #38bdf8;
+		stroke: var(--w-accent-cold);
 		stroke-width: 2.3;
 		stroke-opacity: 0.85;
 	}
 
 	.strike-cross {
-		stroke: #ef4444;
+		stroke: var(--w-accent-err);
 		stroke-width: 3.5;
 		stroke-opacity: 0.45;
 		stroke-linecap: round;
 	}
 
 	.nucleus {
-		fill: #ef4444;
+		fill: var(--w-accent-err);
 		stroke: #fca5a5;
 		stroke-width: 1.5;
 	}
@@ -322,15 +242,6 @@
 	}
 
 	.db-footer {
-		margin-top: 0.65rem;
-		padding-top: 0.55rem;
-		border-top: 1px solid #3a352d;
-		font-size: 0.83rem;
-		line-height: 1.45;
-		color: #e2d8c3;
-
-		b {
-			color: #f59e0b;
-		}
+		display: block;
 	}
 </style>

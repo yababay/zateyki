@@ -1,0 +1,195 @@
+// Единая палитра и типографика для интерактивных виджетов «Гуманитарных затеек»
+:root {
+	--w-bg-card: #23211d;
+	--w-bg-stage: #181613;
+	--w-bg-btn: #332f28;
+	--w-bg-btn-hover: #4b4439;
+
+	--w-border: #3a352d;
+	--w-border-subtle: #2e2a24;
+	--w-border-control: #5c5343;
+
+	--w-text-main: #f3efe6;
+	--w-text-body: #e2d8c3;
+	--w-text-muted: #cbbba0;
+	--w-text-dim: #8c8270;
+
+	--w-accent: #f59e0b;      // Янтарь (электроны, фаза +, основная кривая)
+	--w-accent-cold: #38bdf8; // Голубой (позитроны, фаза -, магнитное поле)
+	--w-accent-err: #ef4444;  // Красный (узлы, катастрофы, запреты)
+
+	--w-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+// Основной контейнер виджета
+.z-widget {
+	margin: 1.75rem 0;
+	padding: 0.9rem;
+	border-radius: 10px;
+	background: var(--w-bg-card);
+	border: 1px solid var(--w-border);
+	color: var(--w-text-main);
+	user-select: none;
+	box-sizing: border-box;
+
+	@media (max-width: 560px) {
+		padding: 0.65rem;
+		margin: 1.25rem -0.5rem;
+		border-radius: 8px;
+	}
+}
+
+// Верхняя панель управления (кнопки, слайдеры, чекбоксы)
+.z-widget-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 0.75rem;
+	font-size: 0.82rem;
+}
+
+.z-widget-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+.z-widget-label {
+	color: var(--w-text-muted);
+	margin-right: 0.2rem;
+}
+
+// Унифицированные кнопки и пресеты
+.z-widget-btn {
+	padding: 0.25rem 0.52rem;
+	border: 1px solid var(--w-border-control);
+	border-radius: 5px;
+	background: var(--w-bg-btn);
+	color: var(--w-text-main);
+	font-family: var(--w-font-mono);
+	font-size: 0.76rem;
+	line-height: 1.2;
+	cursor: pointer;
+	transition: background 0.15s, border-color 0.15s, color 0.15s;
+
+	&:hover {
+		background: var(--w-bg-btn-hover);
+	}
+
+	&.active {
+		background: var(--w-accent);
+		border-color: var(--w-accent);
+		color: var(--w-bg-stage);
+		font-weight: 700;
+	}
+
+	&.active-err {
+		background: var(--w-accent-err);
+		border-color: var(--w-accent-err);
+		color: #fff;
+		font-weight: 700;
+	}
+
+	&.play-btn {
+		background: #2b2721;
+		border-color: #6b614e;
+		font-family: inherit;
+		padding: 0.25rem 0.68rem;
+	}
+}
+
+// Чекбоксы
+.z-widget-check {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	color: var(--w-text-body);
+	font-size: 0.8rem;
+	cursor: pointer;
+
+	input[type='checkbox'] {
+		accent-color: var(--w-accent);
+		margin: 0;
+		cursor: pointer;
+	}
+
+	&.cold {
+		color: #7dd3fc;
+		input[type='checkbox'] {
+			accent-color: var(--w-accent-cold);
+		}
+	}
+
+	&.err {
+		color: #fca5a5;
+		input[type='checkbox'] {
+			accent-color: var(--w-accent-err);
+		}
+	}
+}
+
+// Рабочая сцена / холст прибора
+.z-widget-stage {
+	position: relative;
+	background: var(--w-bg-stage);
+	border-radius: 8px;
+	border: 1px solid var(--w-border-subtle);
+	padding: 0.75rem;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	// Адаптивная двухколоночная сетка внутри сцены
+	&.split-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+
+		@media (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&.with-sidebar {
+		display: grid;
+		grid-template-columns: 1fr 230px;
+		gap: 0.85rem;
+		align-items: center;
+
+		@media (max-width: 640px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+// Защита для всех SVG внутри виджетов (сбрасывает глобальные отступы)
+.z-widget-svg {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+// Нижняя подпись-телеметрия
+.z-widget-footer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.85rem;
+	margin-top: 0.65rem;
+	padding-top: 0.55rem;
+	border-top: 1px solid var(--w-border);
+	font-size: 0.82rem;
+	line-height: 1.45;
+	color: var(--w-text-body);
+
+	&.mono {
+		font-family: var(--w-font-mono);
+		font-size: 0.8rem;
+	}
+
+	b {
+		color: var(--w-accent);
+	}
+}

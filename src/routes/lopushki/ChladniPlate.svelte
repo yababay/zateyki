@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '#lib/styles/widget.scss'
+	
 	interface Props {
 		/** Число диаметров тишины m (0 = круги, 1 = 2 сектора, 2 = 4 сектора, 3 = 6 секторов, 4 = 8 секторов) */
 		diameters?: number;
@@ -17,9 +19,13 @@
 	const initM = diameters;
 	const initK = rings;
 
-	let isPlaying = $state(autoplay);
+	let isPlaying = $state(false);
 	let showSand = $state(true);
 	let phase = $state(0);
+
+	$effect(() => {
+		isPlaying = autoplay;
+	});
 
 	$effect(() => {
 		if (!isPlaying) return;
@@ -172,40 +178,40 @@
 	}
 </script>
 
-<figure class="cp-wrapper" aria-label="Интерактивная модель фигур Хладни на круглой мембране">
-	<div class="cp-toolbar">
-		<div class="cp-group">
-			<span class="cp-lbl">Диаметры (дольки):</span>
+<figure class="z-widget" aria-label="Интерактивная модель фигур Хладни на круглой мембране">
+	<div class="z-widget-toolbar">
+		<div class="z-widget-group">
+			<span class="z-widget-label">Диаметры (дольки):</span>
 			{#each diameterOpts as m}
-				<button type="button" class:active={diameters === m} onclick={() => (diameters = m)}>
+				<button type="button" class="z-widget-btn" class:active={diameters === m} onclick={() => (diameters = m)}>
 					{m === 0 ? '0 (круги)' : `${m} (${m * 2} долек)`}
 				</button>
 			{/each}
 		</div>
 
-		<div class="cp-group">
-			<span class="cp-lbl">Кольца тишины:</span>
+		<div class="z-widget-group">
+			<span class="z-widget-label">Кольца тишины:</span>
 			{#each ringOpts as k}
-				<button type="button" class:active={rings === k} onclick={() => (rings = k)}>
+				<button type="button" class="z-widget-btn" class:active={rings === k} onclick={() => (rings = k)}>
 					{k}
 				</button>
 			{/each}
 		</div>
 
-		<div class="cp-actions">
-			<label class="cp-check">
+		<div class="z-widget-group cp-actions">
+			<label class="z-widget-check">
 				<input type="checkbox" bind:checked={showSand} />
 				<span>Песок Хладни</span>
 			</label>
 
-			<button type="button" class="cp-play" onclick={() => (isPlaying = !isPlaying)}>
+			<button type="button" class="z-widget-btn play-btn" onclick={() => (isPlaying = !isPlaying)}>
 				{isPlaying ? 'Пауза' : 'Пуск'}
 			</button>
 		</div>
 	</div>
 
-	<div class="cp-stage" role="application" ondblclick={resetState}>
-		<svg viewBox="-165 -165 330 330" class="cp-svg">
+	<div class="z-widget-stage with-sidebar" role="application" ondblclick={resetState}>
+		<svg viewBox="-165 -165 330 330" class="z-widget-svg cp-svg">
 			<!-- Вибрирующие секторы (фаза + и фаза -) -->
 			{#each patches as p}
 			{@const pulse = isPlaying ? Math.cos(phase) : 1}
@@ -247,134 +253,31 @@
 
 		<div class="cp-presets">
 			<span class="cp-presets-title">Характерные режимы:</span>
-			<button type="button" onclick={() => applyPreset(0, 2)}>Удар строго в центр (кольца)</button>
-			<button type="button" onclick={() => applyPreset(1, 0)}>Удар сбоку («качели», 2 дольки)</button>
-			<button type="button" onclick={() => applyPreset(2, 0)}>Четырёхлистник (4 дольки)</button>
-			<button type="button" onclick={() => applyPreset(3, 1)}>Холодец с кольцом (6 × 2)</button>
-			<button type="button" onclick={() => applyPreset(4, 1)}>Сложный обертон (8 × 2)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(0, 2)}>Удар строго в центр (кольца)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(1, 0)}>Удар сбоку («качели», 2 дольки)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(2, 0)}>Четырёхлистник (4 дольки)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(3, 1)}>Холодец с кольцом (6 × 2)</button>
+			<button type="button" class="z-widget-btn" onclick={() => applyPreset(4, 1)}>Сложный обертон (8 × 2)</button>
 		</div>
 	</div>
 
-	<figcaption class="cp-footer">
+	<figcaption class="z-widget-footer cp-footer">
 		Янтарные и голубые зоны колеблются в противофазе (одна вверх, соседняя вниз), а на границах между ними проходят неподвижные <b>линии тишины</b>, куда сползаются песчинки Хладни. Двойной щелчок сбрасывает настройки.
 	</figcaption>
 </figure>
 
 <style lang="scss">
-	.cp-wrapper {
-		margin: 1.75rem 0;
-		padding: 0.9rem;
-		border-radius: 10px;
-		background: #23211d;
-		border: 1px solid #3a352d;
-		color: #f3efe6;
-		user-select: none;
-	}
-
-	.cp-toolbar {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		gap: 0.6rem;
-		margin-bottom: 0.75rem;
-		font-size: 0.8rem;
-	}
-
-	.cp-group {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.28rem;
-
-		.cp-lbl {
-			color: #cbbba0;
-			margin-right: 0.2rem;
-		}
-
-		button {
-			padding: 0.22rem 0.45rem;
-			border: 1px solid #5c5343;
-			border-radius: 5px;
-			background: #332f28;
-			color: #f3efe6;
-			font-family: 'JetBrains Mono', monospace;
-			font-size: 0.74rem;
-			cursor: pointer;
-			transition: background 0.15s;
-
-			&:hover {
-				background: #4b4439;
-			}
-
-			&.active {
-				background: #f59e0b;
-				border-color: #f59e0b;
-				color: #181613;
-				font-weight: 700;
-			}
-		}
-	}
-
 	.cp-actions {
-		display: flex;
-		align-items: center;
 		gap: 0.75rem;
 	}
 
-	.cp-check {
-		display: flex;
-		align-items: center;
-		gap: 0.35rem;
-		color: #e2d8c3;
-		font-size: 0.8rem;
-		cursor: pointer;
-
-		input {
-			accent-color: #f59e0b;
-		}
-	}
-
-	.cp-play {
-		padding: 0.25rem 0.65rem;
-		border: 1px solid #6b614e;
-		border-radius: 5px;
-		background: #2b2721;
-		color: #e2d8c3;
-		font-size: 0.78rem;
-		cursor: pointer;
-
-		&:hover {
-			background: #3f3930;
-		}
-	}
-
-	.cp-stage {
-		display: grid;
-		grid-template-columns: 1fr 220px;
-		gap: 0.85rem;
-		align-items: center;
-		background: #181613;
-		border-radius: 8px;
-		border: 1px solid #2e2a24;
-		padding: 0.75rem;
-
-		@media (max-width: 620px) {
-			grid-template-columns: 1fr;
-		}
-	}
-
 	.cp-svg {
-		width: 100%;
 		max-width: 300px;
-		height: auto;
-		margin: 0 auto;
-		display: block;
 	}
 
 	.nodal-line {
 		fill: none;
-		stroke: #e2d8c3;
+		stroke: var(--w-text-body);
 		stroke-width: 1.1;
 		stroke-opacity: 0.35;
 		stroke-dasharray: 4 4;
@@ -398,38 +301,18 @@
 
 		.cp-presets-title {
 			font-size: 0.78rem;
-			color: #a89f8d;
+			color: var(--w-text-dim);
 			margin-bottom: 0.15rem;
 		}
 
 		button {
 			text-align: left;
 			padding: 0.38rem 0.6rem;
-			border: 1px solid #3a352d;
-			border-radius: 6px;
-			background: #23211d;
-			color: #e2d8c3;
 			font-size: 0.78rem;
-			cursor: pointer;
-			transition: background 0.15s, border-color 0.15s;
-
-			&:hover {
-				background: #332f28;
-				border-color: #f59e0b;
-			}
 		}
 	}
 
 	.cp-footer {
-		margin-top: 0.65rem;
-		padding-top: 0.55rem;
-		border-top: 1px solid #3a352d;
-		font-size: 0.83rem;
-		line-height: 1.45;
-		color: #e2d8c3;
-
-		b {
-			color: #f59e0b;
-		}
+		display: block;
 	}
 </style>

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '#lib/styles/widget.scss';
+
 	interface Props {
 		/** Номер моды (количество полуволн n). Если showAll = true, рисуются 1, 2 и 3 */
 		mode?: number;
@@ -21,9 +23,13 @@
 	const initialShowAll = showAll;
 	const initialShowMagnetic = showMagnetic;
 
-	let isPlaying = $state(autoplay);
+	let isPlaying = $state(false);
 	let showForbidden = $state(false);
 	let phase = $state(0);
+
+	$effect(() => {
+		isPlaying = autoplay;
+	});
 
 	$effect(() => {
 		if (!isPlaying) return;
@@ -127,11 +133,13 @@
 	}
 </script>
 
-<figure class="sw-wrapper" aria-label="Интерактивная модель стоячих волн в полости">
-	<div class="sw-controls">
-		<div class="sw-buttons">
+
+<figure class="z-widget" aria-label="Интерактивная модель стоячих волн в полости">
+	<div class="z-widget-toolbar sw-controls">
+		<div class="z-widget-group">
 			<button
 				type="button"
+				class="z-widget-btn"
 				class:active={showAll && !showForbidden}
 				onclick={() => {
 					showAll = true;
@@ -144,6 +152,7 @@
 			{#each modesList as n}
 				<button
 					type="button"
+					class="z-widget-btn"
 					class:active={!showAll && !showForbidden && mode === n}
 					onclick={() => selectSingleMode(n)}
 				>
@@ -152,8 +161,8 @@
 			{/each}
 		</div>
 
-		<div class="sw-actions">
-			<label class="sw-checkbox mag">
+		<div class="z-widget-group sw-actions">
+			<label class="z-widget-check cold">
 				<input
 					type="checkbox"
 					bind:checked={showMagnetic}
@@ -168,7 +177,7 @@
 				<span>Магнитное поле B</span>
 			</label>
 
-			<label class="sw-checkbox err">
+			<label class="z-widget-check err">
 				<input
 					type="checkbox"
 					bind:checked={showForbidden}
@@ -182,7 +191,7 @@
 				<span>Некратная (n = 2.4)</span>
 			</label>
 
-			<button type="button" class="sw-play" onclick={() => (isPlaying = !isPlaying)}>
+			<button type="button" class="z-widget-btn play-btn" onclick={() => (isPlaying = !isPlaying)}>
 				{isPlaying ? 'Пауза' : 'Пуск'}
 			</button>
 		</div>
@@ -190,7 +199,7 @@
 
 	<svg
 		viewBox="0 0 {W} {H}"
-		class="sw-svg"
+		class="z-widget-svg sw-svg"
 		role="application"
 		aria-label="Стоячие волны между стенками полости. Двойной щелчок сбрасывает вид."
 		ondblclick={resetState}
@@ -246,7 +255,7 @@
 		{/if}
 	</svg>
 
-	<figcaption class="sw-footer">
+	<figcaption class="z-widget-footer sw-footer">
 		{#if showAll && !showForbidden}
 			<span>
 				Показаны первые три моды электрического поля E: <b style="color:#f59e0b">n = 1</b>,
@@ -270,101 +279,15 @@
 </figure>
 
 <style lang="scss">
-	.sw-wrapper {
-		margin: 1.75rem 0;
-		padding: 0.85rem;
-		border-radius: 10px;
-		background: #23211d;
-		color: #f3efe6;
-		user-select: none;
-	}
-
 	.sw-controls {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		gap: 0.6rem;
 		margin-bottom: 0.7rem;
-		font-size: 0.82rem;
-	}
-
-	.sw-buttons {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.3rem;
-
-		button {
-			padding: 0.25rem 0.5rem;
-			border: 1px solid #5c5343;
-			border-radius: 5px;
-			background: #332f28;
-			color: #f3efe6;
-			font-family: 'JetBrains Mono', monospace;
-			font-size: 0.76rem;
-			cursor: pointer;
-			transition: background 0.15s, border-color 0.15s;
-
-			&:hover {
-				background: #4b4439;
-			}
-
-			&.active {
-				background: #f59e0b;
-				border-color: #f59e0b;
-				color: #181613;
-				font-weight: 700;
-			}
-		}
 	}
 
 	.sw-actions {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
 		gap: 0.75rem;
 	}
 
-	.sw-checkbox {
-		display: flex;
-		align-items: center;
-		gap: 0.35rem;
-		font-size: 0.8rem;
-		cursor: pointer;
-
-		&.mag {
-			color: #7dd3fc;
-			input {
-				accent-color: #38bdf8;
-			}
-		}
-
-		&.err {
-			color: #fca5a5;
-			input {
-				accent-color: #ef4444;
-			}
-		}
-	}
-
-	.sw-play {
-		padding: 0.25rem 0.65rem;
-		border: 1px solid #6b614e;
-		border-radius: 5px;
-		background: #2b2721;
-		color: #e2d8c3;
-		font-size: 0.78rem;
-		cursor: pointer;
-
-		&:hover {
-			background: #3f3930;
-		}
-	}
-
 	.sw-svg {
-		display: block;
-		width: 100%;
-		height: auto;
 		border-radius: 6px;
 	}
 
@@ -385,14 +308,6 @@
 
 	.sw-footer {
 		margin-top: 0.6rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid #3a352d;
-		font-size: 0.82rem;
 		line-height: 1.4;
-		color: #e2d8c3;
-
-		b {
-			color: #f59e0b;
-		}
 	}
 </style>
