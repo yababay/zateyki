@@ -48,6 +48,7 @@
 * [Бытовые проблемы элементарных частиц](https://yababay.github.io/zateyki/feynman-diagrams/)
 * [От сувенира к сувениру](https://yababay.github.io/zateyki/naina/)
 * [Электронно-позитронный тройничок](https://yababay.github.io/zateyki/troynichok/)
+* [Лопуховые заросли квантового мира](https://yababay.github.io/zateyki/lopushki/)
 
 ### Краткая история логики:
 
