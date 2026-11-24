@@ -7,7 +7,7 @@
     import ScrollTop from '#lib/components/ScrollTop.svelte';
     import Social from '#lib/components/Social.svelte';
     import Pinup from '#lib/components/Pinup.svelte';
-    import '#lib/styles/bootstrap-icons.min.css'
+    // import '#lib/styles/bootstrap-icons.min.css'
     import '#lib/styles/article.scss'
 
 	let { children }: LayoutProps = $props();
