@@ -2,6 +2,7 @@
     import { isRoot, headState } from '#lib/stores/head.svelte.ts';
     import { ROOT_TITLE, ROOT_DESCRIPTION } from '$app/env/public'
     import default_banner from '#lib/assets/barny-banner.png'
+    import GoTo from './GoTo.svelte'
 
     let title = $derived(isRoot() && ROOT_TITLE || headState.title)
     let description = $derived(isRoot() && ROOT_DESCRIPTION || headState.description)
@@ -16,6 +17,8 @@
     </div>
     <p class="description">{description}</p>
 </header>
+
+<GoTo />
 
 <style lang="scss">
 

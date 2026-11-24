@@ -4,8 +4,10 @@
 	import Header  from '#lib/components/Header.svelte';
     import Footer  from '#lib/components/Footer.svelte';
     import Home from '#lib/components/Home.svelte';
-    import Telegram from '#lib/components/Telegram.svelte';
+    import ScrollTop from '#lib/components/ScrollTop.svelte';
+    import Social from '#lib/components/Social.svelte';
     import Pinup from '#lib/components/Pinup.svelte';
+    import '#lib/styles/bootstrap-icons.min.css'
     import '#lib/styles/article.scss'
 
 	let { children }: LayoutProps = $props();
@@ -15,7 +17,8 @@
 <Pinup />
 <Header />
 <Home />
-<Telegram />
+<ScrollTop />
+<Social />
 
 <section class="container">
 	<article>
