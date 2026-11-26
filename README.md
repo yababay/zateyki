@@ -49,7 +49,7 @@
 * [От сувенира к сувениру](https://yababay.github.io/zateyki/naina/)
 * [Электронно-позитронный тройничок](https://yababay.github.io/zateyki/troynichok/)
 * [Лопуховые заросли квантового мира](https://yababay.github.io/zateyki/lopushki/)
-* [Звёздная яичница](https://yababay.github.io/zateyki/zvezdnaya-yaichnitsa/)
+* [Кручу, верчу, запутать хочу](https://yababay.github.io/zateyki/zvezdnaya-yaichnitsa/)
 
 ### Краткая история логики:
 
