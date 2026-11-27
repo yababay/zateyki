@@ -50,6 +50,7 @@
 * [Электронно-позитронный тройничок](https://yababay.github.io/zateyki/troynichok/)
 * [Лопуховые заросли квантового мира](https://yababay.github.io/zateyki/lopushki/)
 * [Кручу, верчу, запутать хочу](https://yababay.github.io/zateyki/zvezdnaya-yaichnitsa/)
+* [Выкупить за бусики](https://yababay.github.io/zateyki/busiki/)
 
 ### Краткая история логики:
 
