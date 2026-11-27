@@ -294,6 +294,14 @@
 </figure>
 
 <style lang="scss">
+	@media (min-height: 1000px) {
+		.z-widget-footer {
+			height: 85px;
+		}
+		/*figure svg {
+			height: 500px;
+		}*/
+	}
 	.bb-controls {
 		gap: 0.75rem;
 		font-size: 0.85rem;

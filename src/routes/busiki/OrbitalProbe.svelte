@@ -249,7 +249,7 @@
 			</span -->
 
             <span class="node-badge" class:visible={mode !== '1s' && badgeHold}>
-                Зона тишины 2s!
+                Тишина 2s!
             </span>
           
 			<input
@@ -488,6 +488,11 @@
 </div>
 
 <style lang="scss">
+	.z-widget-footer p {
+		@media (min-height: 1000px ) {
+			min-height: 85px
+		}
+	}
 	.slider-row {
 		border-top: 1px solid var(--w-border);
 		padding-top: 0.55rem;
@@ -525,6 +530,12 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.15s ease;
+
+        &.silence {
+	        color: #0f172a;
+	        background: #2dd4bf;
+	        opacity: 1;
+        }
 
         &.visible {
             opacity: 1;

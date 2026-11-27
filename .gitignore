@@ -25,9 +25,10 @@ vite.config.ts.timestamp-*
 src/routes/.obsidian/plugins/hunspell-spellchecker/languages
 src/routes/.obsidian/plugins/hunspell-spellchecker/logs
 
-# Черновики
+# Черновики и мультимедиа
 drafts/
 /src/routes/*/
+shorts/
 
 # Вычитанные
 

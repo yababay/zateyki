@@ -8,6 +8,7 @@ description: Квантовая теория не так удивительна,
     import BlackBodyChart from './BlackBodyChart.svelte';
     import StandingWaves from './StandingWaves.svelte';
    	import Pinup from  '#lib/components/Pinup.svelte';   	
+    import Video_9x16 from '#lib/components/Video_9x16.svelte'
    	import Footnote from '#lib/components/Footnote.svelte';
     import SlideRule from '#lib/components/SlideRule.svelte';
     //import banner from './banner.webp'
@@ -65,9 +66,11 @@ description: Квантовая теория не так удивительна,
 
 <a name="gorb">&nbsp;</a>
 
-<Figure caption="Свечение «абсолютно чёрного тела»">
+<!-- Figure caption="Свечение «абсолютно чёрного тела»">
     <BlackBodyChart />
-</Figure>
+</Figure -->
+
+<Video_9x16><BlackBodyChart /></Video_9x16>
 
 <!-- ![Спектр излучения абсолютно чёрного тела при разной температуре](black_body_spectrum.webp) -->
 
@@ -79,9 +82,10 @@ description: Квантовая теория не так удивительна,
 
 <!-- ![Первые три стоячие волны (моды) между стенками полости](./first_modes.webp) -->
 
-<Figure caption="Стоячие волны">
+<!--Figure caption="Стоячие волны">
     <StandingWaves />
-</Figure>
+</Figure-->
+<Video_9x16><StandingWaves /></Video_9x16>
 
 Выжившая внутри нагретой сферы и многократно отражённая волна рано или поздно вылетает через ту самую дырочку, радуя находящихся снаружи физиков своим цветом. Но позвольте, как же температура порождает электромагнитные волны? Не знаете? Вот и Макс Планк не знал! Ни о каком устройстве атома с его заряженными протонами и электронами тогда ещё и не слыхивали — до опытов Резерфорда оставалось целых 11 лет. Однако, как честный физик, Планк не мог поспорить с результатами экспериментов: электромагнитные волны явно вылетали из отверстия нагретой сферы, и он решил применить теоретический «костыль» (далеко не последний в этой истории), чтобы эта неопределённость не мешала в дальнейших рассуждениях.
 

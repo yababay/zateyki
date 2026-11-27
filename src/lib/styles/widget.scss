@@ -193,3 +193,9 @@
 		color: var(--w-accent);
 	}
 }
+
+@media (min-height: 1000px) {
+	.z-widget-footer {
+		height: 85px;
+	}
+}
