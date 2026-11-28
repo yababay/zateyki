@@ -4,7 +4,8 @@ description: Исследование о вращениях, от молекул
 ---
 
 <script lang="ts">
-   	import Pinup from '#lib/components/Pinup.svelte';   	
+   	import Pinup from '#lib/components/Pinup.svelte';
+    import Video_9x16 from '#lib/components/Video_9x16.svelte'   	
    	import NewtonCannon from './NewtonCannon.svelte';
    	import StarOmelette from './StarOmelette.svelte';
    	import DiracBelt from './DiracBelt.svelte'
@@ -164,7 +165,7 @@ $E^2 = (mc^2)^2 + (pc)^2$
 
 Электрон на $2s$-орбитали хорош тем, что его спин меняется на противоположный за два полных такта по 360&deg;, т. е. за 720&deg;. Чтобы показать это на нашей картинке, достаточно соответствующим образом менять цвет путешественника по атомной скважине.
 
-<OrbitalSpin2s />
+<Video_9x16><OrbitalSpin2s /></Video_9x16>
 
 ## «Халтура» Шрёдингера
 

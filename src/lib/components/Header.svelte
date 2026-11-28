@@ -3,8 +3,10 @@
     import { ROOT_TITLE, ROOT_DESCRIPTION } from '$app/env/public'
     import default_banner from '#lib/assets/barny-banner.png'
     import GoTo from './GoTo.svelte'
+    import Spinner from './Spinner.svelte'
 
     let title = $derived(isRoot() && ROOT_TITLE || headState.title)
+    let ready = $derived(!!headState.title)
     let description = $derived(isRoot() && ROOT_DESCRIPTION || headState.description)
     let banner = $derived(isRoot() && default_banner || headState.banner)
 </script>
@@ -12,7 +14,11 @@
 <header style:background-image={`url("${banner}")`} class="d-flex justify-content-center align-items-center flex-column">
     <div class="w-100 h-75 d-flex justify-content-center align-items-center">
         <p>
-            <i class="bi bi-align-end"></i><span bind:textContent={title} contenteditable="false"></span><i class="bi bi-align-start"></i>
+            {#if ready}
+                <i class="bi bi-align-end"></i><span bind:textContent={title} contenteditable="false"></span><i class="bi bi-align-start"></i>
+            {:else}
+                <Spinner />
+            {/if}
         </p>
     </div>
     <p class="description">{description}</p>
