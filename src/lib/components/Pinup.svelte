@@ -19,7 +19,7 @@
 {/if}
 
 <svelte:head>
-    <link rel="canonical" href="https://yababay.github.io/zateyki/">
+    <!-- link rel="canonical" href="https://yababay.github.io/zateyki/" -->
     {#if pinup}
         <meta property="image" content={pinup} />
         <meta property="twitter:image" content={pinup} />
