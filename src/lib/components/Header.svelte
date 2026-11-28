@@ -14,7 +14,7 @@
 <header style:background-image={`url("${banner}")`} class="d-flex justify-content-center align-items-center flex-column">
     <div class="w-100 h-75 d-flex justify-content-center align-items-center">
         <p>
-            {#if ready}
+            {#if ready || isRoot()}
                 <i class="bi bi-align-end"></i><span bind:textContent={title} contenteditable="false"></span><i class="bi bi-align-start"></i>
             {:else}
                 <Spinner />
